@@ -1,0 +1,73 @@
+\hypertarget{structsearch__manager__t}{}\section{Riferimenti per la struct search\+\_\+manager\+\_\+t}
+\label{structsearch__manager__t}\index{search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}}
+
+
+Struct che rappresenta il manager dei thread atti a ricercare le password all\textquotesingle{}interno degli archivi.  
+
+
+
+
+{\ttfamily \#include $<$data.\+h$>$}
+
+
+
+Diagramma di collaborazione per search\+\_\+manager\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{d6/d51/structsearch__manager__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Attributi pubblici}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+t $\ast$ \hyperlink{structsearch__manager__t_abac9106caf0478276fc6cf288d30917c}{threads}
+\item 
+\hyperlink{structls__t}{ls\+\_\+t} $\ast$ \hyperlink{structsearch__manager__t_a7f1f64c246b3827f179dd96c678722cf}{file\+\_\+list}
+\item 
+\hyperlink{structresult__t}{result\+\_\+t} \hyperlink{structsearch__manager__t_ae71a7eb74a2af2e9f3ea2ab7de643139}{res}
+\item 
+char $\ast$ \hyperlink{structsearch__manager__t_ad36bf1b5a95e84275ae96e106fc88b6c}{email}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Struct che rappresenta il manager dei thread atti a ricercare le password all\textquotesingle{}interno degli archivi. 
+
+~\newline
+Campi\+:~\newline
+1) t -\/ Array di thread searcher/worker;~\newline
+2) file\+\_\+list -\/ Lista degli archivi in cui cercare;~\newline
+3) res -\/ Password che corrispondo all\textquotesingle{}email dell\textquotesingle{}utente;~\newline
+4) email -\/ Email inserita dall\textquotesingle{}utente. 
+
+\subsection{Documentazione dei membri dato}
+\mbox{\Hypertarget{structsearch__manager__t_ad36bf1b5a95e84275ae96e106fc88b6c}\label{structsearch__manager__t_ad36bf1b5a95e84275ae96e106fc88b6c}} 
+\index{search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}!email@{email}}
+\index{email@{email}!search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{email}{email}}
+{\footnotesize\ttfamily char$\ast$ search\+\_\+manager\+\_\+t\+::email}
+
+\mbox{\Hypertarget{structsearch__manager__t_a7f1f64c246b3827f179dd96c678722cf}\label{structsearch__manager__t_a7f1f64c246b3827f179dd96c678722cf}} 
+\index{search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}!file\+\_\+list@{file\+\_\+list}}
+\index{file\+\_\+list@{file\+\_\+list}!search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{file\+\_\+list}{file\_list}}
+{\footnotesize\ttfamily \hyperlink{structls__t}{ls\+\_\+t}$\ast$ search\+\_\+manager\+\_\+t\+::file\+\_\+list}
+
+\mbox{\Hypertarget{structsearch__manager__t_ae71a7eb74a2af2e9f3ea2ab7de643139}\label{structsearch__manager__t_ae71a7eb74a2af2e9f3ea2ab7de643139}} 
+\index{search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}!res@{res}}
+\index{res@{res}!search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{res}{res}}
+{\footnotesize\ttfamily \hyperlink{structresult__t}{result\+\_\+t} search\+\_\+manager\+\_\+t\+::res}
+
+\mbox{\Hypertarget{structsearch__manager__t_abac9106caf0478276fc6cf288d30917c}\label{structsearch__manager__t_abac9106caf0478276fc6cf288d30917c}} 
+\index{search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}!threads@{threads}}
+\index{threads@{threads}!search\+\_\+manager\+\_\+t@{search\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{threads}{threads}}
+{\footnotesize\ttfamily pthread\+\_\+t$\ast$ search\+\_\+manager\+\_\+t\+::threads}
+
+
+
+La documentazione per questa struct è stata generata a partire dal seguente file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data_8h}{data.\+h}\end{DoxyCompactItemize}

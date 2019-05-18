@@ -1,0 +1,482 @@
+\hypertarget{drawing__functions_8cpp}{}\section{Riferimenti per il file drawing\+\_\+functions.\+cpp}
+\label{drawing__functions_8cpp}\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+{\ttfamily \#include \char`\"{}drawing\+\_\+functions.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per drawing\+\_\+functions.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d63/drawing__functions_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$ \hyperlink{drawing__functions_8cpp_a4c5bc668d5d515156097d50ad1ea094c}{generate\+\_\+menu\+\_\+bitmaps} ()
+\begin{DoxyCompactList}\small\item\em Funzione che genera l\textquotesingle{}array contenente i puntatori ai bitmap relativi alla schermata del menu principale. \end{DoxyCompactList}\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$ \hyperlink{drawing__functions_8cpp_acaa107eaf4d6d8e1e1675d3e7c576277}{generate\+\_\+playwa\+\_\+bitmaps} ()
+\begin{DoxyCompactList}\small\item\em Funzione che genera l\textquotesingle{}array contenente i puntatori ai bitmap relativi alla schermata di gioco. \end{DoxyCompactList}\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$ \hyperlink{drawing__functions_8cpp_a63f87e78d7d8340b2a5a02dc56b61718}{generate\+\_\+instr\+\_\+bitmaps} ()
+\begin{DoxyCompactList}\small\item\em Funzione che genera l\textquotesingle{}array contenente i puntatori ai bitmap relativi alla schermata di pausa. \end{DoxyCompactList}\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$ \hyperlink{drawing__functions_8cpp_a73982fb9ed5faaa34dd83cec1c8deb7c}{generate\+\_\+playwa\+\_\+fonts} ()
+\begin{DoxyCompactList}\small\item\em Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi alla schermata di gioco. \end{DoxyCompactList}\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$ \hyperlink{drawing__functions_8cpp_a91ed375d606dbda8bdeaefde045bccc0}{generate\+\_\+instr\+\_\+fonts} ()
+\begin{DoxyCompactList}\small\item\em Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi alla schermata di pausa. \end{DoxyCompactList}\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$ \hyperlink{drawing__functions_8cpp_ac8a42fd07fd0472609d1334c696ca934}{generate\+\_\+menu\+\_\+fonts} ()
+\begin{DoxyCompactList}\small\item\em Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi ai menu. \end{DoxyCompactList}\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$ \hyperlink{drawing__functions_8cpp_ae2818bfb00fa513611854338aeeef6ad}{generate\+\_\+user\+\_\+fonts} ()
+\begin{DoxyCompactList}\small\item\em Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi alla schermata di gameover. \end{DoxyCompactList}\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$ \hyperlink{drawing__functions_8cpp_ae4246ed2992a4852e394233e2b41d013}{generate\+\_\+settings\+\_\+fonts} ()
+\begin{DoxyCompactList}\small\item\em Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi alla schermata delle impostazioni. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a30bcdca4f2bc932add7319374a3bb617}{destroy\+\_\+arr\+\_\+bitmaps} (A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$arr, const int num)
+\begin{DoxyCompactList}\small\item\em Funzione che dealloca un array di bitmap, oltre che tutti i bitmap in esso contenuti. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a3c93cba6ceb2ca7188621e0112220c8c}{destroy\+\_\+arr\+\_\+fonts} (A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$arr, const int num)
+\begin{DoxyCompactList}\small\item\em Funzione che dealloca un array di font, oltre che tutti i font in esso contenuti. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_ae6b0d0c9d9a687608caf2b5f240758cf}{draw\+\_\+background} (A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$bmp\+\_\+bg, float \&offset\+\_\+bg, const bool playing)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa lo sfondo della schermata. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a1fc8105c4e2716aff11b7f1835be51b9}{draw\+\_\+head} (char $\ast$head\+\_\+str, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa il titolo della schermata. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a5492eb7b0241c0d2cc97cda425addebd}{draw\+\_\+back} (A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font, const bool pause)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa la stringa di ritorno al gioco, o al menu principale (in base alla variabile \char`\"{}pause\char`\"{}). \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a497ccfc6d0c0bf91883fa091a8fc9310}{draw\+\_\+intro\+\_\+init} (A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$arr\+\_\+bitmaps, float \&bg\+\_\+offset)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce l\textquotesingle{}inizializzazione dell\textquotesingle{}animazione di introduzione. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_adc09c13b7ec3fb805900982610c49cf9}{draw\+\_\+intro\+\_\+title\+\_\+slide} (A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$arr\+\_\+bitmaps, float \&bg\+\_\+offset)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce lo slide del titolo nell\textquotesingle{}animazione di introduzione. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a51a2880bf7e514344ee1ac5e562f9479}{draw\+\_\+intro\+\_\+menu\+\_\+fadein} (A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$arr\+\_\+bitmaps, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$arr\+\_\+fonts, float \&bg\+\_\+offset)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce il fadein del menu nell\textquotesingle{}animazione di introduzione. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a9affe6a634fbf578ab2158cb6ae5ae7f}{draw\+\_\+menu\+\_\+title} (A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$bmp\+\_\+title)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa il bitmap relativo al titolo presente nel menu principale. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a9ce95bf12fc8789ae26027859ee5f47d}{draw\+\_\+menu\+\_\+option} (const int \&index, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$bmp\+\_\+option, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font, char $\ast$str\+\_\+scelta, const bool settings)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa l\textquotesingle{}opzione indicata (menu). \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_aa6d5deb3a6b2e9f1a2db69ff00badcbb}{draw\+\_\+menu\+\_\+copyright} (A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa la stringa di copyright (menu). \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_afcf3a6ebbfad9889b2b58b85f82814c7}{draw\+\_\+playwa\+\_\+score\+\_\+hint} (const \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font\+\_\+score, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font\+\_\+hints, const bool visible\+\_\+hints)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa il punteggio e i suggerimenti (schermata di gioco). \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_aa12cd18d497401592c40fd5f803ed384}{draw\+\_\+playwa\+\_\+shooter} (const \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars, const \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$arr\+\_\+bullet, const \hyperlink{structshooter__t}{shooter\+\_\+t} \&shooter, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$arr\+\_\+bitmaps)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa lo shooter, la sua area (bianca normalmente, rossa in caso di pericolo o azzurra nel caso in cui il bonus \char`\"{}shield\char`\"{} venga attivato). \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a61d883b04452e38f3c290857d66941d7}{draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets} (const \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars, const \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$arr\+\_\+bullet, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$arr\+\_\+bitmaps, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa lo gli asteroidi ed i proiettili presenti in gioco. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_acac0972652d8d16bcebdc571bd69d7cc}{draw\+\_\+playwa\+\_\+bonus\+\_\+music} (const \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$arr\+\_\+bitmaps, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font\+\_\+score, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font\+\_\+bonus, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font\+\_\+bonus\+\_\+hint, \hyperlink{structsettings__t}{settings\+\_\+t} settings)
+\begin{DoxyCompactList}\small\item\em Funzione che stampa i bonus della partita (e le icone relative al suono). \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a3bf614e725835505499415b255bff0e7}{draw\+\_\+stats\+\_\+blocks} (A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font)
+\begin{DoxyCompactList}\small\item\em Funzione che disegna i blocchi di sfondo relativi ai risultati di fine partita. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a7f0ecbefa0f7f7cb274e8d5b56c3aa74}{draw\+\_\+stat} (const int \&idx\+\_\+stat, int stat\+\_\+value, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font)
+\begin{DoxyCompactList}\small\item\em Funzione che disegna un singolo risultato. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a05c0e4929a232f4cdcfbf43b05c79b39}{draw\+\_\+gameover\+\_\+animation} (const int \&score\+\_\+goal, const int \&dast\+\_\+goal, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$bg\+\_\+bmp, float \&bg\+\_\+offset, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$arr\+\_\+fonts)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce l\textquotesingle{}animazione di fine partita. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_ad713eae96f263309068c67fe145b9748}{draw\+\_\+playagain\+\_\+button} (A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font)
+\begin{DoxyCompactList}\small\item\em Funzione che disegna il bottone \char`\"{}play again\char`\"{} nella schermata di Game Over. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_ada8f618047616bdecf221bf0548fd2e5}{draw\+\_\+results} (A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font, \hyperlink{structresult__t}{result\+\_\+t} res)
+\begin{DoxyCompactList}\small\item\em Funzione che disegna i risultati estratti dagli archivi corrispondenti alla password inserita dell\textquotesingle{}utente. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_acf0b8be217a189ac8895e0a879931602}{draw\+\_\+username\+\_\+block} (const bool enter\+\_\+active, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font)
+\begin{DoxyCompactList}\small\item\em Funzione che disegna il blocco di inserimento dello username. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a6d58b45f3a62d5d1fd44a26e3e206c72}{draw\+\_\+username} (char $\ast$username, const int \&cur\+\_\+pos, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font, const bool bar\+\_\+visible)
+\begin{DoxyCompactList}\small\item\em Funzione che disegna lo username. \end{DoxyCompactList}\item 
+void \hyperlink{drawing__functions_8cpp_a7b076accc9ae9e5e8e5e172d9bc50e8f}{draw\+\_\+instructions} (A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$arr\+\_\+fonts, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$arr\+\_\+bitmaps)
+\begin{DoxyCompactList}\small\item\em Funzine che disegna le istruzioni durante la pausa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{drawing__functions_8cpp_a30bcdca4f2bc932add7319374a3bb617}\label{drawing__functions_8cpp_a30bcdca4f2bc932add7319374a3bb617}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!destroy\+\_\+arr\+\_\+bitmaps@{destroy\+\_\+arr\+\_\+bitmaps}}
+\index{destroy\+\_\+arr\+\_\+bitmaps@{destroy\+\_\+arr\+\_\+bitmaps}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{destroy\+\_\+arr\+\_\+bitmaps()}{destroy\_arr\_bitmaps()}}
+{\footnotesize\ttfamily void destroy\+\_\+arr\+\_\+bitmaps (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$}]{arr,  }\item[{const int}]{num }\end{DoxyParamCaption})}
+
+
+
+Funzione che dealloca un array di bitmap, oltre che tutti i bitmap in esso contenuti. 
+
+~\newline
+Parametri\+: ~\newline
+1) arr -\/ Array di bitmap; ~\newline
+2) num -\/ Dimensione dell\textquotesingle{}array di bitmap. \mbox{\Hypertarget{drawing__functions_8cpp_a3c93cba6ceb2ca7188621e0112220c8c}\label{drawing__functions_8cpp_a3c93cba6ceb2ca7188621e0112220c8c}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!destroy\+\_\+arr\+\_\+fonts@{destroy\+\_\+arr\+\_\+fonts}}
+\index{destroy\+\_\+arr\+\_\+fonts@{destroy\+\_\+arr\+\_\+fonts}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{destroy\+\_\+arr\+\_\+fonts()}{destroy\_arr\_fonts()}}
+{\footnotesize\ttfamily void destroy\+\_\+arr\+\_\+fonts (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$}]{arr,  }\item[{const int}]{num }\end{DoxyParamCaption})}
+
+
+
+Funzione che dealloca un array di font, oltre che tutti i font in esso contenuti. 
+
+~\newline
+Parametri\+: ~\newline
+1) arr -\/ Array di font; ~\newline
+2) num -\/ Dimensione dell\textquotesingle{}array di font. \mbox{\Hypertarget{drawing__functions_8cpp_a5492eb7b0241c0d2cc97cda425addebd}\label{drawing__functions_8cpp_a5492eb7b0241c0d2cc97cda425addebd}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+back@{draw\+\_\+back}}
+\index{draw\+\_\+back@{draw\+\_\+back}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+back()}{draw\_back()}}
+{\footnotesize\ttfamily void draw\+\_\+back (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font,  }\item[{const bool}]{pause }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa la stringa di ritorno al gioco, o al menu principale (in base alla variabile \char`\"{}pause\char`\"{}). 
+
+~\newline
+Parametri\+: ~\newline
+1) font -\/ Font relativo alla stringa di ritorno; ~\newline
+2) pause -\/ In base al valore assunto da questa variabile viene stampata la stringa adatta. \mbox{\Hypertarget{drawing__functions_8cpp_ae6b0d0c9d9a687608caf2b5f240758cf}\label{drawing__functions_8cpp_ae6b0d0c9d9a687608caf2b5f240758cf}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+background@{draw\+\_\+background}}
+\index{draw\+\_\+background@{draw\+\_\+background}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+background()}{draw\_background()}}
+{\footnotesize\ttfamily void draw\+\_\+background (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$}]{bmp\+\_\+bg,  }\item[{float \&}]{offset\+\_\+bg,  }\item[{const bool}]{playing }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa lo sfondo della schermata. 
+
+~\newline
+Parametri\+: ~\newline
+1) bmp\+\_\+bg -\/ Bitmap relativo allo sfondo; ~\newline
+2) offset\+\_\+bg -\/ Scostamento in pixel dello sfondo dal lato sinistro della schermata (per rotazione sfondo); ~\newline
+3) playing -\/ Flag sul quale si basa la velocità di rotazione (durante il gioco risulta essere più lenta). \mbox{\Hypertarget{drawing__functions_8cpp_a05c0e4929a232f4cdcfbf43b05c79b39}\label{drawing__functions_8cpp_a05c0e4929a232f4cdcfbf43b05c79b39}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+gameover\+\_\+animation@{draw\+\_\+gameover\+\_\+animation}}
+\index{draw\+\_\+gameover\+\_\+animation@{draw\+\_\+gameover\+\_\+animation}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+gameover\+\_\+animation()}{draw\_gameover\_animation()}}
+{\footnotesize\ttfamily void draw\+\_\+gameover\+\_\+animation (\begin{DoxyParamCaption}\item[{const int \&}]{score\+\_\+goal,  }\item[{const int \&}]{dast\+\_\+goal,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$}]{bg\+\_\+bmp,  }\item[{float \&}]{bg\+\_\+offset,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$}]{arr\+\_\+fonts }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce l\textquotesingle{}animazione di fine partita. 
+
+~\newline
+Parametri\+: ~\newline
+1) score\+\_\+goal -\/ Score effettiva del giocatore; ~\newline
+2) dast\+\_\+goal -\/ Asteroidi effettivamente distrutti; ~\newline
+4) bg\+\_\+bmp -\/ Bitmap di sfondo; ~\newline
+5) bg\+\_\+offset -\/ Scostamento laterale dello sfondo; ~\newline
+6) arr\+\_\+fonts -\/ Array dei font necessari. \mbox{\Hypertarget{drawing__functions_8cpp_a1fc8105c4e2716aff11b7f1835be51b9}\label{drawing__functions_8cpp_a1fc8105c4e2716aff11b7f1835be51b9}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+head@{draw\+\_\+head}}
+\index{draw\+\_\+head@{draw\+\_\+head}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+head()}{draw\_head()}}
+{\footnotesize\ttfamily void draw\+\_\+head (\begin{DoxyParamCaption}\item[{char $\ast$}]{head\+\_\+str,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa il titolo della schermata. 
+
+~\newline
+Parametri\+: ~\newline
+1) head\+\_\+str -\/ Stringa relativa al titolo; ~\newline
+2) font -\/ Font relativo al titolo. \mbox{\Hypertarget{drawing__functions_8cpp_a7b076accc9ae9e5e8e5e172d9bc50e8f}\label{drawing__functions_8cpp_a7b076accc9ae9e5e8e5e172d9bc50e8f}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+instructions@{draw\+\_\+instructions}}
+\index{draw\+\_\+instructions@{draw\+\_\+instructions}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+instructions()}{draw\_instructions()}}
+{\footnotesize\ttfamily void draw\+\_\+instructions (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$}]{arr\+\_\+fonts,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$}]{arr\+\_\+bitmaps }\end{DoxyParamCaption})}
+
+
+
+Funzine che disegna le istruzioni durante la pausa. 
+
+~\newline
+Parametri\+: ~\newline
+1) arr\+\_\+fonts -\/ Array contenente i font utilizzati; ~\newline
+2) arr\+\_\+bitmaps -\/ Array contenente i bitmap utilizzati. \mbox{\Hypertarget{drawing__functions_8cpp_a497ccfc6d0c0bf91883fa091a8fc9310}\label{drawing__functions_8cpp_a497ccfc6d0c0bf91883fa091a8fc9310}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+intro\+\_\+init@{draw\+\_\+intro\+\_\+init}}
+\index{draw\+\_\+intro\+\_\+init@{draw\+\_\+intro\+\_\+init}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+intro\+\_\+init()}{draw\_intro\_init()}}
+{\footnotesize\ttfamily void draw\+\_\+intro\+\_\+init (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$}]{arr\+\_\+bitmaps,  }\item[{float \&}]{bg\+\_\+offset }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce l\textquotesingle{}inizializzazione dell\textquotesingle{}animazione di introduzione. 
+
+~\newline
+Parametri\+: ~\newline
+1) arr\+\_\+bitmaps -\/ Array di bitmap; ~\newline
+2) bg\+\_\+offset -\/ Offset iniziale dello sfondo. \mbox{\Hypertarget{drawing__functions_8cpp_a51a2880bf7e514344ee1ac5e562f9479}\label{drawing__functions_8cpp_a51a2880bf7e514344ee1ac5e562f9479}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+intro\+\_\+menu\+\_\+fadein@{draw\+\_\+intro\+\_\+menu\+\_\+fadein}}
+\index{draw\+\_\+intro\+\_\+menu\+\_\+fadein@{draw\+\_\+intro\+\_\+menu\+\_\+fadein}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+intro\+\_\+menu\+\_\+fadein()}{draw\_intro\_menu\_fadein()}}
+{\footnotesize\ttfamily void draw\+\_\+intro\+\_\+menu\+\_\+fadein (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$}]{arr\+\_\+bitmaps,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$$\ast$}]{arr\+\_\+fonts,  }\item[{float \&}]{bg\+\_\+offset }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce il fadein del menu nell\textquotesingle{}animazione di introduzione. 
+
+~\newline
+Parametri\+: ~\newline
+1) arr\+\_\+bitmaps -\/ Array di bitmap; ~\newline
+2) arr\+\_\+fonts -\/ Array di font; ~\newline
+3) bg\+\_\+offset -\/ Offset iniziale dello sfondo. \mbox{\Hypertarget{drawing__functions_8cpp_adc09c13b7ec3fb805900982610c49cf9}\label{drawing__functions_8cpp_adc09c13b7ec3fb805900982610c49cf9}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+intro\+\_\+title\+\_\+slide@{draw\+\_\+intro\+\_\+title\+\_\+slide}}
+\index{draw\+\_\+intro\+\_\+title\+\_\+slide@{draw\+\_\+intro\+\_\+title\+\_\+slide}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+intro\+\_\+title\+\_\+slide()}{draw\_intro\_title\_slide()}}
+{\footnotesize\ttfamily void draw\+\_\+intro\+\_\+title\+\_\+slide (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$}]{arr\+\_\+bitmaps,  }\item[{float \&}]{bg\+\_\+offset }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce lo slide del titolo nell\textquotesingle{}animazione di introduzione. 
+
+~\newline
+Parametri\+: ~\newline
+1) arr\+\_\+bitmaps -\/ Array di bitmap; ~\newline
+2) bg\+\_\+offset -\/ Offset iniziale dello sfondo. \mbox{\Hypertarget{drawing__functions_8cpp_aa6d5deb3a6b2e9f1a2db69ff00badcbb}\label{drawing__functions_8cpp_aa6d5deb3a6b2e9f1a2db69ff00badcbb}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+menu\+\_\+copyright@{draw\+\_\+menu\+\_\+copyright}}
+\index{draw\+\_\+menu\+\_\+copyright@{draw\+\_\+menu\+\_\+copyright}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+menu\+\_\+copyright()}{draw\_menu\_copyright()}}
+{\footnotesize\ttfamily void draw\+\_\+menu\+\_\+copyright (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa la stringa di copyright (menu). 
+
+~\newline
+Parametri\+: ~\newline
+1) font -\/ Font relativo alla stringa di copyright. \mbox{\Hypertarget{drawing__functions_8cpp_a9ce95bf12fc8789ae26027859ee5f47d}\label{drawing__functions_8cpp_a9ce95bf12fc8789ae26027859ee5f47d}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+menu\+\_\+option@{draw\+\_\+menu\+\_\+option}}
+\index{draw\+\_\+menu\+\_\+option@{draw\+\_\+menu\+\_\+option}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+menu\+\_\+option()}{draw\_menu\_option()}}
+{\footnotesize\ttfamily void draw\+\_\+menu\+\_\+option (\begin{DoxyParamCaption}\item[{const int \&}]{index,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$}]{bmp\+\_\+option,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font,  }\item[{char $\ast$}]{str\+\_\+scelta,  }\item[{const bool}]{settings }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa l\textquotesingle{}opzione indicata (menu). 
+
+~\newline
+Parametri\+: ~\newline
+1) index -\/ Indice dell\textquotesingle{}opzione; ~\newline
+2) bmp\+\_\+option -\/ Bitmap relativo all\textquotesingle{}opzione indicata; ~\newline
+3) font -\/ Font relativo all\textquotesingle{}opzione indicata; ~\newline
+4) str\+\_\+scelta -\/ Stringa relativa all\textquotesingle{}opzione indicata; ~\newline
+5) settings -\/ Se vero, stampa le opzioni leggermente più in alto rispetto al menu principale. \mbox{\Hypertarget{drawing__functions_8cpp_a9affe6a634fbf578ab2158cb6ae5ae7f}\label{drawing__functions_8cpp_a9affe6a634fbf578ab2158cb6ae5ae7f}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+menu\+\_\+title@{draw\+\_\+menu\+\_\+title}}
+\index{draw\+\_\+menu\+\_\+title@{draw\+\_\+menu\+\_\+title}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+menu\+\_\+title()}{draw\_menu\_title()}}
+{\footnotesize\ttfamily void draw\+\_\+menu\+\_\+title (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$}]{bmp\+\_\+title }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa il bitmap relativo al titolo presente nel menu principale. 
+
+~\newline
+Parametri\+: ~\newline
+1) bmp\+\_\+title -\/ Bitmap relativo al titolo. \mbox{\Hypertarget{drawing__functions_8cpp_ad713eae96f263309068c67fe145b9748}\label{drawing__functions_8cpp_ad713eae96f263309068c67fe145b9748}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+playagain\+\_\+button@{draw\+\_\+playagain\+\_\+button}}
+\index{draw\+\_\+playagain\+\_\+button@{draw\+\_\+playagain\+\_\+button}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+playagain\+\_\+button()}{draw\_playagain\_button()}}
+{\footnotesize\ttfamily void draw\+\_\+playagain\+\_\+button (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Funzione che disegna il bottone \char`\"{}play again\char`\"{} nella schermata di Game Over. 
+
+~\newline
+Parametri\+: ~\newline
+1) arr\+\_\+fonts -\/ Array dei font necessari;~\newline
+\mbox{\Hypertarget{drawing__functions_8cpp_a61d883b04452e38f3c290857d66941d7}\label{drawing__functions_8cpp_a61d883b04452e38f3c290857d66941d7}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets@{draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets}}
+\index{draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets@{draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets()}{draw\_playwa\_asteroids\_bullets()}}
+{\footnotesize\ttfamily void draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets (\begin{DoxyParamCaption}\item[{const \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars,  }\item[{const \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$}]{arr\+\_\+bullet,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$}]{arr\+\_\+bitmaps,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa lo gli asteroidi ed i proiettili presenti in gioco. 
+
+~\newline
+Parametri\+: ~\newline
+1) match\+\_\+vars -\/ Struct contenente le variabili di gioco; ~\newline
+2) arr\+\_\+bullet -\/ Array contenente i proiettili in gioco; ~\newline
+3) arr\+\_\+bitmaps -\/ Array contenente i bitmap di gioco; ~\newline
+4) font -\/ Font relativo agli asteroidi. \mbox{\Hypertarget{drawing__functions_8cpp_acac0972652d8d16bcebdc571bd69d7cc}\label{drawing__functions_8cpp_acac0972652d8d16bcebdc571bd69d7cc}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+playwa\+\_\+bonus\+\_\+music@{draw\+\_\+playwa\+\_\+bonus\+\_\+music}}
+\index{draw\+\_\+playwa\+\_\+bonus\+\_\+music@{draw\+\_\+playwa\+\_\+bonus\+\_\+music}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+playwa\+\_\+bonus\+\_\+music()}{draw\_playwa\_bonus\_music()}}
+{\footnotesize\ttfamily void draw\+\_\+playwa\+\_\+bonus\+\_\+music (\begin{DoxyParamCaption}\item[{const \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$}]{arr\+\_\+bitmaps,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font\+\_\+score,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font\+\_\+bonus,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font\+\_\+bonus\+\_\+hint,  }\item[{\hyperlink{structsettings__t}{settings\+\_\+t}}]{settings }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa i bonus della partita (e le icone relative al suono). 
+
+~\newline
+Parametri\+: ~\newline
+1) match\+\_\+vars -\/ Struct contenente le variabili di gioco; ~\newline
+2) arr\+\_\+bitmaps -\/ Array contenente i bitmap di gioco; ~\newline
+3) font\+\_\+score -\/ Font relativo al punteggio (utilizzato per stampare l\textquotesingle{}intestazione dei bonus); ~\newline
+4) font\+\_\+bonus -\/ Font relativo alla numerosità dei bonus; ~\newline
+5) font\+\_\+bonus\+\_\+hint -\/ Font relativo al suggerimento per l\textquotesingle{}attivazione del bonus. \mbox{\Hypertarget{drawing__functions_8cpp_afcf3a6ebbfad9889b2b58b85f82814c7}\label{drawing__functions_8cpp_afcf3a6ebbfad9889b2b58b85f82814c7}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+playwa\+\_\+score\+\_\+hint@{draw\+\_\+playwa\+\_\+score\+\_\+hint}}
+\index{draw\+\_\+playwa\+\_\+score\+\_\+hint@{draw\+\_\+playwa\+\_\+score\+\_\+hint}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+playwa\+\_\+score\+\_\+hint()}{draw\_playwa\_score\_hint()}}
+{\footnotesize\ttfamily void draw\+\_\+playwa\+\_\+score\+\_\+hint (\begin{DoxyParamCaption}\item[{const \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font\+\_\+score,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font\+\_\+hints,  }\item[{const bool}]{visible\+\_\+hints }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa il punteggio e i suggerimenti (schermata di gioco). 
+
+~\newline
+Parametri\+: ~\newline
+1) match\+\_\+vars -\/ Struct contenente le variabili di gioco; ~\newline
+2) font\+\_\+score -\/ Font relativo al punteggio; ~\newline
+3) font\+\_\+hints -\/ Font relativo ai suggerimenti; ~\newline
+4) visible\+\_\+hints -\/ Se true, mostra i suggerimenti di gioco. \mbox{\Hypertarget{drawing__functions_8cpp_aa12cd18d497401592c40fd5f803ed384}\label{drawing__functions_8cpp_aa12cd18d497401592c40fd5f803ed384}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+playwa\+\_\+shooter@{draw\+\_\+playwa\+\_\+shooter}}
+\index{draw\+\_\+playwa\+\_\+shooter@{draw\+\_\+playwa\+\_\+shooter}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+playwa\+\_\+shooter()}{draw\_playwa\_shooter()}}
+{\footnotesize\ttfamily void draw\+\_\+playwa\+\_\+shooter (\begin{DoxyParamCaption}\item[{const \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars,  }\item[{const \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$}]{arr\+\_\+bullet,  }\item[{const \hyperlink{structshooter__t}{shooter\+\_\+t} \&}]{shooter,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$$\ast$}]{arr\+\_\+bitmaps }\end{DoxyParamCaption})}
+
+
+
+Funzione che stampa lo shooter, la sua area (bianca normalmente, rossa in caso di pericolo o azzurra nel caso in cui il bonus \char`\"{}shield\char`\"{} venga attivato). 
+
+~\newline
+Parametri\+: ~\newline
+1) match\+\_\+vars -\/ Struct contenente le variabili di gioco; ~\newline
+2) arr\+\_\+bullet -\/ Array contenente i proiettili in gioco; ~\newline
+3) shooter -\/ Struct contenente le variabili relative allo shooter; ~\newline
+4) arr\+\_\+bitmaps -\/ Array contenente i bitmap di gioco. \mbox{\Hypertarget{drawing__functions_8cpp_ada8f618047616bdecf221bf0548fd2e5}\label{drawing__functions_8cpp_ada8f618047616bdecf221bf0548fd2e5}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+results@{draw\+\_\+results}}
+\index{draw\+\_\+results@{draw\+\_\+results}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+results()}{draw\_results()}}
+{\footnotesize\ttfamily void draw\+\_\+results (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font,  }\item[{\hyperlink{structresult__t}{result\+\_\+t}}]{res }\end{DoxyParamCaption})}
+
+
+
+Funzione che disegna i risultati estratti dagli archivi corrispondenti alla password inserita dell\textquotesingle{}utente. 
+
+~\newline
+Parametri\+: ~\newline
+1) arr\+\_\+fonts -\/ Array dei font necessari;~\newline
+2) res -\/ Risultati dei match estratti; \mbox{\Hypertarget{drawing__functions_8cpp_a7f0ecbefa0f7f7cb274e8d5b56c3aa74}\label{drawing__functions_8cpp_a7f0ecbefa0f7f7cb274e8d5b56c3aa74}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+stat@{draw\+\_\+stat}}
+\index{draw\+\_\+stat@{draw\+\_\+stat}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+stat()}{draw\_stat()}}
+{\footnotesize\ttfamily void draw\+\_\+stat (\begin{DoxyParamCaption}\item[{const int \&}]{idx\+\_\+stat,  }\item[{int}]{stat\+\_\+value,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Funzione che disegna un singolo risultato. 
+
+~\newline
+Parametri\+: ~\newline
+1) idx\+\_\+stat -\/ Indice del risultato; ~\newline
+2) stat\+\_\+value -\/ Valore del risultato; ~\newline
+3) font -\/ Font utilizzato. \mbox{\Hypertarget{drawing__functions_8cpp_a3bf614e725835505499415b255bff0e7}\label{drawing__functions_8cpp_a3bf614e725835505499415b255bff0e7}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+stats\+\_\+blocks@{draw\+\_\+stats\+\_\+blocks}}
+\index{draw\+\_\+stats\+\_\+blocks@{draw\+\_\+stats\+\_\+blocks}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+stats\+\_\+blocks()}{draw\_stats\_blocks()}}
+{\footnotesize\ttfamily void draw\+\_\+stats\+\_\+blocks (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Funzione che disegna i blocchi di sfondo relativi ai risultati di fine partita. 
+
+~\newline
+Parametri\+: ~\newline
+1) font -\/ Font utilizzato. \mbox{\Hypertarget{drawing__functions_8cpp_a6d58b45f3a62d5d1fd44a26e3e206c72}\label{drawing__functions_8cpp_a6d58b45f3a62d5d1fd44a26e3e206c72}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+username@{draw\+\_\+username}}
+\index{draw\+\_\+username@{draw\+\_\+username}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+username()}{draw\_username()}}
+{\footnotesize\ttfamily void draw\+\_\+username (\begin{DoxyParamCaption}\item[{char $\ast$}]{username,  }\item[{const int \&}]{cur\+\_\+pos,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font,  }\item[{const bool}]{bar\+\_\+visible }\end{DoxyParamCaption})}
+
+
+
+Funzione che disegna lo username. 
+
+~\newline
+1) username -\/ Stringa dello username; ~\newline
+2) cur\+\_\+pos -\/ Posizione corrente all\textquotesingle{}interno della stringa; ~\newline
+3) font -\/ Font utilizzato; ~\newline
+4) bar\+\_\+visible -\/ Se vero, il cursore è visibile. \mbox{\Hypertarget{drawing__functions_8cpp_acf0b8be217a189ac8895e0a879931602}\label{drawing__functions_8cpp_acf0b8be217a189ac8895e0a879931602}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!draw\+\_\+username\+\_\+block@{draw\+\_\+username\+\_\+block}}
+\index{draw\+\_\+username\+\_\+block@{draw\+\_\+username\+\_\+block}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+username\+\_\+block()}{draw\_username\_block()}}
+{\footnotesize\ttfamily void draw\+\_\+username\+\_\+block (\begin{DoxyParamCaption}\item[{const bool}]{enter\+\_\+active,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Funzione che disegna il blocco di inserimento dello username. 
+
+~\newline
+Parametri\+: ~\newline
+1) enter\+\_\+active -\/ Se true, è possibile cliccare il tasto di invio dello username; ~\newline
+2) font -\/ Font utilizzato. \mbox{\Hypertarget{drawing__functions_8cpp_a63f87e78d7d8340b2a5a02dc56b61718}\label{drawing__functions_8cpp_a63f87e78d7d8340b2a5a02dc56b61718}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!generate\+\_\+instr\+\_\+bitmaps@{generate\+\_\+instr\+\_\+bitmaps}}
+\index{generate\+\_\+instr\+\_\+bitmaps@{generate\+\_\+instr\+\_\+bitmaps}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+instr\+\_\+bitmaps()}{generate\_instr\_bitmaps()}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP$\ast$$\ast$ generate\+\_\+instr\+\_\+bitmaps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera l\textquotesingle{}array contenente i puntatori ai bitmap relativi alla schermata di pausa. 
+
+~\newline
+Ritorna un puntatore all\textquotesingle{}array generato. \mbox{\Hypertarget{drawing__functions_8cpp_a91ed375d606dbda8bdeaefde045bccc0}\label{drawing__functions_8cpp_a91ed375d606dbda8bdeaefde045bccc0}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!generate\+\_\+instr\+\_\+fonts@{generate\+\_\+instr\+\_\+fonts}}
+\index{generate\+\_\+instr\+\_\+fonts@{generate\+\_\+instr\+\_\+fonts}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+instr\+\_\+fonts()}{generate\_instr\_fonts()}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT$\ast$$\ast$ generate\+\_\+instr\+\_\+fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi alla schermata di pausa. 
+
+~\newline
+Ritorna un puntatore all\textquotesingle{}array generato. \mbox{\Hypertarget{drawing__functions_8cpp_a4c5bc668d5d515156097d50ad1ea094c}\label{drawing__functions_8cpp_a4c5bc668d5d515156097d50ad1ea094c}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!generate\+\_\+menu\+\_\+bitmaps@{generate\+\_\+menu\+\_\+bitmaps}}
+\index{generate\+\_\+menu\+\_\+bitmaps@{generate\+\_\+menu\+\_\+bitmaps}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+menu\+\_\+bitmaps()}{generate\_menu\_bitmaps()}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP$\ast$$\ast$ generate\+\_\+menu\+\_\+bitmaps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera l\textquotesingle{}array contenente i puntatori ai bitmap relativi alla schermata del menu principale. 
+
+~\newline
+Ritorna un puntatore all\textquotesingle{}array generato. \mbox{\Hypertarget{drawing__functions_8cpp_ac8a42fd07fd0472609d1334c696ca934}\label{drawing__functions_8cpp_ac8a42fd07fd0472609d1334c696ca934}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!generate\+\_\+menu\+\_\+fonts@{generate\+\_\+menu\+\_\+fonts}}
+\index{generate\+\_\+menu\+\_\+fonts@{generate\+\_\+menu\+\_\+fonts}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+menu\+\_\+fonts()}{generate\_menu\_fonts()}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT$\ast$$\ast$ generate\+\_\+menu\+\_\+fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi ai menu. 
+
+~\newline
+Ritorna un puntatore all\textquotesingle{}array generato. \mbox{\Hypertarget{drawing__functions_8cpp_acaa107eaf4d6d8e1e1675d3e7c576277}\label{drawing__functions_8cpp_acaa107eaf4d6d8e1e1675d3e7c576277}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!generate\+\_\+playwa\+\_\+bitmaps@{generate\+\_\+playwa\+\_\+bitmaps}}
+\index{generate\+\_\+playwa\+\_\+bitmaps@{generate\+\_\+playwa\+\_\+bitmaps}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+playwa\+\_\+bitmaps()}{generate\_playwa\_bitmaps()}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP$\ast$$\ast$ generate\+\_\+playwa\+\_\+bitmaps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera l\textquotesingle{}array contenente i puntatori ai bitmap relativi alla schermata di gioco. 
+
+~\newline
+Ritorna un puntatore all\textquotesingle{}array generato. \mbox{\Hypertarget{drawing__functions_8cpp_a73982fb9ed5faaa34dd83cec1c8deb7c}\label{drawing__functions_8cpp_a73982fb9ed5faaa34dd83cec1c8deb7c}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!generate\+\_\+playwa\+\_\+fonts@{generate\+\_\+playwa\+\_\+fonts}}
+\index{generate\+\_\+playwa\+\_\+fonts@{generate\+\_\+playwa\+\_\+fonts}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+playwa\+\_\+fonts()}{generate\_playwa\_fonts()}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT$\ast$$\ast$ generate\+\_\+playwa\+\_\+fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi alla schermata di gioco. 
+
+~\newline
+Ritorna un puntatore all\textquotesingle{}array generato. \mbox{\Hypertarget{drawing__functions_8cpp_ae4246ed2992a4852e394233e2b41d013}\label{drawing__functions_8cpp_ae4246ed2992a4852e394233e2b41d013}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!generate\+\_\+settings\+\_\+fonts@{generate\+\_\+settings\+\_\+fonts}}
+\index{generate\+\_\+settings\+\_\+fonts@{generate\+\_\+settings\+\_\+fonts}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+settings\+\_\+fonts()}{generate\_settings\_fonts()}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT$\ast$$\ast$ generate\+\_\+settings\+\_\+fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi alla schermata delle impostazioni. 
+
+~\newline
+Ritorna un puntatore all\textquotesingle{}array generato. \mbox{\Hypertarget{drawing__functions_8cpp_ae2818bfb00fa513611854338aeeef6ad}\label{drawing__functions_8cpp_ae2818bfb00fa513611854338aeeef6ad}} 
+\index{drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}!generate\+\_\+user\+\_\+fonts@{generate\+\_\+user\+\_\+fonts}}
+\index{generate\+\_\+user\+\_\+fonts@{generate\+\_\+user\+\_\+fonts}!drawing\+\_\+functions.\+cpp@{drawing\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+user\+\_\+fonts()}{generate\_user\_fonts()}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT$\ast$$\ast$ generate\+\_\+user\+\_\+fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera l\textquotesingle{}array contenente i puntatori ai font relativi alla schermata di gameover. 
+
+~\newline
+Ritorna un puntatore all\textquotesingle{}array generato. 

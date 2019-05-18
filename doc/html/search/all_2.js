@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['change_5fenable',['change_enable',['../de/da5/utilities_8cpp.html#a5c24fe2f533da0dea022ccdb2ac665bb',1,'change_enable(enable_t &amp;enabled):&#160;utilities.cpp'],['../de/df0/utilities_8h.html#a5185c06c8740c026fa53f18b87385767',1,'change_enable(enable_t &amp;enable):&#160;utilities.cpp']]],
+  ['change_5fmusic',['change_music',['../d8/dff/game__functions_8cpp.html#a128182b533de18f8e11904ea47403c20',1,'change_music(const char *path, const enable_t &amp;music):&#160;game_functions.cpp'],['../d8/df6/game__functions_8h.html#a128182b533de18f8e11904ea47403c20',1,'change_music(const char *path, const enable_t &amp;music):&#160;game_functions.cpp']]],
+  ['check_5fdistance',['check_distance',['../d8/dff/game__functions_8cpp.html#a0afa627f8960d4dd4b67274fdf64fe0a',1,'check_distance(const asteroid_list *ast_queues, const bullet_t *arr_bullet, const shooter_t &amp;shooter):&#160;game_functions.cpp'],['../d8/df6/game__functions_8h.html#a0afa627f8960d4dd4b67274fdf64fe0a',1,'check_distance(const asteroid_list *ast_queues, const bullet_t *arr_bullet, const shooter_t &amp;shooter):&#160;game_functions.cpp']]],
+  ['check_5fgameover',['check_gameover',['../d8/dff/game__functions_8cpp.html#a678c1013bf4f3a44b140829f7954e0f7',1,'check_gameover(asteroid_list *ast_queues, const shooter_t &amp;shooter, const bullet_t *arr_bullet):&#160;game_functions.cpp'],['../d8/df6/game__functions_8h.html#a678c1013bf4f3a44b140829f7954e0f7',1,'check_gameover(asteroid_list *ast_queues, const shooter_t &amp;shooter, const bullet_t *arr_bullet):&#160;game_functions.cpp']]],
+  ['check_5fshield',['check_shield',['../d8/dff/game__functions_8cpp.html#a265dd35de6568690392ca63124fccccb',1,'check_shield(match_vars_t &amp;match_vars, bullet_t *arr_bullet, shooter_t &amp;shooter, enable_t &amp;en_sound):&#160;game_functions.cpp'],['../d8/df6/game__functions_8h.html#a265dd35de6568690392ca63124fccccb',1,'check_shield(match_vars_t &amp;match_vars, bullet_t *arr_bullet, shooter_t &amp;shooter, enable_t &amp;en_sound):&#160;game_functions.cpp']]],
+  ['consumer_5fsem',['consumer_sem',['../d5/dce/structthread__manager__t.html#add09eb9696fcde21f6ea575747dd9bc6',1,'thread_manager_t']]],
+  ['copyright_5ffontsize',['COPYRIGHT_FONTSIZE',['../d2/d21/structmenu__gv__t.html#a2a4d398685066a02a54f67bba3c2280a',1,'menu_gv_t']]],
+  ['copyright_5ftop_5foffset',['COPYRIGHT_TOP_OFFSET',['../d2/d21/structmenu__gv__t.html#abe36447c1aaedef6dea8e52187413024',1,'menu_gv_t']]],
+  ['count_5fresult',['count_result',['../df/dd3/structresult__t.html#a2a013c07b53c89347cf42f0ae98667cb',1,'result_t']]],
+  ['current_5fasteroid',['current_asteroid',['../de/d14/structmatch__vars__t.html#aec99582de5c65954b0cf568f1d702427',1,'match_vars_t']]]
+];

@@ -1,0 +1,159 @@
+\hypertarget{sections_8h}{}\section{Riferimenti per il file sections.\+h}
+\label{sections_8h}\index{sections.\+h@{sections.\+h}}
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}init.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilities.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}drawing\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}archive\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Grafo delle dipendenze di inclusione per sections.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d5f/sections_8h__incl}
+\end{center}
+\end{figure}
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{dd/d0b/sections_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{sections_8h_af70f3c978475d7a7271b784f838ff98b}{intro} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display)
+\begin{DoxyCompactList}\small\item\em Funzione che lancia l\textquotesingle{}animazione di introduzione. \end{DoxyCompactList}\item 
+int \hyperlink{sections_8h_a57ef27fbb5dfc9331234f3e4769f78bb}{main\+\_\+menu} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$ev\+\_\+queue, const float \&prev\+\_\+bg\+\_\+offset)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce la schermata del menu principale. \end{DoxyCompactList}\item 
+bool \hyperlink{sections_8h_a46f019b736168bdc12825c9629e18828}{settings\+\_\+menu} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$ev\+\_\+queue, \hyperlink{structsettings__t}{settings\+\_\+t} \&settings)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce la schermata del menu delle impostazioni. \end{DoxyCompactList}\item 
+bool \hyperlink{sections_8h_a77020eac2eeede2d2f733f19cdc9594c}{play\+\_\+wa} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$ev\+\_\+queue, \hyperlink{structsettings__t}{settings\+\_\+t} \&settings)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce la schermata di gioco. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structdisplay__info__t}{display\+\_\+info\+\_\+t} \hyperlink{sections_8h_a781a8df874545e4f5bff5f8a446d1963}{display\+\_\+info}
+\item 
+\hyperlink{structthread__manager__t}{thread\+\_\+manager\+\_\+t} \hyperlink{sections_8h_ad04f177b84df22adea5536cbae88451b}{thread\+\_\+manager}
+\item 
+\hyperlink{structwords__buffer__t}{words\+\_\+buffer\+\_\+t} \hyperlink{sections_8h_aaa25f9883d8c134861353b1bf5e00846}{words\+\_\+buffer}
+\item 
+\hyperlink{structmenu__gv__t}{menu\+\_\+gv\+\_\+t} \hyperlink{sections_8h_a8050b794d70ca38807298569dc1af9b1}{M\+E\+N\+U\+\_\+\+GV}
+\begin{DoxyCompactList}\small\item\em Struct contenente le proporzioni grafiche dei menu. \end{DoxyCompactList}\item 
+\hyperlink{structusr__gv__t}{usr\+\_\+gv\+\_\+t} \hyperlink{sections_8h_aba4a0deff6c9de510c6621913ab2a406}{U\+S\+R\+\_\+\+GV}
+\begin{DoxyCompactList}\small\item\em Struct contenente le proporzioni grafiche della schermata di fine partita. \end{DoxyCompactList}\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$ \hyperlink{sections_8h_aaf63227dc3c1f6203248971c305a3e11}{music\+\_\+wa}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{sections_8h_af70f3c978475d7a7271b784f838ff98b}\label{sections_8h_af70f3c978475d7a7271b784f838ff98b}} 
+\index{sections.\+h@{sections.\+h}!intro@{intro}}
+\index{intro@{intro}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{intro()}{intro()}}
+{\footnotesize\ttfamily float intro (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display }\end{DoxyParamCaption})}
+
+
+
+Funzione che lancia l\textquotesingle{}animazione di introduzione. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Display corrente. ~\newline
+Ritorna la posizione dello sfondo a fine funzione (espressa in pixel). \mbox{\Hypertarget{sections_8h_a57ef27fbb5dfc9331234f3e4769f78bb}\label{sections_8h_a57ef27fbb5dfc9331234f3e4769f78bb}} 
+\index{sections.\+h@{sections.\+h}!main\+\_\+menu@{main\+\_\+menu}}
+\index{main\+\_\+menu@{main\+\_\+menu}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{main\+\_\+menu()}{main\_menu()}}
+{\footnotesize\ttfamily int main\+\_\+menu (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$}]{ev\+\_\+queue,  }\item[{const float \&}]{prev\+\_\+bg\+\_\+offset }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce la schermata del menu principale. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Display corrente; ~\newline
+2) ev\+\_\+queue -\/ Coda degli eventi; ~\newline
+3) prev\+\_\+bg\+\_\+offset -\/ Posizione dello sfondo al momento del lancio della funzione. ~\newline
+Ritorna la scelta effettuata dall\textquotesingle{}utente. \mbox{\Hypertarget{sections_8h_a77020eac2eeede2d2f733f19cdc9594c}\label{sections_8h_a77020eac2eeede2d2f733f19cdc9594c}} 
+\index{sections.\+h@{sections.\+h}!play\+\_\+wa@{play\+\_\+wa}}
+\index{play\+\_\+wa@{play\+\_\+wa}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{play\+\_\+wa()}{play\_wa()}}
+{\footnotesize\ttfamily bool play\+\_\+wa (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$}]{ev\+\_\+queue,  }\item[{\hyperlink{structsettings__t}{settings\+\_\+t} \&}]{settings }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce la schermata di gioco. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Display corrente; ~\newline
+2) ev\+\_\+queue -\/ Coda degli eventi; ~\newline
+3) settings -\/ Struct contenente le impostazioni di gioco. ~\newline
+Ritorna true se la partita termina normalmente, false se l\textquotesingle{}utente decide di uscire dal gioco. \mbox{\Hypertarget{sections_8h_a46f019b736168bdc12825c9629e18828}\label{sections_8h_a46f019b736168bdc12825c9629e18828}} 
+\index{sections.\+h@{sections.\+h}!settings\+\_\+menu@{settings\+\_\+menu}}
+\index{settings\+\_\+menu@{settings\+\_\+menu}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{settings\+\_\+menu()}{settings\_menu()}}
+{\footnotesize\ttfamily bool settings\+\_\+menu (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$}]{ev\+\_\+queue,  }\item[{\hyperlink{structsettings__t}{settings\+\_\+t} \&}]{settings }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce la schermata del menu delle impostazioni. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Display corrente; ~\newline
+2) ev\+\_\+queue -\/ Coda degli eventi; ~\newline
+3) settings -\/ Struct contenente le impostazioni di gioco. ~\newline
+Ritorna true se l\textquotesingle{}utente decide di tornare al menu principale, false se decide di uscire dal gioco. 
+
+\subsection{Documentazione delle variabili}
+\mbox{\Hypertarget{sections_8h_a781a8df874545e4f5bff5f8a446d1963}\label{sections_8h_a781a8df874545e4f5bff5f8a446d1963}} 
+\index{sections.\+h@{sections.\+h}!display\+\_\+info@{display\+\_\+info}}
+\index{display\+\_\+info@{display\+\_\+info}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{display\+\_\+info}{display\_info}}
+{\footnotesize\ttfamily \hyperlink{structdisplay__info__t}{display\+\_\+info\+\_\+t} display\+\_\+info}
+
+\mbox{\Hypertarget{sections_8h_a8050b794d70ca38807298569dc1af9b1}\label{sections_8h_a8050b794d70ca38807298569dc1af9b1}} 
+\index{sections.\+h@{sections.\+h}!M\+E\+N\+U\+\_\+\+GV@{M\+E\+N\+U\+\_\+\+GV}}
+\index{M\+E\+N\+U\+\_\+\+GV@{M\+E\+N\+U\+\_\+\+GV}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{M\+E\+N\+U\+\_\+\+GV}{MENU\_GV}}
+{\footnotesize\ttfamily \hyperlink{structmenu__gv__t}{menu\+\_\+gv\+\_\+t} M\+E\+N\+U\+\_\+\+GV}
+
+
+
+Struct contenente le proporzioni grafiche dei menu. 
+
+\mbox{\Hypertarget{sections_8h_aaf63227dc3c1f6203248971c305a3e11}\label{sections_8h_aaf63227dc3c1f6203248971c305a3e11}} 
+\index{sections.\+h@{sections.\+h}!music\+\_\+wa@{music\+\_\+wa}}
+\index{music\+\_\+wa@{music\+\_\+wa}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{music\+\_\+wa}{music\_wa}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE$\ast$ music\+\_\+wa}
+
+\mbox{\Hypertarget{sections_8h_ad04f177b84df22adea5536cbae88451b}\label{sections_8h_ad04f177b84df22adea5536cbae88451b}} 
+\index{sections.\+h@{sections.\+h}!thread\+\_\+manager@{thread\+\_\+manager}}
+\index{thread\+\_\+manager@{thread\+\_\+manager}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{thread\+\_\+manager}{thread\_manager}}
+{\footnotesize\ttfamily \hyperlink{structthread__manager__t}{thread\+\_\+manager\+\_\+t} thread\+\_\+manager}
+
+\mbox{\Hypertarget{sections_8h_aba4a0deff6c9de510c6621913ab2a406}\label{sections_8h_aba4a0deff6c9de510c6621913ab2a406}} 
+\index{sections.\+h@{sections.\+h}!U\+S\+R\+\_\+\+GV@{U\+S\+R\+\_\+\+GV}}
+\index{U\+S\+R\+\_\+\+GV@{U\+S\+R\+\_\+\+GV}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+R\+\_\+\+GV}{USR\_GV}}
+{\footnotesize\ttfamily \hyperlink{structusr__gv__t}{usr\+\_\+gv\+\_\+t} U\+S\+R\+\_\+\+GV}
+
+
+
+Struct contenente le proporzioni grafiche della schermata di fine partita. 
+
+\mbox{\Hypertarget{sections_8h_aaa25f9883d8c134861353b1bf5e00846}\label{sections_8h_aaa25f9883d8c134861353b1bf5e00846}} 
+\index{sections.\+h@{sections.\+h}!words\+\_\+buffer@{words\+\_\+buffer}}
+\index{words\+\_\+buffer@{words\+\_\+buffer}!sections.\+h@{sections.\+h}}
+\subsubsection{\texorpdfstring{words\+\_\+buffer}{words\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structwords__buffer__t}{words\+\_\+buffer\+\_\+t} words\+\_\+buffer}
+

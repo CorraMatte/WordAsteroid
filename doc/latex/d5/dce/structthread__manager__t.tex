@@ -1,0 +1,125 @@
+\hypertarget{structthread__manager__t}{}\section{Riferimenti per la struct thread\+\_\+manager\+\_\+t}
+\label{structthread__manager__t}\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+
+
+Struct che contiene le variabili di sincronizzazione del gioco.  
+
+
+
+
+{\ttfamily \#include $<$data.\+h$>$}
+
+
+
+Diagramma di collaborazione per thread\+\_\+manager\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d8/df3/structthread__manager__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Attributi pubblici}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsearch__manager__t}{search\+\_\+manager\+\_\+t} \hyperlink{structthread__manager__t_a1020a46c9471ad522d62cd82f212967d}{search\+\_\+manager}
+\item 
+pthread\+\_\+t \hyperlink{structthread__manager__t_a0d5c8b3e690252132fcf05abf7b03bca}{searcher\+\_\+thread}
+\item 
+pthread\+\_\+t \hyperlink{structthread__manager__t_afe6523e46806390d78b6e33c8298b50c}{spawner\+\_\+thread}
+\item 
+sem\+\_\+t \hyperlink{structthread__manager__t_ae21d407363c3091b08d020ee91d2fb19}{searcher\+\_\+sem}
+\item 
+sem\+\_\+t \hyperlink{structthread__manager__t_add09eb9696fcde21f6ea575747dd9bc6}{consumer\+\_\+sem}
+\item 
+pthread\+\_\+cond\+\_\+t \hyperlink{structthread__manager__t_a3d2875e19825c1177a202dbee945dda7}{spawn\+\_\+cond}
+\item 
+pthread\+\_\+mutex\+\_\+t \hyperlink{structthread__manager__t_a0c6481fe0c14e7061e39e7c71a080a72}{spawn\+\_\+mutex}
+\item 
+pthread\+\_\+mutex\+\_\+t \hyperlink{structthread__manager__t_acbf655b8885eb6344c889df3bdc04914}{words\+\_\+buffer\+\_\+mutex}
+\item 
+pthread\+\_\+cond\+\_\+t \hyperlink{structthread__manager__t_adc9c0bc7d1a31425ee832c85e2568a4c}{gameover\+\_\+cond}
+\item 
+pthread\+\_\+mutex\+\_\+t \hyperlink{structthread__manager__t_af7c55eacef734d190ef5c8ca4bd0a047}{gameover\+\_\+mutex}
+\item 
+pthread\+\_\+mutex\+\_\+t \hyperlink{structthread__manager__t_ab2460282f6fd131b9d3f0aacb9ddbf72}{search\+\_\+result\+\_\+mutex}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Struct che contiene le variabili di sincronizzazione del gioco. 
+
+~\newline
+Campi\+: 1) search\+\_\+manager -\/ struct che contiene le informazioni per la ricerca dentro gli archivi; 2) searcher\+\_\+thread -\/ thread che si occupa della ricerca delle informazioni (producer); 3) spawner\+\_\+thread -\/ thread che si occupa di fornire le parole al gioco (consumer); 4) searcher\+\_\+sem -\/ semaforo privato per i producer; 5) consumer\+\_\+sem -\/ semaforo privato per i consumer; 6) spawn\+\_\+cond -\/ condition per la sincronizzazione dello spawner thread; 7) spawn\+\_\+mutex -\/ mutex per la sincronizzazione dello spawner thread; 8) words\+\_\+buffer\+\_\+mutex -\/ mutex per gestire il buffer condiviso; 9) gameover\+\_\+cond -\/ condition per la sincronizzazione dei threads con il gioco principale; 10) gameover\+\_\+mutex -\/ mutex per la sincronizzazione dei threads con il gioco principale; 11) search\+\_\+result\+\_\+mutex -\/ mutex per gestire la mutua esclusione sui risultati della ricerca; 
+
+\subsection{Documentazione dei membri dato}
+\mbox{\Hypertarget{structthread__manager__t_add09eb9696fcde21f6ea575747dd9bc6}\label{structthread__manager__t_add09eb9696fcde21f6ea575747dd9bc6}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!consumer\+\_\+sem@{consumer\+\_\+sem}}
+\index{consumer\+\_\+sem@{consumer\+\_\+sem}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{consumer\+\_\+sem}{consumer\_sem}}
+{\footnotesize\ttfamily sem\+\_\+t thread\+\_\+manager\+\_\+t\+::consumer\+\_\+sem}
+
+\mbox{\Hypertarget{structthread__manager__t_adc9c0bc7d1a31425ee832c85e2568a4c}\label{structthread__manager__t_adc9c0bc7d1a31425ee832c85e2568a4c}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!gameover\+\_\+cond@{gameover\+\_\+cond}}
+\index{gameover\+\_\+cond@{gameover\+\_\+cond}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{gameover\+\_\+cond}{gameover\_cond}}
+{\footnotesize\ttfamily pthread\+\_\+cond\+\_\+t thread\+\_\+manager\+\_\+t\+::gameover\+\_\+cond}
+
+\mbox{\Hypertarget{structthread__manager__t_af7c55eacef734d190ef5c8ca4bd0a047}\label{structthread__manager__t_af7c55eacef734d190ef5c8ca4bd0a047}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!gameover\+\_\+mutex@{gameover\+\_\+mutex}}
+\index{gameover\+\_\+mutex@{gameover\+\_\+mutex}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{gameover\+\_\+mutex}{gameover\_mutex}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t thread\+\_\+manager\+\_\+t\+::gameover\+\_\+mutex}
+
+\mbox{\Hypertarget{structthread__manager__t_a1020a46c9471ad522d62cd82f212967d}\label{structthread__manager__t_a1020a46c9471ad522d62cd82f212967d}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!search\+\_\+manager@{search\+\_\+manager}}
+\index{search\+\_\+manager@{search\+\_\+manager}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{search\+\_\+manager}{search\_manager}}
+{\footnotesize\ttfamily \hyperlink{structsearch__manager__t}{search\+\_\+manager\+\_\+t} thread\+\_\+manager\+\_\+t\+::search\+\_\+manager}
+
+\mbox{\Hypertarget{structthread__manager__t_ab2460282f6fd131b9d3f0aacb9ddbf72}\label{structthread__manager__t_ab2460282f6fd131b9d3f0aacb9ddbf72}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!search\+\_\+result\+\_\+mutex@{search\+\_\+result\+\_\+mutex}}
+\index{search\+\_\+result\+\_\+mutex@{search\+\_\+result\+\_\+mutex}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{search\+\_\+result\+\_\+mutex}{search\_result\_mutex}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t thread\+\_\+manager\+\_\+t\+::search\+\_\+result\+\_\+mutex}
+
+\mbox{\Hypertarget{structthread__manager__t_ae21d407363c3091b08d020ee91d2fb19}\label{structthread__manager__t_ae21d407363c3091b08d020ee91d2fb19}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!searcher\+\_\+sem@{searcher\+\_\+sem}}
+\index{searcher\+\_\+sem@{searcher\+\_\+sem}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{searcher\+\_\+sem}{searcher\_sem}}
+{\footnotesize\ttfamily sem\+\_\+t thread\+\_\+manager\+\_\+t\+::searcher\+\_\+sem}
+
+\mbox{\Hypertarget{structthread__manager__t_a0d5c8b3e690252132fcf05abf7b03bca}\label{structthread__manager__t_a0d5c8b3e690252132fcf05abf7b03bca}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!searcher\+\_\+thread@{searcher\+\_\+thread}}
+\index{searcher\+\_\+thread@{searcher\+\_\+thread}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{searcher\+\_\+thread}{searcher\_thread}}
+{\footnotesize\ttfamily pthread\+\_\+t thread\+\_\+manager\+\_\+t\+::searcher\+\_\+thread}
+
+\mbox{\Hypertarget{structthread__manager__t_a3d2875e19825c1177a202dbee945dda7}\label{structthread__manager__t_a3d2875e19825c1177a202dbee945dda7}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!spawn\+\_\+cond@{spawn\+\_\+cond}}
+\index{spawn\+\_\+cond@{spawn\+\_\+cond}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{spawn\+\_\+cond}{spawn\_cond}}
+{\footnotesize\ttfamily pthread\+\_\+cond\+\_\+t thread\+\_\+manager\+\_\+t\+::spawn\+\_\+cond}
+
+\mbox{\Hypertarget{structthread__manager__t_a0c6481fe0c14e7061e39e7c71a080a72}\label{structthread__manager__t_a0c6481fe0c14e7061e39e7c71a080a72}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!spawn\+\_\+mutex@{spawn\+\_\+mutex}}
+\index{spawn\+\_\+mutex@{spawn\+\_\+mutex}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{spawn\+\_\+mutex}{spawn\_mutex}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t thread\+\_\+manager\+\_\+t\+::spawn\+\_\+mutex}
+
+\mbox{\Hypertarget{structthread__manager__t_afe6523e46806390d78b6e33c8298b50c}\label{structthread__manager__t_afe6523e46806390d78b6e33c8298b50c}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!spawner\+\_\+thread@{spawner\+\_\+thread}}
+\index{spawner\+\_\+thread@{spawner\+\_\+thread}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{spawner\+\_\+thread}{spawner\_thread}}
+{\footnotesize\ttfamily pthread\+\_\+t thread\+\_\+manager\+\_\+t\+::spawner\+\_\+thread}
+
+\mbox{\Hypertarget{structthread__manager__t_acbf655b8885eb6344c889df3bdc04914}\label{structthread__manager__t_acbf655b8885eb6344c889df3bdc04914}} 
+\index{thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}!words\+\_\+buffer\+\_\+mutex@{words\+\_\+buffer\+\_\+mutex}}
+\index{words\+\_\+buffer\+\_\+mutex@{words\+\_\+buffer\+\_\+mutex}!thread\+\_\+manager\+\_\+t@{thread\+\_\+manager\+\_\+t}}
+\subsubsection{\texorpdfstring{words\+\_\+buffer\+\_\+mutex}{words\_buffer\_mutex}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t thread\+\_\+manager\+\_\+t\+::words\+\_\+buffer\+\_\+mutex}
+
+
+
+La documentazione per questa struct è stata generata a partire dal seguente file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data_8h}{data.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,627 @@
+\hypertarget{data_8h}{}\section{Riferimenti per il file data.\+h}
+\label{data_8h}\index{data.\+h@{data.\+h}}
+{\ttfamily \#include $<$allegro5/allegro.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+native\+\_\+dialog.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+primitives.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+font.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+audio.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+acodec.\+h$>$}\newline
+{\ttfamily \#include $<$semaphore.\+h$>$}\newline
+Grafo delle dipendenze di inclusione per data.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d2b/data_8h__incl}
+\end{center}
+\end{figure}
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2f/data_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Composti}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdisplay__info__t}{display\+\_\+info\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct contenente le informazioni relative al display. \end{DoxyCompactList}\item 
+struct \hyperlink{structasteroid__t}{asteroid\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct contenente le informazioni relative al singolo asteroide. \end{DoxyCompactList}\item 
+struct \hyperlink{structelem__asteroid__t}{elem\+\_\+asteroid\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct del singolo elemento di una lista di asteroidi. \end{DoxyCompactList}\item 
+struct \hyperlink{structbullet__t}{bullet\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct contenente le informazioni relative al singolo proiettile. \end{DoxyCompactList}\item 
+struct \hyperlink{structshooter__t}{shooter\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct contenente le informazioni relative al singolo proiettile. \end{DoxyCompactList}\item 
+struct \hyperlink{structresult__t}{result\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct contenenti le password corrispondenti alla mail data in input dall\textquotesingle{}utente. \end{DoxyCompactList}\item 
+struct \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct contenente le variabili di gioco. \end{DoxyCompactList}\item 
+struct \hyperlink{structsettings__t}{settings\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct contenente le impostazioni di gioco. \end{DoxyCompactList}\item 
+struct \hyperlink{structgeneral__gv__t}{general\+\_\+gv\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct relativo alle proporzioni grafiche generali. \end{DoxyCompactList}\item 
+struct \hyperlink{structmenu__gv__t}{menu\+\_\+gv\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct relativo alle proporzioni grafiche dei menu. \end{DoxyCompactList}\item 
+struct \hyperlink{structplaywa__gv__t}{playwa\+\_\+gv\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct relativo alle proporzioni grafiche della schermata di gioco. \end{DoxyCompactList}\item 
+struct \hyperlink{structinstr__gv__t}{instr\+\_\+gv\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct relativo alle proporzioni grafiche della schermata di pausa. \end{DoxyCompactList}\item 
+struct \hyperlink{structusr__gv__t}{usr\+\_\+gv\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct relativo alle proporzioni grafiche della schermata di fine partita. \end{DoxyCompactList}\item 
+struct \hyperlink{structfile__t}{file\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct relativa alla descrizione di un archivio che andrà esaminato. \end{DoxyCompactList}\item 
+struct \hyperlink{structls__t}{ls\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct che raccoglie tutti gli archivi. \end{DoxyCompactList}\item 
+struct \hyperlink{structsearch__manager__t}{search\+\_\+manager\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct che rappresenta il manager dei thread atti a ricercare le password all\textquotesingle{}interno degli archivi. \end{DoxyCompactList}\item 
+struct \hyperlink{structthread__manager__t}{thread\+\_\+manager\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct che contiene le variabili di sincronizzazione del gioco. \end{DoxyCompactList}\item 
+struct \hyperlink{structwords__buffer__t}{words\+\_\+buffer\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct buffer che implementa l\textquotesingle{}architettura producer/consumer. \end{DoxyCompactList}\item 
+struct \hyperlink{structlook__into__t}{look\+\_\+into\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struct di appoggio utilizzata dai thread searcher/worker per ricevere informazioni riguardo\+: 1) filename -\/ dentro quale archivio cercare; 2) email -\/ quale email cercare; 3) is\+\_\+searcher -\/ se il thread si tratta di un searcher (fornisce le parole al gioco) o di un worker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{data_8h_a4d87b864f0d93d71fe43d714a5634f9e}{D\+EB}(a,  b)
+\item 
+\#define \hyperlink{data_8h_a81abc68fb355638b9e35fc29fd1ffc71}{D\+E\+B1}(a)~\hyperlink{data_8h_a4d87b864f0d93d71fe43d714a5634f9e}{D\+EB}(1, a)
+\item 
+\#define \hyperlink{data_8h_a86ba8a1242bcfa3aabcad0b733be9a16}{D\+E\+B2}(a)~\hyperlink{data_8h_a4d87b864f0d93d71fe43d714a5634f9e}{D\+EB}(2, a)
+\item 
+\#define \hyperlink{data_8h_a5e44ee7e5e774b94bc34f1a2e86b3fe6}{T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US}~8.\+0
+\begin{DoxyCompactList}\small\item\em Tempo (in secondi) di durata del bonus \char`\"{}\+Shield\char`\"{}. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a9e0802df8e999c92321e68fcfe300672}{T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US}~5.\+0
+\begin{DoxyCompactList}\small\item\em Tempo (in secondi) di durata del bonus \char`\"{}\+Rallenty\char`\"{}. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_acca7b190290abc33a795032bff506aef}{G\+A\+M\+E\+R\+E\+S\+\_\+W}~1280
+\begin{DoxyCompactList}\small\item\em Larghezza della risoluzione base. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_ab03f52d3b8949390ea4ecda6c477f410}{G\+A\+M\+E\+R\+E\+S\+\_\+H}~800
+\begin{DoxyCompactList}\small\item\em Altezza della risoluzione base. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a8b1f936785c35076c00d66e950d47bd2}{M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE}~5
+\begin{DoxyCompactList}\small\item\em Frazione di schermo (in altezza) lasciata libera per la creazione della schermata di gioco. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_affced4b175e803df59f802e25d017b9b}{N\+U\+M\+\_\+\+I\+T\+E\+MS}~4
+\begin{DoxyCompactList}\small\item\em Numerosita\textquotesingle{} dei bonus. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_ac32ea00c03c9a9afd1ffc9e1627a8506}{M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}~40
+\begin{DoxyCompactList}\small\item\em Lunghezza massima dello username del giocatore. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a3a6cec1114888847d65a0b7a87dd36dd}{M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD}~9
+\begin{DoxyCompactList}\small\item\em Numero massimo di asteroidi in campo (ovvero in testa alle code). \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a9ff4b2e40684ddc4a47b8b02c9fb2afa}{M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE}~8
+\begin{DoxyCompactList}\small\item\em Numero massimo di caratteri relativi allo score. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_aab81d64b66b572b5d81e3f36eac72591}{M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD}~8
+\begin{DoxyCompactList}\small\item\em Lunghezza massima delle parole che verranno presentate al giocatore. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a88f5ea90744f4c455d0337349a79d723}{M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS}~10
+\begin{DoxyCompactList}\small\item\em Massimo numero di password cercate negli archivi. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a47b9222ac12a0ba84084dc2690558610}{M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN}~0.\+5
+\begin{DoxyCompactList}\small\item\em Tempo minimo di spawn tra un asteroide e l\textquotesingle{}altro. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a632dec00f55ca9cb545a41add57e05e2}{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS}~4
+\begin{DoxyCompactList}\small\item\em Numero di bitmap relativi ai menu. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_ab0ecfd8e12a2e2a1d57e96ddef5fce70}{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS}~14
+\begin{DoxyCompactList}\small\item\em Numero di bitmap relativi alla schermata di gioco. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a7f7b62d0300a1e20185fc33b33bea73a}{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS}~6
+\begin{DoxyCompactList}\small\item\em Numero di bitmap relativi alla pausa. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a8d79b09c0b692acd363149b46796cdb5}{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS}~3
+\begin{DoxyCompactList}\small\item\em Numero di font relativi ai menu. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_adba95d0950cb362ebc8d02b7692587b3}{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS}~4
+\begin{DoxyCompactList}\small\item\em Numero di font relativi alla schermata di pausa. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_ad9c1911ddd54eba9ce62b51bc6ce6b9f}{N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS}~3
+\begin{DoxyCompactList}\small\item\em Numero di font relativi al menu delle impostazioni. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_afdf4d0cc194ae2d54c40ea5c8799e1de}{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS}~5
+\begin{DoxyCompactList}\small\item\em Numero di font relativi alla schermata di gioco. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_af51d343753f0f8c4197593f11c7943f9}{N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS}~4
+\begin{DoxyCompactList}\small\item\em Numero di font relativi alla schermata di fine partita. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a6c58a590ae37a1cbae1d1b06a85306dd}{B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME}~0.\+0005
+\begin{DoxyCompactList}\small\item\em Tempo (espresso in secondi) di aggiornamento relativo allo scorrimento dello sfondo. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a7ebeba86e0052d7a48de7828893f4d2b}{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS}~3
+\begin{DoxyCompactList}\small\item\em Numero di opzioni presenti nel menu principale. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a9a5f23ce835c1e5895bff9f7186260f8}{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS}~3
+\begin{DoxyCompactList}\small\item\em Numero di opzioni presenti nel menu delle impostazioni. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a58f27eafcb451c09c454d20e4ef83edb}{S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT}~50
+\begin{DoxyCompactList}\small\item\em Punteggio dato dalla distruzione di un asteroide. \end{DoxyCompactList}\item 
+\#define \hyperlink{data_8h_a19736b4c86eeb93bb035d5a8623f4e47}{S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR}~al\+\_\+map\+\_\+rgba\+\_\+f(0, 0, 0, 0.\+75)
+\item 
+\#define \hyperlink{data_8h_aba607bb53a6a521c43cdde7ba93fa391}{M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR}~al\+\_\+map\+\_\+rgb(246, 242, 212)
+\item 
+\#define \hyperlink{data_8h_a5b70e07aac9be7838d27b4794af7a07c}{M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR}~al\+\_\+map\+\_\+rgb(122, 124, 119)
+\end{DoxyCompactItemize}
+\subsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structelem__asteroid__t}{elem\+\_\+asteroid\+\_\+t} $\ast$ \hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list}
+\begin{DoxyCompactList}\small\item\em Definizione del tipo \char`\"{}lista di asteriodi\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Tipi enumerati (enum)}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \{ \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218a977d478dacaae531f95695750d1e9d03}{ON}, 
+\hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218aac132f2982b98bcaa3445e535a03ff75}{O\+FF}
+ \}\begin{DoxyCompactList}\small\item\em Enumerato relativo alle impostazioni di gioco\+: attive o non attive. \end{DoxyCompactList}
+\item 
+enum \hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564}{asteroid\+\_\+special\+\_\+t} \{ \newline
+\hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a50d1448013c6f17125caee18aa418af7}{N\+O\+R\+M\+AL}, 
+\hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564ada0b1d3109123d2ec0ef5e8f4fa32262}{A\+T\+O\+M\+IC}, 
+\hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a781532b2d0582c3c9c7c3a9d76f0c159}{R\+A\+L\+L\+E\+N\+TY}, 
+\hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a6811f08ec3a763b0351fab6fb5054df8}{F\+I\+RE}, 
+\newline
+\hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564affdd98146fb0c71b3381f94b036a100f}{S\+H\+I\+E\+LD}
+ \}\begin{DoxyCompactList}\small\item\em Enumerato relativo al bonus contenuto nel singonlo asteroide\+: nessuno, Atomic, Rallenty, Fire o Shield. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{data_8h_abbb1a97343fdbf54e75f14fb83cb0a92}{N\+\_\+\+Q\+U\+E\+U\+ES} = \textquotesingle{}Z\textquotesingle{} -\/ \textquotesingle{}A\textquotesingle{} + 1
+\begin{DoxyCompactList}\small\item\em Numerosita\textquotesingle{} delle code di asteroidi (\textquotesingle{}A\textquotesingle{}..\textquotesingle{}Z\textquotesingle{}) e del buffer. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_a8b9c6bfbae12c88e6228954f78070560}{M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA} \mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/menu.\+wav\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso del file audio relativo alla musica dei menu. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_a8f13920443635ea4f319d0e0842ba280}{M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA} \mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/gameover.\+wav\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso del file audio relativo alla musica della schermata di gameover. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_ad18234177a3bd9410ed9837905d071bf}{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON} \mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/explosion.\+wav\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso del file audio relativo all\textquotesingle{}effetto sonoro dell\textquotesingle{}esplosione di un asteroide. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_accf15b03b5957e66ec3a6afa0b26d656}{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE} \mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/fire.\+wav\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso del file audio relativo all\textquotesingle{}effetto sonoro dello sparo di un proiettile. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_a9358d35614f3e5a06b73e2aed0c241db}{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR} \mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/error.\+wav\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso del file audio relativo all\textquotesingle{}effetto sonoro che viene riprodotto quando si sbaglia una lettera. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_ab5aa6954a2f8d619dfc6ebf5ada160a8}{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER} \mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/death.\+wav\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso del file audio relativo all\textquotesingle{}effetto sonoro che viene riprodotto quando un asteroide tocca la navicella. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_a73513865a0c9e121811b8bf52575c71b}{M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA} \mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/playwa.\+wav\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso del file audio relativo alla musica della schermata di gioco. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_a33122e2c233f57480d757de1e6637f23}{F\+O\+N\+T\+\_\+\+P\+A\+TH} \mbox{[}$\,$\mbox{]} = \char`\"{}media/font/visitor.\+ttf\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso del font utilizzato in tutto il progetto. \end{DoxyCompactList}\item 
+const char \hyperlink{data_8h_a00240ac4435599a8c32ffdf40689dab3}{B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE} \mbox{[}$\,$\mbox{]} = \char`\"{}media/images/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Percorso della cartella contenente le immagini. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{data_8h_a6c58a590ae37a1cbae1d1b06a85306dd}\label{data_8h_a6c58a590ae37a1cbae1d1b06a85306dd}} 
+\index{data.\+h@{data.\+h}!B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME@{B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME}}
+\index{B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME@{B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME}{BG\_REFRESH\_TIME}}
+{\footnotesize\ttfamily \#define B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME~0.\+0005}
+
+
+
+Tempo (espresso in secondi) di aggiornamento relativo allo scorrimento dello sfondo. 
+
+\mbox{\Hypertarget{data_8h_a4d87b864f0d93d71fe43d714a5634f9e}\label{data_8h_a4d87b864f0d93d71fe43d714a5634f9e}} 
+\index{data.\+h@{data.\+h}!D\+EB@{D\+EB}}
+\index{D\+EB@{D\+EB}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{D\+EB}{DEB}}
+{\footnotesize\ttfamily \#define D\+EB(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{data_8h_a81abc68fb355638b9e35fc29fd1ffc71}\label{data_8h_a81abc68fb355638b9e35fc29fd1ffc71}} 
+\index{data.\+h@{data.\+h}!D\+E\+B1@{D\+E\+B1}}
+\index{D\+E\+B1@{D\+E\+B1}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+B1}{DEB1}}
+{\footnotesize\ttfamily \#define D\+E\+B1(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~\hyperlink{data_8h_a4d87b864f0d93d71fe43d714a5634f9e}{D\+EB}(1, a)}
+
+\mbox{\Hypertarget{data_8h_a86ba8a1242bcfa3aabcad0b733be9a16}\label{data_8h_a86ba8a1242bcfa3aabcad0b733be9a16}} 
+\index{data.\+h@{data.\+h}!D\+E\+B2@{D\+E\+B2}}
+\index{D\+E\+B2@{D\+E\+B2}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+B2}{DEB2}}
+{\footnotesize\ttfamily \#define D\+E\+B2(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~\hyperlink{data_8h_a4d87b864f0d93d71fe43d714a5634f9e}{D\+EB}(2, a)}
+
+\mbox{\Hypertarget{data_8h_ab03f52d3b8949390ea4ecda6c477f410}\label{data_8h_ab03f52d3b8949390ea4ecda6c477f410}} 
+\index{data.\+h@{data.\+h}!G\+A\+M\+E\+R\+E\+S\+\_\+H@{G\+A\+M\+E\+R\+E\+S\+\_\+H}}
+\index{G\+A\+M\+E\+R\+E\+S\+\_\+H@{G\+A\+M\+E\+R\+E\+S\+\_\+H}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{G\+A\+M\+E\+R\+E\+S\+\_\+H}{GAMERES\_H}}
+{\footnotesize\ttfamily \#define G\+A\+M\+E\+R\+E\+S\+\_\+H~800}
+
+
+
+Altezza della risoluzione base. 
+
+\mbox{\Hypertarget{data_8h_acca7b190290abc33a795032bff506aef}\label{data_8h_acca7b190290abc33a795032bff506aef}} 
+\index{data.\+h@{data.\+h}!G\+A\+M\+E\+R\+E\+S\+\_\+W@{G\+A\+M\+E\+R\+E\+S\+\_\+W}}
+\index{G\+A\+M\+E\+R\+E\+S\+\_\+W@{G\+A\+M\+E\+R\+E\+S\+\_\+W}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{G\+A\+M\+E\+R\+E\+S\+\_\+W}{GAMERES\_W}}
+{\footnotesize\ttfamily \#define G\+A\+M\+E\+R\+E\+S\+\_\+W~1280}
+
+
+
+Larghezza della risoluzione base. 
+
+\mbox{\Hypertarget{data_8h_a3a6cec1114888847d65a0b7a87dd36dd}\label{data_8h_a3a6cec1114888847d65a0b7a87dd36dd}} 
+\index{data.\+h@{data.\+h}!M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD@{M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD}}
+\index{M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD@{M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD}{MAX\_ASTEROID\_HEAD}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD~9}
+
+
+
+Numero massimo di asteroidi in campo (ovvero in testa alle code). 
+
+~\newline
+Questo accorgimento garantisce un normale flusso nella generazione degli asteroidi\+: ~\newline
+dal momento che le parole relative agli asteroidi vengono generate casualmente, troppe ~\newline
+teste occupate (Es. 9 su 10) provocherebbero una situazione di \char`\"{}stallo\char`\"{} dovuto alla ~\newline
+probabilità minima di individuare casualmente le teste libere (Es. La decima). \mbox{\Hypertarget{data_8h_a9ff4b2e40684ddc4a47b8b02c9fb2afa}\label{data_8h_a9ff4b2e40684ddc4a47b8b02c9fb2afa}} 
+\index{data.\+h@{data.\+h}!M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE@{M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE}}
+\index{M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE@{M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE}{MAX\_DIGIT\_SCORE}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE~8}
+
+
+
+Numero massimo di caratteri relativi allo score. 
+
+\mbox{\Hypertarget{data_8h_aab81d64b66b572b5d81e3f36eac72591}\label{data_8h_aab81d64b66b572b5d81e3f36eac72591}} 
+\index{data.\+h@{data.\+h}!M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD@{M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD}}
+\index{M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD@{M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD}{MAX\_LENGTH\_WORD}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD~8}
+
+
+
+Lunghezza massima delle parole che verranno presentate al giocatore. 
+
+\mbox{\Hypertarget{data_8h_a88f5ea90744f4c455d0337349a79d723}\label{data_8h_a88f5ea90744f4c455d0337349a79d723}} 
+\index{data.\+h@{data.\+h}!M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS@{M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS}}
+\index{M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS@{M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS}{MAX\_MATCHING\_PASS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS~10}
+
+
+
+Massimo numero di password cercate negli archivi. 
+
+\mbox{\Hypertarget{data_8h_ac32ea00c03c9a9afd1ffc9e1627a8506}\label{data_8h_ac32ea00c03c9a9afd1ffc9e1627a8506}} 
+\index{data.\+h@{data.\+h}!M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH@{M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH@{M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}{MAX\_USERNAME\_LENGTH}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH~40}
+
+
+
+Lunghezza massima dello username del giocatore. 
+
+\mbox{\Hypertarget{data_8h_a5b70e07aac9be7838d27b4794af7a07c}\label{data_8h_a5b70e07aac9be7838d27b4794af7a07c}} 
+\index{data.\+h@{data.\+h}!M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR@{M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR}}
+\index{M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR@{M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR}{MENU\_CPY\_COLOR}}
+{\footnotesize\ttfamily \#define M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR~al\+\_\+map\+\_\+rgb(122, 124, 119)}
+
+\mbox{\Hypertarget{data_8h_aba607bb53a6a521c43cdde7ba93fa391}\label{data_8h_aba607bb53a6a521c43cdde7ba93fa391}} 
+\index{data.\+h@{data.\+h}!M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR@{M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR}}
+\index{M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR@{M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR}{MENU\_FONT\_COLOR}}
+{\footnotesize\ttfamily \#define M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR~al\+\_\+map\+\_\+rgb(246, 242, 212)}
+
+\mbox{\Hypertarget{data_8h_a47b9222ac12a0ba84084dc2690558610}\label{data_8h_a47b9222ac12a0ba84084dc2690558610}} 
+\index{data.\+h@{data.\+h}!M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN@{M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN}}
+\index{M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN@{M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN}{MIN\_TIME\_SPAWN}}
+{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN~0.\+5}
+
+
+
+Tempo minimo di spawn tra un asteroide e l\textquotesingle{}altro. 
+
+\mbox{\Hypertarget{data_8h_a8b1f936785c35076c00d66e950d47bd2}\label{data_8h_a8b1f936785c35076c00d66e950d47bd2}} 
+\index{data.\+h@{data.\+h}!M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE@{M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE}}
+\index{M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE@{M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE}{MONITOR\_OFFSET\_RATE}}
+{\footnotesize\ttfamily \#define M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE~5}
+
+
+
+Frazione di schermo (in altezza) lasciata libera per la creazione della schermata di gioco. 
+
+\mbox{\Hypertarget{data_8h_a7f7b62d0300a1e20185fc33b33bea73a}\label{data_8h_a7f7b62d0300a1e20185fc33b33bea73a}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS@{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS}}
+\index{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS@{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS}{NUM\_INSTR\_BITMAPS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS~6}
+
+
+
+Numero di bitmap relativi alla pausa. 
+
+\mbox{\Hypertarget{data_8h_adba95d0950cb362ebc8d02b7692587b3}\label{data_8h_adba95d0950cb362ebc8d02b7692587b3}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS}}
+\index{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS}{NUM\_INSTR\_FONTS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS~4}
+
+
+
+Numero di font relativi alla schermata di pausa. 
+
+\mbox{\Hypertarget{data_8h_affced4b175e803df59f802e25d017b9b}\label{data_8h_affced4b175e803df59f802e25d017b9b}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+I\+T\+E\+MS@{N\+U\+M\+\_\+\+I\+T\+E\+MS}}
+\index{N\+U\+M\+\_\+\+I\+T\+E\+MS@{N\+U\+M\+\_\+\+I\+T\+E\+MS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+I\+T\+E\+MS}{NUM\_ITEMS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+I\+T\+E\+MS~4}
+
+
+
+Numerosita\textquotesingle{} dei bonus. 
+
+\mbox{\Hypertarget{data_8h_a632dec00f55ca9cb545a41add57e05e2}\label{data_8h_a632dec00f55ca9cb545a41add57e05e2}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS@{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS}}
+\index{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS@{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS}{NUM\_MENU\_BITMAPS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS~4}
+
+
+
+Numero di bitmap relativi ai menu. 
+
+\mbox{\Hypertarget{data_8h_a8d79b09c0b692acd363149b46796cdb5}\label{data_8h_a8d79b09c0b692acd363149b46796cdb5}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS}}
+\index{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS}{NUM\_MENU\_FONTS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS~3}
+
+
+
+Numero di font relativi ai menu. 
+
+\mbox{\Hypertarget{data_8h_a7ebeba86e0052d7a48de7828893f4d2b}\label{data_8h_a7ebeba86e0052d7a48de7828893f4d2b}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS@{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS}}
+\index{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS@{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS}{NUM\_OPTIONS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS~3}
+
+
+
+Numero di opzioni presenti nel menu principale. 
+
+\mbox{\Hypertarget{data_8h_a9a5f23ce835c1e5895bff9f7186260f8}\label{data_8h_a9a5f23ce835c1e5895bff9f7186260f8}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS@{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS}}
+\index{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS@{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS}{NUM\_OPTIONS\_SETTINGS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS~3}
+
+
+
+Numero di opzioni presenti nel menu delle impostazioni. 
+
+\mbox{\Hypertarget{data_8h_ab0ecfd8e12a2e2a1d57e96ddef5fce70}\label{data_8h_ab0ecfd8e12a2e2a1d57e96ddef5fce70}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS@{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS}}
+\index{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS@{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS}{NUM\_PLAYWA\_BITMAPS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS~14}
+
+
+
+Numero di bitmap relativi alla schermata di gioco. 
+
+\mbox{\Hypertarget{data_8h_afdf4d0cc194ae2d54c40ea5c8799e1de}\label{data_8h_afdf4d0cc194ae2d54c40ea5c8799e1de}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS}}
+\index{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS}{NUM\_PLAYWA\_FONTS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS~5}
+
+
+
+Numero di font relativi alla schermata di gioco. 
+
+\mbox{\Hypertarget{data_8h_ad9c1911ddd54eba9ce62b51bc6ce6b9f}\label{data_8h_ad9c1911ddd54eba9ce62b51bc6ce6b9f}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS}}
+\index{N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS}{NUM\_SETTINGS\_FONTS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS~3}
+
+
+
+Numero di font relativi al menu delle impostazioni. 
+
+\mbox{\Hypertarget{data_8h_af51d343753f0f8c4197593f11c7943f9}\label{data_8h_af51d343753f0f8c4197593f11c7943f9}} 
+\index{data.\+h@{data.\+h}!N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS}}
+\index{N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS@{N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS}{NUM\_USER\_FONTS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS~4}
+
+
+
+Numero di font relativi alla schermata di fine partita. 
+
+\mbox{\Hypertarget{data_8h_a58f27eafcb451c09c454d20e4ef83edb}\label{data_8h_a58f27eafcb451c09c454d20e4ef83edb}} 
+\index{data.\+h@{data.\+h}!S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT@{S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT}}
+\index{S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT@{S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT}{SCORE\_INCREMENT}}
+{\footnotesize\ttfamily \#define S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT~50}
+
+
+
+Punteggio dato dalla distruzione di un asteroide. 
+
+\mbox{\Hypertarget{data_8h_a19736b4c86eeb93bb035d5a8623f4e47}\label{data_8h_a19736b4c86eeb93bb035d5a8623f4e47}} 
+\index{data.\+h@{data.\+h}!S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR@{S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR}}
+\index{S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR@{S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR}{SHADOW\_COLOR}}
+{\footnotesize\ttfamily \#define S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR~al\+\_\+map\+\_\+rgba\+\_\+f(0, 0, 0, 0.\+75)}
+
+\mbox{\Hypertarget{data_8h_a9e0802df8e999c92321e68fcfe300672}\label{data_8h_a9e0802df8e999c92321e68fcfe300672}} 
+\index{data.\+h@{data.\+h}!T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US@{T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US}}
+\index{T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US@{T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US}{TIMER\_RALLENTY\_BONUS}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US~5.\+0}
+
+
+
+Tempo (in secondi) di durata del bonus \char`\"{}\+Rallenty\char`\"{}. 
+
+\mbox{\Hypertarget{data_8h_a5e44ee7e5e774b94bc34f1a2e86b3fe6}\label{data_8h_a5e44ee7e5e774b94bc34f1a2e86b3fe6}} 
+\index{data.\+h@{data.\+h}!T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US@{T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US}}
+\index{T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US@{T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US}{TIMER\_SHIELD\_BONUS}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US~8.\+0}
+
+
+
+Tempo (in secondi) di durata del bonus \char`\"{}\+Shield\char`\"{}. 
+
+
+
+\subsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\mbox{\Hypertarget{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}\label{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}} 
+\index{data.\+h@{data.\+h}!asteroid\+\_\+list@{asteroid\+\_\+list}}
+\index{asteroid\+\_\+list@{asteroid\+\_\+list}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{asteroid\+\_\+list}{asteroid\_list}}
+{\footnotesize\ttfamily typedef \hyperlink{structelem__asteroid__t}{elem\+\_\+asteroid\+\_\+t}$\ast$ \hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list}}
+
+
+
+Definizione del tipo \char`\"{}lista di asteriodi\char`\"{}. 
+
+
+
+\subsection{Documentazione dei tipi enumerati}
+\mbox{\Hypertarget{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564}\label{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564}} 
+\index{data.\+h@{data.\+h}!asteroid\+\_\+special\+\_\+t@{asteroid\+\_\+special\+\_\+t}}
+\index{asteroid\+\_\+special\+\_\+t@{asteroid\+\_\+special\+\_\+t}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{asteroid\+\_\+special\+\_\+t}{asteroid\_special\_t}}
+{\footnotesize\ttfamily enum \hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564}{asteroid\+\_\+special\+\_\+t}}
+
+
+
+Enumerato relativo al bonus contenuto nel singonlo asteroide\+: nessuno, Atomic, Rallenty, Fire o Shield. 
+
+\begin{DoxyEnumFields}{Valori del tipo enumerato}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+R\+M\+AL@{N\+O\+R\+M\+AL}!data.\+h@{data.\+h}}\index{data.\+h@{data.\+h}!N\+O\+R\+M\+AL@{N\+O\+R\+M\+AL}}}\mbox{\Hypertarget{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a50d1448013c6f17125caee18aa418af7}\label{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a50d1448013c6f17125caee18aa418af7}} 
+N\+O\+R\+M\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+T\+O\+M\+IC@{A\+T\+O\+M\+IC}!data.\+h@{data.\+h}}\index{data.\+h@{data.\+h}!A\+T\+O\+M\+IC@{A\+T\+O\+M\+IC}}}\mbox{\Hypertarget{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564ada0b1d3109123d2ec0ef5e8f4fa32262}\label{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564ada0b1d3109123d2ec0ef5e8f4fa32262}} 
+A\+T\+O\+M\+IC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+A\+L\+L\+E\+N\+TY@{R\+A\+L\+L\+E\+N\+TY}!data.\+h@{data.\+h}}\index{data.\+h@{data.\+h}!R\+A\+L\+L\+E\+N\+TY@{R\+A\+L\+L\+E\+N\+TY}}}\mbox{\Hypertarget{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a781532b2d0582c3c9c7c3a9d76f0c159}\label{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a781532b2d0582c3c9c7c3a9d76f0c159}} 
+R\+A\+L\+L\+E\+N\+TY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+I\+RE@{F\+I\+RE}!data.\+h@{data.\+h}}\index{data.\+h@{data.\+h}!F\+I\+RE@{F\+I\+RE}}}\mbox{\Hypertarget{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a6811f08ec3a763b0351fab6fb5054df8}\label{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564a6811f08ec3a763b0351fab6fb5054df8}} 
+F\+I\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+H\+I\+E\+LD@{S\+H\+I\+E\+LD}!data.\+h@{data.\+h}}\index{data.\+h@{data.\+h}!S\+H\+I\+E\+LD@{S\+H\+I\+E\+LD}}}\mbox{\Hypertarget{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564affdd98146fb0c71b3381f94b036a100f}\label{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564affdd98146fb0c71b3381f94b036a100f}} 
+S\+H\+I\+E\+LD&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{data_8h_a56839c56ca6deb3cff5e21540ddb8218}\label{data_8h_a56839c56ca6deb3cff5e21540ddb8218}} 
+\index{data.\+h@{data.\+h}!enable\+\_\+t@{enable\+\_\+t}}
+\index{enable\+\_\+t@{enable\+\_\+t}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{enable\+\_\+t}{enable\_t}}
+{\footnotesize\ttfamily enum \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t}}
+
+
+
+Enumerato relativo alle impostazioni di gioco\+: attive o non attive. 
+
+\begin{DoxyEnumFields}{Valori del tipo enumerato}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ON@{ON}!data.\+h@{data.\+h}}\index{data.\+h@{data.\+h}!ON@{ON}}}\mbox{\Hypertarget{data_8h_a56839c56ca6deb3cff5e21540ddb8218a977d478dacaae531f95695750d1e9d03}\label{data_8h_a56839c56ca6deb3cff5e21540ddb8218a977d478dacaae531f95695750d1e9d03}} 
+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+FF@{O\+FF}!data.\+h@{data.\+h}}\index{data.\+h@{data.\+h}!O\+FF@{O\+FF}}}\mbox{\Hypertarget{data_8h_a56839c56ca6deb3cff5e21540ddb8218aac132f2982b98bcaa3445e535a03ff75}\label{data_8h_a56839c56ca6deb3cff5e21540ddb8218aac132f2982b98bcaa3445e535a03ff75}} 
+O\+FF&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Documentazione delle variabili}
+\mbox{\Hypertarget{data_8h_a00240ac4435599a8c32ffdf40689dab3}\label{data_8h_a00240ac4435599a8c32ffdf40689dab3}} 
+\index{data.\+h@{data.\+h}!B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE@{B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE}}
+\index{B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE@{B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE}{BMP\_PATH\_BASE}}
+{\footnotesize\ttfamily const char B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE\mbox{[}$\,$\mbox{]} = \char`\"{}media/images/\char`\"{}}
+
+
+
+Percorso della cartella contenente le immagini. 
+
+\mbox{\Hypertarget{data_8h_a33122e2c233f57480d757de1e6637f23}\label{data_8h_a33122e2c233f57480d757de1e6637f23}} 
+\index{data.\+h@{data.\+h}!F\+O\+N\+T\+\_\+\+P\+A\+TH@{F\+O\+N\+T\+\_\+\+P\+A\+TH}}
+\index{F\+O\+N\+T\+\_\+\+P\+A\+TH@{F\+O\+N\+T\+\_\+\+P\+A\+TH}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{F\+O\+N\+T\+\_\+\+P\+A\+TH}{FONT\_PATH}}
+{\footnotesize\ttfamily const char F\+O\+N\+T\+\_\+\+P\+A\+TH\mbox{[}$\,$\mbox{]} = \char`\"{}media/font/visitor.\+ttf\char`\"{}}
+
+
+
+Percorso del font utilizzato in tutto il progetto. 
+
+\mbox{\Hypertarget{data_8h_a8f13920443635ea4f319d0e0842ba280}\label{data_8h_a8f13920443635ea4f319d0e0842ba280}} 
+\index{data.\+h@{data.\+h}!M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA@{M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA}}
+\index{M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA@{M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA}{MUSIC\_GAMEOVER\_PATH\_WA}}
+{\footnotesize\ttfamily const char M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA\mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/gameover.\+wav\char`\"{}}
+
+
+
+Percorso del file audio relativo alla musica della schermata di gameover. 
+
+\mbox{\Hypertarget{data_8h_a8b9c6bfbae12c88e6228954f78070560}\label{data_8h_a8b9c6bfbae12c88e6228954f78070560}} 
+\index{data.\+h@{data.\+h}!M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA@{M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA}}
+\index{M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA@{M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA}{MUSIC\_MENU\_PATH\_WA}}
+{\footnotesize\ttfamily const char M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA\mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/menu.\+wav\char`\"{}}
+
+
+
+Percorso del file audio relativo alla musica dei menu. 
+
+\mbox{\Hypertarget{data_8h_a73513865a0c9e121811b8bf52575c71b}\label{data_8h_a73513865a0c9e121811b8bf52575c71b}} 
+\index{data.\+h@{data.\+h}!M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA@{M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA}}
+\index{M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA@{M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA}{MUSIC\_PLAYWA\_PATH\_WA}}
+{\footnotesize\ttfamily const char M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA\mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/playwa.\+wav\char`\"{}}
+
+
+
+Percorso del file audio relativo alla musica della schermata di gioco. 
+
+\mbox{\Hypertarget{data_8h_abbb1a97343fdbf54e75f14fb83cb0a92}\label{data_8h_abbb1a97343fdbf54e75f14fb83cb0a92}} 
+\index{data.\+h@{data.\+h}!N\+\_\+\+Q\+U\+E\+U\+ES@{N\+\_\+\+Q\+U\+E\+U\+ES}}
+\index{N\+\_\+\+Q\+U\+E\+U\+ES@{N\+\_\+\+Q\+U\+E\+U\+ES}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{N\+\_\+\+Q\+U\+E\+U\+ES}{N\_QUEUES}}
+{\footnotesize\ttfamily const int N\+\_\+\+Q\+U\+E\+U\+ES = \textquotesingle{}Z\textquotesingle{} -\/ \textquotesingle{}A\textquotesingle{} + 1}
+
+
+
+Numerosita\textquotesingle{} delle code di asteroidi (\textquotesingle{}A\textquotesingle{}..\textquotesingle{}Z\textquotesingle{}) e del buffer. 
+
+\mbox{\Hypertarget{data_8h_a9358d35614f3e5a06b73e2aed0c241db}\label{data_8h_a9358d35614f3e5a06b73e2aed0c241db}} 
+\index{data.\+h@{data.\+h}!S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR@{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR}}
+\index{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR@{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR}{SOUND\_PATH\_ERROR}}
+{\footnotesize\ttfamily const char S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR\mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/error.\+wav\char`\"{}}
+
+
+
+Percorso del file audio relativo all\textquotesingle{}effetto sonoro che viene riprodotto quando si sbaglia una lettera. 
+
+\mbox{\Hypertarget{data_8h_ad18234177a3bd9410ed9837905d071bf}\label{data_8h_ad18234177a3bd9410ed9837905d071bf}} 
+\index{data.\+h@{data.\+h}!S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON@{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON}}
+\index{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON@{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON}{SOUND\_PATH\_EXPLOSION}}
+{\footnotesize\ttfamily const char S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON\mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/explosion.\+wav\char`\"{}}
+
+
+
+Percorso del file audio relativo all\textquotesingle{}effetto sonoro dell\textquotesingle{}esplosione di un asteroide. 
+
+\mbox{\Hypertarget{data_8h_accf15b03b5957e66ec3a6afa0b26d656}\label{data_8h_accf15b03b5957e66ec3a6afa0b26d656}} 
+\index{data.\+h@{data.\+h}!S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE@{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE}}
+\index{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE@{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE}{SOUND\_PATH\_FIRE}}
+{\footnotesize\ttfamily const char S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE\mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/fire.\+wav\char`\"{}}
+
+
+
+Percorso del file audio relativo all\textquotesingle{}effetto sonoro dello sparo di un proiettile. 
+
+\mbox{\Hypertarget{data_8h_ab5aa6954a2f8d619dfc6ebf5ada160a8}\label{data_8h_ab5aa6954a2f8d619dfc6ebf5ada160a8}} 
+\index{data.\+h@{data.\+h}!S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER@{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER}}
+\index{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER@{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER}!data.\+h@{data.\+h}}
+\subsubsection{\texorpdfstring{S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER}{SOUND\_PATH\_GAMEOVER}}
+{\footnotesize\ttfamily const char S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER\mbox{[}$\,$\mbox{]} = \char`\"{}media/sounds/death.\+wav\char`\"{}}
+
+
+
+Percorso del file audio relativo all\textquotesingle{}effetto sonoro che viene riprodotto quando un asteroide tocca la navicella. 
+

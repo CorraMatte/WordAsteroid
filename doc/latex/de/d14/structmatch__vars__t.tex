@@ -1,0 +1,248 @@
+\hypertarget{structmatch__vars__t}{}\section{Riferimenti per la struct match\+\_\+vars\+\_\+t}
+\label{structmatch__vars__t}\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+
+
+Struct contenente le variabili di gioco.  
+
+
+
+
+{\ttfamily \#include $<$data.\+h$>$}
+
+
+
+Diagramma di collaborazione per match\+\_\+vars\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d2/db7/structmatch__vars__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Attributi pubblici}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} \hyperlink{structmatch__vars__t_a71ec4212320d46caf051a7e61addbffe}{ast\+\_\+queues} \mbox{[}\hyperlink{data_8h_abbb1a97343fdbf54e75f14fb83cb0a92}{N\+\_\+\+Q\+U\+E\+U\+ES}\mbox{]}
+\item 
+int \hyperlink{structmatch__vars__t_aa002d177fd16ff93c89394a68fd469a0}{score}
+\item 
+int \hyperlink{structmatch__vars__t_ab2a6e3340cca84e388bae6a0bc3e0425}{asteroids\+\_\+destroyed}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+T\+I\+M\+ER $\ast$ \hyperlink{structmatch__vars__t_a3f2d3e6df0eba86392ef88491d1e31bd}{spawn\+\_\+timer}
+\item 
+double \hyperlink{structmatch__vars__t_a82b9a455eeeb8653c724fb6ab555ab01}{spawn\+\_\+interval}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+T\+I\+M\+ER $\ast$ \hyperlink{structmatch__vars__t_a98409cabd79c20cd80959cb2242e683c}{timer\+\_\+shield\+\_\+bonus}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+T\+I\+M\+ER $\ast$ \hyperlink{structmatch__vars__t_a943d3f8a5a80e3840b4c034893ad3d72}{timer\+\_\+rallenty\+\_\+bonus}
+\item 
+float \hyperlink{structmatch__vars__t_a1b8a66b48d6fb51e5bcdfd6c66da1102}{fps}
+\item 
+int \hyperlink{structmatch__vars__t_a8b93e95f0caf4fa72707e6e234446751}{insert\+\_\+asteroid\+\_\+index}
+\item 
+int \hyperlink{structmatch__vars__t_a19eb567824590a0ae36be4ed146c1a89}{asteroid\+\_\+head}
+\item 
+\hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564}{asteroid\+\_\+special\+\_\+t} \hyperlink{structmatch__vars__t_a776555bc52d4be60612230e4735fe467}{asteroid\+\_\+to\+\_\+generate}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$ \hyperlink{structmatch__vars__t_aefc460782c12de4ae0c1fdbd9f7c531d}{sound\+\_\+exp}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$ \hyperlink{structmatch__vars__t_ac379900bede23a881327a9951a020dc6}{sound\+\_\+fire}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$ \hyperlink{structmatch__vars__t_a31831089835f2f553993d69e4c0c3d1b}{sound\+\_\+gameover}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$ \hyperlink{structmatch__vars__t_a76f812bd8ea550d3e61ebfa185c3471a}{sound\+\_\+error}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+I\+N\+S\+T\+A\+N\+CE $\ast$ \hyperlink{structmatch__vars__t_a1565ecf6c28c18912372ef685ec9627f}{music\+\_\+playwa}
+\item 
+int \hyperlink{structmatch__vars__t_aec99582de5c65954b0cf568f1d702427}{current\+\_\+asteroid}
+\item 
+int \hyperlink{structmatch__vars__t_ab682954df4b3c57c0808d1f0975134ae}{key\+\_\+error}
+\item 
+\hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \hyperlink{structmatch__vars__t_a726fe4ae3e07b478c2753115e71030f0}{playing}
+\item 
+bool \hyperlink{structmatch__vars__t_a2d403d1bd9faac481e4508b771b8ba69}{gameover}
+\item 
+int \hyperlink{structmatch__vars__t_a888b72765ff70c20f1d7980a00f3603c}{items} \mbox{[}\hyperlink{data_8h_affced4b175e803df59f802e25d017b9b}{N\+U\+M\+\_\+\+I\+T\+E\+MS}\mbox{]}
+\item 
+int \hyperlink{structmatch__vars__t_a2775d451ad359f3296dbfa36da5cca82}{asteroid\+\_\+to\+\_\+bonus}
+\item 
+int \hyperlink{structmatch__vars__t_a6d48827959334e36fca668b19fe1fe77}{instant\+\_\+ast\+\_\+dest}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Struct contenente le variabili di gioco. 
+
+~\newline
+Campi\+: ~\newline
+1) ast\+\_\+queues -\/ Array di liste di asteroidi; ~\newline
+2) score -\/ Punteggio; ~\newline
+3) asteroids\+\_\+destroyed -\/ Numero di asteroidi distrutti; ~\newline
+4) spawn\+\_\+interval -\/ Tempo di attesa (espresso in secondi) tra la generazione di due asteroidi; ~\newline
+5) spawn\+\_\+timer -\/ Timer relativo alla generazione di asteroidi; ~\newline
+6) timer\+\_\+shield\+\_\+bonus -\/ Timer relativo alla durata del bonus \char`\"{}\+Shield\char`\"{}; ~\newline
+7) timer\+\_\+rallenty\+\_\+bonus -\/ Timer relativo alla durata del bonus \char`\"{}\+Rallenty\char`\"{}; ~\newline
+8) fps -\/ Intervallo di refresh della schermata; ~\newline
+9) diff\+\_\+liv -\/ Livello di difficoltà del gioco (\mbox{[}3,14\mbox{]}); ~\newline
+10) insert\+\_\+asteroid\+\_\+index -\/ Indice che dice se c\textquotesingle{}è un asteroide in coda che andrà fatto comparire nel gioco; ~\newline
+11) asteroid\+\_\+head -\/ Numero di asteroidi presenti in testa nel vettore delle liste (\mbox{[}0,N\+U\+M\+\_\+\+Q\+U\+E\+U\+ES\mbox{]}); ~\newline
+12) asteroid\+\_\+to\+\_\+generate -\/ Tipo dell\textquotesingle{}asteroide che verrà generato; ~\newline
+ ~\newline
+13) sound\+\_\+exp -\/ Suono dell\textquotesingle{}esplosione di un asteroide; ~\newline
+14) sound\+\_\+fire -\/ Suono dello sparo di un proiettile; ~\newline
+15) sound\+\_\+gameover -\/ Suono che viene eseguito quando si verifica il gameover; ~\newline
+16) sound\+\_\+rallenty -\/ Suono che sostituisce la musica durante il bonus \char`\"{}\+Rallenty\char`\"{}; ~\newline
+17) sound\+\_\+error -\/ Suono che viene eseguito quando si digita una lettera sbagliata; ~\newline
+18) current\+\_\+asteroid -\/ Indice dell\textquotesingle{}asteroide che si sta cercando di distruggere. ~\newline
+ Vale -\/1 se si deve ancora agganciare un asteroide da colipire; ~\newline
+19) key\+\_\+error -\/ Indice dell\textquotesingle{}asteroide del quale si è sbagliata la lettera. Vale -\/1 se non vi sono errori; ~\newline
+20) playing -\/ Variabile che indica se il gioco è in pausa o si sta giocando; ~\newline
+21) gameover -\/ Variabile che indica se si è verificato il gameover; ~\newline
+ ~\newline
+22) items -\/ Array dei bonus\+: indica la numerosità di ognuno dei quattro bonus; ~\newline
+23) asteroid\+\_\+to\+\_\+bonus -\/ Numero di asteroidi da distruggere per ottenere un bonus; ~\newline
+24) instant\+\_\+ast\+\_\+dest -\/ Numero di asteroidi distrutti in un determinato istante, in modo da calcolare se si è arrivati al bonus. 
+
+\subsection{Documentazione dei membri dato}
+\mbox{\Hypertarget{structmatch__vars__t_a71ec4212320d46caf051a7e61addbffe}\label{structmatch__vars__t_a71ec4212320d46caf051a7e61addbffe}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!ast\+\_\+queues@{ast\+\_\+queues}}
+\index{ast\+\_\+queues@{ast\+\_\+queues}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{ast\+\_\+queues}{ast\_queues}}
+{\footnotesize\ttfamily \hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} match\+\_\+vars\+\_\+t\+::ast\+\_\+queues\mbox{[}\hyperlink{data_8h_abbb1a97343fdbf54e75f14fb83cb0a92}{N\+\_\+\+Q\+U\+E\+U\+ES}\mbox{]}}
+
+\mbox{\Hypertarget{structmatch__vars__t_a19eb567824590a0ae36be4ed146c1a89}\label{structmatch__vars__t_a19eb567824590a0ae36be4ed146c1a89}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!asteroid\+\_\+head@{asteroid\+\_\+head}}
+\index{asteroid\+\_\+head@{asteroid\+\_\+head}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{asteroid\+\_\+head}{asteroid\_head}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::asteroid\+\_\+head}
+
+\mbox{\Hypertarget{structmatch__vars__t_a2775d451ad359f3296dbfa36da5cca82}\label{structmatch__vars__t_a2775d451ad359f3296dbfa36da5cca82}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!asteroid\+\_\+to\+\_\+bonus@{asteroid\+\_\+to\+\_\+bonus}}
+\index{asteroid\+\_\+to\+\_\+bonus@{asteroid\+\_\+to\+\_\+bonus}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{asteroid\+\_\+to\+\_\+bonus}{asteroid\_to\_bonus}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::asteroid\+\_\+to\+\_\+bonus}
+
+\mbox{\Hypertarget{structmatch__vars__t_a776555bc52d4be60612230e4735fe467}\label{structmatch__vars__t_a776555bc52d4be60612230e4735fe467}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!asteroid\+\_\+to\+\_\+generate@{asteroid\+\_\+to\+\_\+generate}}
+\index{asteroid\+\_\+to\+\_\+generate@{asteroid\+\_\+to\+\_\+generate}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{asteroid\+\_\+to\+\_\+generate}{asteroid\_to\_generate}}
+{\footnotesize\ttfamily \hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564}{asteroid\+\_\+special\+\_\+t} match\+\_\+vars\+\_\+t\+::asteroid\+\_\+to\+\_\+generate}
+
+\mbox{\Hypertarget{structmatch__vars__t_ab2a6e3340cca84e388bae6a0bc3e0425}\label{structmatch__vars__t_ab2a6e3340cca84e388bae6a0bc3e0425}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!asteroids\+\_\+destroyed@{asteroids\+\_\+destroyed}}
+\index{asteroids\+\_\+destroyed@{asteroids\+\_\+destroyed}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{asteroids\+\_\+destroyed}{asteroids\_destroyed}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::asteroids\+\_\+destroyed}
+
+\mbox{\Hypertarget{structmatch__vars__t_aec99582de5c65954b0cf568f1d702427}\label{structmatch__vars__t_aec99582de5c65954b0cf568f1d702427}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!current\+\_\+asteroid@{current\+\_\+asteroid}}
+\index{current\+\_\+asteroid@{current\+\_\+asteroid}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{current\+\_\+asteroid}{current\_asteroid}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::current\+\_\+asteroid}
+
+\mbox{\Hypertarget{structmatch__vars__t_a1b8a66b48d6fb51e5bcdfd6c66da1102}\label{structmatch__vars__t_a1b8a66b48d6fb51e5bcdfd6c66da1102}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!fps@{fps}}
+\index{fps@{fps}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{fps}{fps}}
+{\footnotesize\ttfamily float match\+\_\+vars\+\_\+t\+::fps}
+
+\mbox{\Hypertarget{structmatch__vars__t_a2d403d1bd9faac481e4508b771b8ba69}\label{structmatch__vars__t_a2d403d1bd9faac481e4508b771b8ba69}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!gameover@{gameover}}
+\index{gameover@{gameover}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{gameover}{gameover}}
+{\footnotesize\ttfamily bool match\+\_\+vars\+\_\+t\+::gameover}
+
+\mbox{\Hypertarget{structmatch__vars__t_a8b93e95f0caf4fa72707e6e234446751}\label{structmatch__vars__t_a8b93e95f0caf4fa72707e6e234446751}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!insert\+\_\+asteroid\+\_\+index@{insert\+\_\+asteroid\+\_\+index}}
+\index{insert\+\_\+asteroid\+\_\+index@{insert\+\_\+asteroid\+\_\+index}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{insert\+\_\+asteroid\+\_\+index}{insert\_asteroid\_index}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::insert\+\_\+asteroid\+\_\+index}
+
+\mbox{\Hypertarget{structmatch__vars__t_a6d48827959334e36fca668b19fe1fe77}\label{structmatch__vars__t_a6d48827959334e36fca668b19fe1fe77}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!instant\+\_\+ast\+\_\+dest@{instant\+\_\+ast\+\_\+dest}}
+\index{instant\+\_\+ast\+\_\+dest@{instant\+\_\+ast\+\_\+dest}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{instant\+\_\+ast\+\_\+dest}{instant\_ast\_dest}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::instant\+\_\+ast\+\_\+dest}
+
+\mbox{\Hypertarget{structmatch__vars__t_a888b72765ff70c20f1d7980a00f3603c}\label{structmatch__vars__t_a888b72765ff70c20f1d7980a00f3603c}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!items@{items}}
+\index{items@{items}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::items\mbox{[}\hyperlink{data_8h_affced4b175e803df59f802e25d017b9b}{N\+U\+M\+\_\+\+I\+T\+E\+MS}\mbox{]}}
+
+\mbox{\Hypertarget{structmatch__vars__t_ab682954df4b3c57c0808d1f0975134ae}\label{structmatch__vars__t_ab682954df4b3c57c0808d1f0975134ae}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!key\+\_\+error@{key\+\_\+error}}
+\index{key\+\_\+error@{key\+\_\+error}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{key\+\_\+error}{key\_error}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::key\+\_\+error}
+
+\mbox{\Hypertarget{structmatch__vars__t_a1565ecf6c28c18912372ef685ec9627f}\label{structmatch__vars__t_a1565ecf6c28c18912372ef685ec9627f}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!music\+\_\+playwa@{music\+\_\+playwa}}
+\index{music\+\_\+playwa@{music\+\_\+playwa}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{music\+\_\+playwa}{music\_playwa}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+I\+N\+S\+T\+A\+N\+CE$\ast$ match\+\_\+vars\+\_\+t\+::music\+\_\+playwa}
+
+\mbox{\Hypertarget{structmatch__vars__t_a726fe4ae3e07b478c2753115e71030f0}\label{structmatch__vars__t_a726fe4ae3e07b478c2753115e71030f0}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!playing@{playing}}
+\index{playing@{playing}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{playing}{playing}}
+{\footnotesize\ttfamily \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} match\+\_\+vars\+\_\+t\+::playing}
+
+\mbox{\Hypertarget{structmatch__vars__t_aa002d177fd16ff93c89394a68fd469a0}\label{structmatch__vars__t_aa002d177fd16ff93c89394a68fd469a0}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!score@{score}}
+\index{score@{score}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int match\+\_\+vars\+\_\+t\+::score}
+
+\mbox{\Hypertarget{structmatch__vars__t_a76f812bd8ea550d3e61ebfa185c3471a}\label{structmatch__vars__t_a76f812bd8ea550d3e61ebfa185c3471a}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!sound\+\_\+error@{sound\+\_\+error}}
+\index{sound\+\_\+error@{sound\+\_\+error}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{sound\+\_\+error}{sound\_error}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE$\ast$ match\+\_\+vars\+\_\+t\+::sound\+\_\+error}
+
+\mbox{\Hypertarget{structmatch__vars__t_aefc460782c12de4ae0c1fdbd9f7c531d}\label{structmatch__vars__t_aefc460782c12de4ae0c1fdbd9f7c531d}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!sound\+\_\+exp@{sound\+\_\+exp}}
+\index{sound\+\_\+exp@{sound\+\_\+exp}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{sound\+\_\+exp}{sound\_exp}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE$\ast$ match\+\_\+vars\+\_\+t\+::sound\+\_\+exp}
+
+\mbox{\Hypertarget{structmatch__vars__t_ac379900bede23a881327a9951a020dc6}\label{structmatch__vars__t_ac379900bede23a881327a9951a020dc6}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!sound\+\_\+fire@{sound\+\_\+fire}}
+\index{sound\+\_\+fire@{sound\+\_\+fire}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{sound\+\_\+fire}{sound\_fire}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE$\ast$ match\+\_\+vars\+\_\+t\+::sound\+\_\+fire}
+
+\mbox{\Hypertarget{structmatch__vars__t_a31831089835f2f553993d69e4c0c3d1b}\label{structmatch__vars__t_a31831089835f2f553993d69e4c0c3d1b}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!sound\+\_\+gameover@{sound\+\_\+gameover}}
+\index{sound\+\_\+gameover@{sound\+\_\+gameover}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{sound\+\_\+gameover}{sound\_gameover}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE$\ast$ match\+\_\+vars\+\_\+t\+::sound\+\_\+gameover}
+
+\mbox{\Hypertarget{structmatch__vars__t_a82b9a455eeeb8653c724fb6ab555ab01}\label{structmatch__vars__t_a82b9a455eeeb8653c724fb6ab555ab01}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!spawn\+\_\+interval@{spawn\+\_\+interval}}
+\index{spawn\+\_\+interval@{spawn\+\_\+interval}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{spawn\+\_\+interval}{spawn\_interval}}
+{\footnotesize\ttfamily double match\+\_\+vars\+\_\+t\+::spawn\+\_\+interval}
+
+\mbox{\Hypertarget{structmatch__vars__t_a3f2d3e6df0eba86392ef88491d1e31bd}\label{structmatch__vars__t_a3f2d3e6df0eba86392ef88491d1e31bd}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!spawn\+\_\+timer@{spawn\+\_\+timer}}
+\index{spawn\+\_\+timer@{spawn\+\_\+timer}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{spawn\+\_\+timer}{spawn\_timer}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+T\+I\+M\+ER$\ast$ match\+\_\+vars\+\_\+t\+::spawn\+\_\+timer}
+
+\mbox{\Hypertarget{structmatch__vars__t_a943d3f8a5a80e3840b4c034893ad3d72}\label{structmatch__vars__t_a943d3f8a5a80e3840b4c034893ad3d72}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!timer\+\_\+rallenty\+\_\+bonus@{timer\+\_\+rallenty\+\_\+bonus}}
+\index{timer\+\_\+rallenty\+\_\+bonus@{timer\+\_\+rallenty\+\_\+bonus}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{timer\+\_\+rallenty\+\_\+bonus}{timer\_rallenty\_bonus}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+T\+I\+M\+ER$\ast$ match\+\_\+vars\+\_\+t\+::timer\+\_\+rallenty\+\_\+bonus}
+
+\mbox{\Hypertarget{structmatch__vars__t_a98409cabd79c20cd80959cb2242e683c}\label{structmatch__vars__t_a98409cabd79c20cd80959cb2242e683c}} 
+\index{match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}!timer\+\_\+shield\+\_\+bonus@{timer\+\_\+shield\+\_\+bonus}}
+\index{timer\+\_\+shield\+\_\+bonus@{timer\+\_\+shield\+\_\+bonus}!match\+\_\+vars\+\_\+t@{match\+\_\+vars\+\_\+t}}
+\subsubsection{\texorpdfstring{timer\+\_\+shield\+\_\+bonus}{timer\_shield\_bonus}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+T\+I\+M\+ER$\ast$ match\+\_\+vars\+\_\+t\+::timer\+\_\+shield\+\_\+bonus}
+
+
+
+La documentazione per questa struct è stata generata a partire dal seguente file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data_8h}{data.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,217 @@
+\hypertarget{game__functions_8cpp}{}\section{Riferimenti per il file game\+\_\+functions.\+cpp}
+\label{game__functions_8cpp}\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+{\ttfamily \#include $<$semaphore.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}game\+\_\+functions.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per game\+\_\+functions.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d20/game__functions_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{game__functions_8cpp_a4f01741d10ee6c94dcc93d71a3b39c04}{spawn\+\_\+asteroid\+\_\+thread} (void $\ast$mv)
+\begin{DoxyCompactList}\small\item\em Funzione che implementa il consumer thread. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_a2a8678c0c49d26b7b3fc8dae6de25713}{sound\+\_\+play} (A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$sound, const \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&en\+\_\+sound)
+\begin{DoxyCompactList}\small\item\em Funzione che fa partire il rispettivo suono del gioco, se i suoni sono attivati. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_a55bb6054017958a7940adc384b00b734}{music\+\_\+wa\+\_\+play} ()
+\begin{DoxyCompactList}\small\item\em Funzione che fa partire la musica del gioco. \end{DoxyCompactList}\item 
+\hyperlink{structasteroid__t}{asteroid\+\_\+t} \hyperlink{game__functions_8cpp_a9d3651675c457f8c8dbbf4b174c8e06a}{generate\+\_\+asteroid} (const \hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564}{asteroid\+\_\+special\+\_\+t} s, const int \&next\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Funzione che genera un singolo asteroide (di tipo compreso tra 3 e lev) in un punto casuale del bordo della zona di gioco. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_ae610b03423bc72bf50a76a18e5edce92}{move\+\_\+bullets} (\hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$bullet, \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars, \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&en\+\_\+sound)
+\begin{DoxyCompactList}\small\item\em Funzione che muove i bullets, e quando c\textquotesingle{}è una collisione viene definitivamente eliminato l\textquotesingle{}asteroide dalla lista, e aggiornati i bonus corrispondenti agli asteroidi distrutti. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_ab2d6354e392f2da433ab558560e82541}{move\+\_\+asteroids} (\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$ast\+\_\+queues, const int \&extract\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Funzione che muove l\textquotesingle{}asteroide in relazione al suo angolo con lo shooter, in modo che segua la retta che congiunge shooter -\/ asteroide. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_a378814aa4904070e808e0ac446a90295}{move\+\_\+shooter} (\hyperlink{structshooter__t}{shooter\+\_\+t} \&shooter, const \hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$ast\+\_\+queues, const int current\+\_\+asteroid)
+\begin{DoxyCompactList}\small\item\em Funzione che ruota lo shooter in base all\textquotesingle{}asteroide puntato. \end{DoxyCompactList}\item 
+bool \hyperlink{game__functions_8cpp_a678c1013bf4f3a44b140829f7954e0f7}{check\+\_\+gameover} (\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$ast\+\_\+queues, const \hyperlink{structshooter__t}{shooter\+\_\+t} \&shooter, const \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$arr\+\_\+bullet)
+\begin{DoxyCompactList}\small\item\em Funzione che, in base alla posizione degli asteroidi in gioco e dello shooter, controlla se ci siano collisioni, ovvero se lo shooter e un asteroide in gioco si siano toccati, e il gioco in questo caso finisce. \end{DoxyCompactList}\item 
+float \hyperlink{game__functions_8cpp_a0afa627f8960d4dd4b67274fdf64fe0a}{check\+\_\+distance} (const \hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$ast\+\_\+queues, const \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$arr\+\_\+bullet, const \hyperlink{structshooter__t}{shooter\+\_\+t} \&shooter)
+\begin{DoxyCompactList}\small\item\em Funzione che restitusice la distanza tra il meteorite più vicino all\textquotesingle{}asteroide e l\textquotesingle{}asteroide stesso. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_a265dd35de6568690392ca63124fccccb}{check\+\_\+shield} (\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars, \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$arr\+\_\+bullet, \hyperlink{structshooter__t}{shooter\+\_\+t} \&shooter, \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&en\+\_\+sound)
+\begin{DoxyCompactList}\small\item\em Funzione che controlla lo stato dello scudo. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_a21d0ec8c5d68d9d7016f4bf884d33e9a}{handler\+\_\+timer} (A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+NT ev, \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars, \hyperlink{structsettings__t}{settings\+\_\+t} \&settings)
+\begin{DoxyCompactList}\small\item\em Funzione di routine che gestisce l\textquotesingle{}evento della scadenza di un timer. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_a8fa1c1282d2161623c1488dc68b085c7}{handler\+\_\+key\+\_\+pressed} (A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+NT ev, \hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars, \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$arr\+\_\+bullet, \hyperlink{structshooter__t}{shooter\+\_\+t} \&shooter, \hyperlink{structsettings__t}{settings\+\_\+t} \&settings)
+\begin{DoxyCompactList}\small\item\em Funzione di routine che gestisce l\textquotesingle{}evento della scadenza di un timer. \end{DoxyCompactList}\item 
+void \hyperlink{game__functions_8cpp_a128182b533de18f8e11904ea47403c20}{change\+\_\+music} (const char $\ast$path, const \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&music)
+\begin{DoxyCompactList}\small\item\em Funzione che mette cambia la musica tra le varie schermate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{game__functions_8cpp_a128182b533de18f8e11904ea47403c20}\label{game__functions_8cpp_a128182b533de18f8e11904ea47403c20}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!change\+\_\+music@{change\+\_\+music}}
+\index{change\+\_\+music@{change\+\_\+music}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{change\+\_\+music()}{change\_music()}}
+{\footnotesize\ttfamily void change\+\_\+music (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{const \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&}]{music }\end{DoxyParamCaption})}
+
+
+
+Funzione che mette cambia la musica tra le varie schermate. 
+
+~\newline
+Parametri\+: ~\newline
+1) path -\/ Percorso del nuovo audio. \mbox{\Hypertarget{game__functions_8cpp_a0afa627f8960d4dd4b67274fdf64fe0a}\label{game__functions_8cpp_a0afa627f8960d4dd4b67274fdf64fe0a}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!check\+\_\+distance@{check\+\_\+distance}}
+\index{check\+\_\+distance@{check\+\_\+distance}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+distance()}{check\_distance()}}
+{\footnotesize\ttfamily float check\+\_\+distance (\begin{DoxyParamCaption}\item[{const \hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$}]{ast\+\_\+queues,  }\item[{const \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$}]{arr\+\_\+bullet,  }\item[{const \hyperlink{structshooter__t}{shooter\+\_\+t} \&}]{shooter }\end{DoxyParamCaption})}
+
+
+
+Funzione che restitusice la distanza tra il meteorite più vicino all\textquotesingle{}asteroide e l\textquotesingle{}asteroide stesso. 
+
+Parametri\+: ~\newline
+1) ast\+\_\+queues -\/ Vettore di liste di asteroidi; ~\newline
+2) arr\+\_\+bullet -\/ Vettore dei proiettili ~\newline
+3) shooter -\/ Informazioni relative allo shooter. \mbox{\Hypertarget{game__functions_8cpp_a678c1013bf4f3a44b140829f7954e0f7}\label{game__functions_8cpp_a678c1013bf4f3a44b140829f7954e0f7}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!check\+\_\+gameover@{check\+\_\+gameover}}
+\index{check\+\_\+gameover@{check\+\_\+gameover}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+gameover()}{check\_gameover()}}
+{\footnotesize\ttfamily bool check\+\_\+gameover (\begin{DoxyParamCaption}\item[{\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$}]{ast\+\_\+queues,  }\item[{const \hyperlink{structshooter__t}{shooter\+\_\+t} \&}]{shooter,  }\item[{const \hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$}]{arr\+\_\+bullet }\end{DoxyParamCaption})}
+
+
+
+Funzione che, in base alla posizione degli asteroidi in gioco e dello shooter, controlla se ci siano collisioni, ovvero se lo shooter e un asteroide in gioco si siano toccati, e il gioco in questo caso finisce. 
+
+~\newline
+Parametri\+: ~\newline
+1) ast\+\_\+queues -\/ Vettore di liste di asteroidi; ~\newline
+2) shooter -\/ Informazioni relative allo shooter; ~\newline
+3) arr\+\_\+bullet -\/ Vettore dei proiettili. \mbox{\Hypertarget{game__functions_8cpp_a265dd35de6568690392ca63124fccccb}\label{game__functions_8cpp_a265dd35de6568690392ca63124fccccb}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!check\+\_\+shield@{check\+\_\+shield}}
+\index{check\+\_\+shield@{check\+\_\+shield}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+shield()}{check\_shield()}}
+{\footnotesize\ttfamily void check\+\_\+shield (\begin{DoxyParamCaption}\item[{\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars,  }\item[{\hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$}]{arr\+\_\+bullet,  }\item[{\hyperlink{structshooter__t}{shooter\+\_\+t} \&}]{shooter,  }\item[{\hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&}]{en\+\_\+sound }\end{DoxyParamCaption})}
+
+
+
+Funzione che controlla lo stato dello scudo. 
+
+Se c\textquotesingle{}è gameover ma lo scudo è attivo grazie al bonus \textquotesingle{}shield\textquotesingle{}, l\textquotesingle{}asteroide che colpisce lo scudo viene distrutto. ~\newline
+Parametri\+: ~\newline
+2) match\+\_\+vars -\/ Contenitore delle variabili di gioco; ~\newline
+2) arr\+\_\+bullet -\/ Vettore dei proiettili; ~\newline
+3) shooter -\/ Informazioni relative allo shooter. \mbox{\Hypertarget{game__functions_8cpp_a9d3651675c457f8c8dbbf4b174c8e06a}\label{game__functions_8cpp_a9d3651675c457f8c8dbbf4b174c8e06a}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!generate\+\_\+asteroid@{generate\+\_\+asteroid}}
+\index{generate\+\_\+asteroid@{generate\+\_\+asteroid}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+\_\+asteroid()}{generate\_asteroid()}}
+{\footnotesize\ttfamily \hyperlink{structasteroid__t}{asteroid\+\_\+t} generate\+\_\+asteroid (\begin{DoxyParamCaption}\item[{const \hyperlink{data_8h_a07b940e2e86eb4fc3f1e1e1843da0564}{asteroid\+\_\+special\+\_\+t}}]{s,  }\item[{const int \&}]{next\+\_\+p }\end{DoxyParamCaption})}
+
+
+
+Funzione che genera un singolo asteroide (di tipo compreso tra 3 e lev) in un punto casuale del bordo della zona di gioco. 
+
+~\newline
+Parametri\+: ~\newline
+1) lev -\/ Livello attuale; ~\newline
+2) v -\/ lingua della parole dell\textquotesingle{}asteroide ~\newline
+3) s -\/ Caratteristiche speciali dell\textquotesingle{}asteroide ~\newline
+4) next\+\_\+p -\/ In caso di conflitto, viene utilizzata come posizione in cui inserire l\textquotesingle{}asteroide \mbox{\Hypertarget{game__functions_8cpp_a8fa1c1282d2161623c1488dc68b085c7}\label{game__functions_8cpp_a8fa1c1282d2161623c1488dc68b085c7}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!handler\+\_\+key\+\_\+pressed@{handler\+\_\+key\+\_\+pressed}}
+\index{handler\+\_\+key\+\_\+pressed@{handler\+\_\+key\+\_\+pressed}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{handler\+\_\+key\+\_\+pressed()}{handler\_key\_pressed()}}
+{\footnotesize\ttfamily void handler\+\_\+key\+\_\+pressed (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+NT}]{ev,  }\item[{\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars,  }\item[{\hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$}]{arr\+\_\+bullet,  }\item[{\hyperlink{structshooter__t}{shooter\+\_\+t} \&}]{shooter,  }\item[{\hyperlink{structsettings__t}{settings\+\_\+t} \&}]{settings }\end{DoxyParamCaption})}
+
+
+
+Funzione di routine che gestisce l\textquotesingle{}evento della scadenza di un timer. 
+
+In base al timer scaduto (spawn, shield, rallenty) genera l\textquotesingle{}evento associato. ~\newline
+Parametri\+: ~\newline
+1) ev -\/ Evento generato; ~\newline
+2) match\+\_\+vars -\/ Contenitore delle variabili di gioco; ~\newline
+3) arr\+\_\+bullet -\/ Vettore dei proiettili; ~\newline
+4) shooter -\/ Informazioni relative allo shooter; ~\newline
+5) settings -\/ Impostazioni di gioco. \mbox{\Hypertarget{game__functions_8cpp_a21d0ec8c5d68d9d7016f4bf884d33e9a}\label{game__functions_8cpp_a21d0ec8c5d68d9d7016f4bf884d33e9a}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!handler\+\_\+timer@{handler\+\_\+timer}}
+\index{handler\+\_\+timer@{handler\+\_\+timer}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{handler\+\_\+timer()}{handler\_timer()}}
+{\footnotesize\ttfamily void handler\+\_\+timer (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+NT}]{ev,  }\item[{\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars,  }\item[{\hyperlink{structsettings__t}{settings\+\_\+t} \&}]{settings }\end{DoxyParamCaption})}
+
+
+
+Funzione di routine che gestisce l\textquotesingle{}evento della scadenza di un timer. 
+
+In base al timer scaduto (spawn, shield, rallenty) genera l\textquotesingle{}evento associato. ~\newline
+Parametri\+: ~\newline
+1) ev -\/ Evento generato; ~\newline
+2) match\+\_\+vars -\/ Contenitore dei tre timer; ~\newline
+3) settings -\/ Impostazioni di gioco. \mbox{\Hypertarget{game__functions_8cpp_ab2d6354e392f2da433ab558560e82541}\label{game__functions_8cpp_ab2d6354e392f2da433ab558560e82541}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!move\+\_\+asteroids@{move\+\_\+asteroids}}
+\index{move\+\_\+asteroids@{move\+\_\+asteroids}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{move\+\_\+asteroids()}{move\_asteroids()}}
+{\footnotesize\ttfamily void move\+\_\+asteroids (\begin{DoxyParamCaption}\item[{\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$}]{ast\+\_\+queues,  }\item[{const int \&}]{extract\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Funzione che muove l\textquotesingle{}asteroide in relazione al suo angolo con lo shooter, in modo che segua la retta che congiunge shooter -\/ asteroide. 
+
+~\newline
+Parametri\+: ~\newline
+1) ast\+\_\+queues -\/ Vettore di liste di asteroidi; ~\newline
+2) extract\+\_\+index -\/ Indice dell\textquotesingle{}asteroide in campo ma da non far comparire. \mbox{\Hypertarget{game__functions_8cpp_ae610b03423bc72bf50a76a18e5edce92}\label{game__functions_8cpp_ae610b03423bc72bf50a76a18e5edce92}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!move\+\_\+bullets@{move\+\_\+bullets}}
+\index{move\+\_\+bullets@{move\+\_\+bullets}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{move\+\_\+bullets()}{move\_bullets()}}
+{\footnotesize\ttfamily void move\+\_\+bullets (\begin{DoxyParamCaption}\item[{\hyperlink{structbullet__t}{bullet\+\_\+t} $\ast$}]{bullet,  }\item[{\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars,  }\item[{\hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&}]{en\+\_\+sound }\end{DoxyParamCaption})}
+
+
+
+Funzione che muove i bullets, e quando c\textquotesingle{}è una collisione viene definitivamente eliminato l\textquotesingle{}asteroide dalla lista, e aggiornati i bonus corrispondenti agli asteroidi distrutti. 
+
+~\newline
+Parametri\+: ~\newline
+1) bullet -\/ Vettore dei bullet; ~\newline
+2) match\+\_\+vars -\/ Contenitore delle variabili di gioco; ~\newline
+3) items -\/ Vettore dei bonus. \mbox{\Hypertarget{game__functions_8cpp_a378814aa4904070e808e0ac446a90295}\label{game__functions_8cpp_a378814aa4904070e808e0ac446a90295}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!move\+\_\+shooter@{move\+\_\+shooter}}
+\index{move\+\_\+shooter@{move\+\_\+shooter}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{move\+\_\+shooter()}{move\_shooter()}}
+{\footnotesize\ttfamily void move\+\_\+shooter (\begin{DoxyParamCaption}\item[{\hyperlink{structshooter__t}{shooter\+\_\+t} \&}]{shooter,  }\item[{const \hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$}]{ast\+\_\+queues,  }\item[{const int}]{current\+\_\+asteroid }\end{DoxyParamCaption})}
+
+
+
+Funzione che ruota lo shooter in base all\textquotesingle{}asteroide puntato. 
+
+~\newline
+Parametri\+: ~\newline
+1) shooter -\/ Informazioni relative allo shooter; ~\newline
+2) ast\+\_\+queues -\/ Vettore di liste di asteroidi; ~\newline
+3) current\+\_\+asteroid -\/ Carattere corrispondente all\textquotesingle{}asteroide puntato. \mbox{\Hypertarget{game__functions_8cpp_a55bb6054017958a7940adc384b00b734}\label{game__functions_8cpp_a55bb6054017958a7940adc384b00b734}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!music\+\_\+wa\+\_\+play@{music\+\_\+wa\+\_\+play}}
+\index{music\+\_\+wa\+\_\+play@{music\+\_\+wa\+\_\+play}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{music\+\_\+wa\+\_\+play()}{music\_wa\_play()}}
+{\footnotesize\ttfamily void music\+\_\+wa\+\_\+play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione che fa partire la musica del gioco. 
+
+\mbox{\Hypertarget{game__functions_8cpp_a2a8678c0c49d26b7b3fc8dae6de25713}\label{game__functions_8cpp_a2a8678c0c49d26b7b3fc8dae6de25713}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!sound\+\_\+play@{sound\+\_\+play}}
+\index{sound\+\_\+play@{sound\+\_\+play}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{sound\+\_\+play()}{sound\_play()}}
+{\footnotesize\ttfamily void sound\+\_\+play (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$}]{sound,  }\item[{const \hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&}]{en\+\_\+sound }\end{DoxyParamCaption})}
+
+
+
+Funzione che fa partire il rispettivo suono del gioco, se i suoni sono attivati. 
+
+Parametri\+: ~\newline
+1) sound -\/ Suono da far partire; ~\newline
+2) en\+\_\+sound -\/ Impostazioni che indica se i suoni sono O\+N/\+O\+FF. \mbox{\Hypertarget{game__functions_8cpp_a4f01741d10ee6c94dcc93d71a3b39c04}\label{game__functions_8cpp_a4f01741d10ee6c94dcc93d71a3b39c04}} 
+\index{game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}!spawn\+\_\+asteroid\+\_\+thread@{spawn\+\_\+asteroid\+\_\+thread}}
+\index{spawn\+\_\+asteroid\+\_\+thread@{spawn\+\_\+asteroid\+\_\+thread}!game\+\_\+functions.\+cpp@{game\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{spawn\+\_\+asteroid\+\_\+thread()}{spawn\_asteroid\_thread()}}
+{\footnotesize\ttfamily void$\ast$ spawn\+\_\+asteroid\+\_\+thread (\begin{DoxyParamCaption}\item[{void $\ast$}]{mv }\end{DoxyParamCaption})}
+
+
+
+Funzione che implementa il consumer thread. 
+
+Ad intervalli regolari viene estratta una parola ed inserita all\textquotesingle{}interno del gioco. ~\newline
+Parametri\+: ~\newline
+1) mv -\/ Puntatore alle match vars, le variabili di gioco; ~\newline

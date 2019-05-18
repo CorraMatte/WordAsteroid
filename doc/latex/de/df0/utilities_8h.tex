@@ -1,0 +1,221 @@
+\hypertarget{utilities_8h}{}\section{Riferimenti per il file utilities.\+h}
+\label{utilities_8h}\index{utilities.\+h@{utilities.\+h}}
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+Grafo delle dipendenze di inclusione per utilities.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dfc/utilities_8h__incl}
+\end{center}
+\end{figure}
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/db7/utilities_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{utilities_8h_a08c469e6eee9ca9956ac35d64d2124ef}{exit} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, const bool playing)
+\begin{DoxyCompactList}\small\item\em Funzione ausiliaria che genera un alert con la richiesta di uscire dal gioco. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{utilities_8h_a09cadb87c7167c969102c415ad70842d}{int\+\_\+to\+\_\+str\+\_\+score} (const int \&match\+\_\+score)
+\begin{DoxyCompactList}\small\item\em Funzione che converte il punteggio (intero) in una stringa di otto caratteri. \end{DoxyCompactList}\item 
+int \hyperlink{utilities_8h_a9ec487f04fb6ccf162c3fc8f0e672780}{which\+\_\+quadrant} (const float x, const float y)
+\begin{DoxyCompactList}\small\item\em Funzione che, dato un certo punto del display, restituisce il quadrante (1-\/4) al quale appartiene. \end{DoxyCompactList}\item 
+void \hyperlink{utilities_8h_aeee1998bab6461ac3281a2fd7522a8b9}{extract\+\_\+elem} (\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$ast\+\_\+queues, const int \&index\+\_\+to\+\_\+extract)
+\begin{DoxyCompactList}\small\item\em Funzione che estrai l\textquotesingle{}elemento dalla coda. \end{DoxyCompactList}\item 
+int \hyperlink{utilities_8h_a045d229cb85f3dbc0d99a421cdcf2a3f}{insert\+\_\+elem\+\_\+head} (\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$ast\+\_\+queues, const \hyperlink{structasteroid__t}{asteroid\+\_\+t} \&asteroid)
+\begin{DoxyCompactList}\small\item\em Funzione che inserisce un elemento nella lista, con un controllo se l\textquotesingle{}elemento è inserito in testa o in coda. \end{DoxyCompactList}\item 
+void \hyperlink{utilities_8h_a5185c06c8740c026fa53f18b87385767}{change\+\_\+enable} (\hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&enable)
+\begin{DoxyCompactList}\small\item\em Funzione adibita al set/reset di una determinata impostazione di gioco. \end{DoxyCompactList}\item 
+void \hyperlink{utilities_8h_adcafafb6c87ae3399e1d4889a5d5dcce}{delete\+\_\+ast\+\_\+queues} (\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$ast\+\_\+queues)
+\begin{DoxyCompactList}\small\item\em Funzione che dealloca gli asteroidi in gioco a fine partita e le relativi immagini. \end{DoxyCompactList}\item 
+void \hyperlink{utilities_8h_a68fad52f9f7a53fa048bafc47528a1bb}{delete\+\_\+timer} (\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars)
+\begin{DoxyCompactList}\small\item\em Funzione che dealloca i timer utilizzati come appoggio durante la partita. \end{DoxyCompactList}\item 
+void \hyperlink{utilities_8h_a1f78e2ccd2b9605cd499c1d5c7fd62ec}{delete\+\_\+display\+\_\+evqueue\+\_\+music} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$ev\+\_\+queue, A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$sound)
+\begin{DoxyCompactList}\small\item\em Funzione che dealloca il display, la coda degli eventi e la musica alla chiusera del gioco. \end{DoxyCompactList}\item 
+void \hyperlink{utilities_8h_ab1ffd16a1c007a9d9029fc4eaea4abdb}{delete\+\_\+sounds} (\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&match\+\_\+vars)
+\begin{DoxyCompactList}\small\item\em Funzione che dealloca i suoni durante la singola partita. \end{DoxyCompactList}\item 
+bool \hyperlink{utilities_8h_a3e3556f55af2c53b4b2790b2e9130b27}{ls\+\_\+tar} (\hyperlink{structls__t}{ls\+\_\+t} $\ast$ls)
+\begin{DoxyCompactList}\small\item\em Funzione che restituisce la lista di archivi presenti nella cartella. \end{DoxyCompactList}\item 
+bool \hyperlink{utilities_8h_aa56ac46388226ecf231b9da96c5d9084}{archives\+\_\+exist} ()
+\begin{DoxyCompactList}\small\item\em Funzione true nel caso la cartella indicata durante la compilazione del programma contenga archivi validi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structdisplay__info__t}{display\+\_\+info\+\_\+t} \hyperlink{utilities_8h_a781a8df874545e4f5bff5f8a446d1963}{display\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{utilities_8h_aa56ac46388226ecf231b9da96c5d9084}\label{utilities_8h_aa56ac46388226ecf231b9da96c5d9084}} 
+\index{utilities.\+h@{utilities.\+h}!archives\+\_\+exist@{archives\+\_\+exist}}
+\index{archives\+\_\+exist@{archives\+\_\+exist}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{archives\+\_\+exist()}{archives\_exist()}}
+{\footnotesize\ttfamily bool archives\+\_\+exist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funzione true nel caso la cartella indicata durante la compilazione del programma contenga archivi validi. 
+
+~\newline
+Ritorna false altrimenti. \mbox{\Hypertarget{utilities_8h_a5185c06c8740c026fa53f18b87385767}\label{utilities_8h_a5185c06c8740c026fa53f18b87385767}} 
+\index{utilities.\+h@{utilities.\+h}!change\+\_\+enable@{change\+\_\+enable}}
+\index{change\+\_\+enable@{change\+\_\+enable}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{change\+\_\+enable()}{change\_enable()}}
+{\footnotesize\ttfamily void change\+\_\+enable (\begin{DoxyParamCaption}\item[{\hyperlink{data_8h_a56839c56ca6deb3cff5e21540ddb8218}{enable\+\_\+t} \&}]{enable }\end{DoxyParamCaption})}
+
+
+
+Funzione adibita al set/reset di una determinata impostazione di gioco. 
+
+~\newline
+Parametri\+: ~\newline
+1) enable -\/ Impostazione corrente. \mbox{\Hypertarget{utilities_8h_adcafafb6c87ae3399e1d4889a5d5dcce}\label{utilities_8h_adcafafb6c87ae3399e1d4889a5d5dcce}} 
+\index{utilities.\+h@{utilities.\+h}!delete\+\_\+ast\+\_\+queues@{delete\+\_\+ast\+\_\+queues}}
+\index{delete\+\_\+ast\+\_\+queues@{delete\+\_\+ast\+\_\+queues}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{delete\+\_\+ast\+\_\+queues()}{delete\_ast\_queues()}}
+{\footnotesize\ttfamily void delete\+\_\+ast\+\_\+queues (\begin{DoxyParamCaption}\item[{\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$}]{ast\+\_\+queues }\end{DoxyParamCaption})}
+
+
+
+Funzione che dealloca gli asteroidi in gioco a fine partita e le relativi immagini. 
+
+~\newline
+Parametri\+: ~\newline
+1) ast\+\_\+queues -\/ Vettore di liste di asteroidi. \mbox{\Hypertarget{utilities_8h_a1f78e2ccd2b9605cd499c1d5c7fd62ec}\label{utilities_8h_a1f78e2ccd2b9605cd499c1d5c7fd62ec}} 
+\index{utilities.\+h@{utilities.\+h}!delete\+\_\+display\+\_\+evqueue\+\_\+music@{delete\+\_\+display\+\_\+evqueue\+\_\+music}}
+\index{delete\+\_\+display\+\_\+evqueue\+\_\+music@{delete\+\_\+display\+\_\+evqueue\+\_\+music}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{delete\+\_\+display\+\_\+evqueue\+\_\+music()}{delete\_display\_evqueue\_music()}}
+{\footnotesize\ttfamily void delete\+\_\+display\+\_\+evqueue\+\_\+music (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$}]{ev\+\_\+queue,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$}]{sound }\end{DoxyParamCaption})}
+
+
+
+Funzione che dealloca il display, la coda degli eventi e la musica alla chiusera del gioco. 
+
+Parametri\+: ~\newline
+1) display -\/ Puntatore al display del gioco; ~\newline
+2) ev\+\_\+queue -\/ Puntatore alla coda di eventi; ~\newline
+3) sound -\/ Puntatore alla musica del gioco. \mbox{\Hypertarget{utilities_8h_ab1ffd16a1c007a9d9029fc4eaea4abdb}\label{utilities_8h_ab1ffd16a1c007a9d9029fc4eaea4abdb}} 
+\index{utilities.\+h@{utilities.\+h}!delete\+\_\+sounds@{delete\+\_\+sounds}}
+\index{delete\+\_\+sounds@{delete\+\_\+sounds}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{delete\+\_\+sounds()}{delete\_sounds()}}
+{\footnotesize\ttfamily void delete\+\_\+sounds (\begin{DoxyParamCaption}\item[{\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars }\end{DoxyParamCaption})}
+
+
+
+Funzione che dealloca i suoni durante la singola partita. 
+
+~\newline
+Parametri\+: ~\newline
+1) match\+\_\+vars -\/ Contenitore dei puntatori agli audio. \mbox{\Hypertarget{utilities_8h_a68fad52f9f7a53fa048bafc47528a1bb}\label{utilities_8h_a68fad52f9f7a53fa048bafc47528a1bb}} 
+\index{utilities.\+h@{utilities.\+h}!delete\+\_\+timer@{delete\+\_\+timer}}
+\index{delete\+\_\+timer@{delete\+\_\+timer}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{delete\+\_\+timer()}{delete\_timer()}}
+{\footnotesize\ttfamily void delete\+\_\+timer (\begin{DoxyParamCaption}\item[{\hyperlink{structmatch__vars__t}{match\+\_\+vars\+\_\+t} \&}]{match\+\_\+vars }\end{DoxyParamCaption})}
+
+
+
+Funzione che dealloca i timer utilizzati come appoggio durante la partita. 
+
+~\newline
+Parametri\+: ~\newline
+1) match\+\_\+vars -\/ Contenitore dei puntatori ai tre timer. \mbox{\Hypertarget{utilities_8h_a08c469e6eee9ca9956ac35d64d2124ef}\label{utilities_8h_a08c469e6eee9ca9956ac35d64d2124ef}} 
+\index{utilities.\+h@{utilities.\+h}!exit@{exit}}
+\index{exit@{exit}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily bool exit (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{const bool}]{playing }\end{DoxyParamCaption})}
+
+
+
+Funzione ausiliaria che genera un alert con la richiesta di uscire dal gioco. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Puntatore al display del gioco; ~\newline
+2) playing -\/ Flag per indicare se si sta giocando, in modo da modificare il messaggio; ~\newline
+Ritorna un booleano, e indica se si desidera uscire (true) o continuare a giocare (false). \mbox{\Hypertarget{utilities_8h_aeee1998bab6461ac3281a2fd7522a8b9}\label{utilities_8h_aeee1998bab6461ac3281a2fd7522a8b9}} 
+\index{utilities.\+h@{utilities.\+h}!extract\+\_\+elem@{extract\+\_\+elem}}
+\index{extract\+\_\+elem@{extract\+\_\+elem}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{extract\+\_\+elem()}{extract\_elem()}}
+{\footnotesize\ttfamily void extract\+\_\+elem (\begin{DoxyParamCaption}\item[{\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$}]{ast\+\_\+queues,  }\item[{const int \&}]{index\+\_\+to\+\_\+extract }\end{DoxyParamCaption})}
+
+
+
+Funzione che estrai l\textquotesingle{}elemento dalla coda. 
+
+Non sono necessari controlli prima dell\textquotesingle{}estrazione, perchè sono fatti prima della chiamata a questa funzione. ~\newline
+Parametri\+: ~\newline
+1) ast\+\_\+queues -\/ Vettore di liste di asteroidi; ~\newline
+2) character -\/ Iniziale dell\textquotesingle{}elemento da eliminare, cioè indice dell\textquotesingle{}array. \mbox{\Hypertarget{utilities_8h_a045d229cb85f3dbc0d99a421cdcf2a3f}\label{utilities_8h_a045d229cb85f3dbc0d99a421cdcf2a3f}} 
+\index{utilities.\+h@{utilities.\+h}!insert\+\_\+elem\+\_\+head@{insert\+\_\+elem\+\_\+head}}
+\index{insert\+\_\+elem\+\_\+head@{insert\+\_\+elem\+\_\+head}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{insert\+\_\+elem\+\_\+head()}{insert\_elem\_head()}}
+{\footnotesize\ttfamily int insert\+\_\+elem\+\_\+head (\begin{DoxyParamCaption}\item[{\hyperlink{data_8h_a452eef9acfcf76fb85e2c7ecf3b9ff90}{asteroid\+\_\+list} $\ast$}]{ast\+\_\+queues,  }\item[{const \hyperlink{structasteroid__t}{asteroid\+\_\+t} \&}]{asteroid }\end{DoxyParamCaption})}
+
+
+
+Funzione che inserisce un elemento nella lista, con un controllo se l\textquotesingle{}elemento è inserito in testa o in coda. 
+
+Ricavo l\textquotesingle{}indice della coda direttamente da asteroid.\+word\mbox{[}0\mbox{]}. ~\newline
+Parametri\+: ~\newline
+1) ast\+\_\+queues -\/ Vettore di liste di asteroidi; ~\newline
+2) asteroid -\/ Asteroide da inserire. Ritorna un intero, -\/1 se l\textquotesingle{}asteroide è stato inserito in testa altrimenti un indice che rappresenta il numero della coda. \mbox{\Hypertarget{utilities_8h_a09cadb87c7167c969102c415ad70842d}\label{utilities_8h_a09cadb87c7167c969102c415ad70842d}} 
+\index{utilities.\+h@{utilities.\+h}!int\+\_\+to\+\_\+str\+\_\+score@{int\+\_\+to\+\_\+str\+\_\+score}}
+\index{int\+\_\+to\+\_\+str\+\_\+score@{int\+\_\+to\+\_\+str\+\_\+score}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{int\+\_\+to\+\_\+str\+\_\+score()}{int\_to\_str\_score()}}
+{\footnotesize\ttfamily char$\ast$ int\+\_\+to\+\_\+str\+\_\+score (\begin{DoxyParamCaption}\item[{const int \&}]{match\+\_\+score }\end{DoxyParamCaption})}
+
+
+
+Funzione che converte il punteggio (intero) in una stringa di otto caratteri. 
+
+~\newline
+Parametri\+:~\newline
+1) match\+\_\+score -\/ Il punteggio intero.~\newline
+Ritorna il puntatore contenente la stringa formattata. \mbox{\Hypertarget{utilities_8h_a3e3556f55af2c53b4b2790b2e9130b27}\label{utilities_8h_a3e3556f55af2c53b4b2790b2e9130b27}} 
+\index{utilities.\+h@{utilities.\+h}!ls\+\_\+tar@{ls\+\_\+tar}}
+\index{ls\+\_\+tar@{ls\+\_\+tar}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{ls\+\_\+tar()}{ls\_tar()}}
+{\footnotesize\ttfamily bool ls\+\_\+tar (\begin{DoxyParamCaption}\item[{\hyperlink{structls__t}{ls\+\_\+t} $\ast$}]{ls }\end{DoxyParamCaption})}
+
+
+
+Funzione che restituisce la lista di archivi presenti nella cartella. 
+
+~\newline
+Parametri\+:~\newline
+1) ls -\/ struttura che rappresenta i file contenuti nella cartella. Ritorno false in caso di errore, true altrimenti. \mbox{\Hypertarget{utilities_8h_a9ec487f04fb6ccf162c3fc8f0e672780}\label{utilities_8h_a9ec487f04fb6ccf162c3fc8f0e672780}} 
+\index{utilities.\+h@{utilities.\+h}!which\+\_\+quadrant@{which\+\_\+quadrant}}
+\index{which\+\_\+quadrant@{which\+\_\+quadrant}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{which\+\_\+quadrant()}{which\_quadrant()}}
+{\footnotesize\ttfamily int which\+\_\+quadrant (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})}
+
+
+
+Funzione che, dato un certo punto del display, restituisce il quadrante (1-\/4) al quale appartiene. 
+
+~\newline
+Parametri\+: ~\newline
+1) x -\/ Ascissa punto; ~\newline
+2) y -\/ Ordinata punto. 
+
+\subsection{Documentazione delle variabili}
+\mbox{\Hypertarget{utilities_8h_a781a8df874545e4f5bff5f8a446d1963}\label{utilities_8h_a781a8df874545e4f5bff5f8a446d1963}} 
+\index{utilities.\+h@{utilities.\+h}!display\+\_\+info@{display\+\_\+info}}
+\index{display\+\_\+info@{display\+\_\+info}!utilities.\+h@{utilities.\+h}}
+\subsubsection{\texorpdfstring{display\+\_\+info}{display\_info}}
+{\footnotesize\ttfamily \hyperlink{structdisplay__info__t}{display\+\_\+info\+\_\+t} display\+\_\+info}
+

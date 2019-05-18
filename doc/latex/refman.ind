@@ -1,0 +1,1105 @@
+\begin{theindex}
+
+  \item {A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{23}
+  \item {A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+G\+AP}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{23}
+  \item {A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+T\+E\+X\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+G\+AP}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{23}
+  \item {archive\+\_\+functions.\+cpp}, \hyperpage{37}
+    \subitem {start\+\_\+searching}, \hyperpage{37}
+  \item {archive\+\_\+functions.\+h}, \hyperpage{38}
+    \subitem {start\+\_\+searching}, \hyperpage{39}
+    \subitem {thread\+\_\+manager}, \hyperpage{39}
+    \subitem {words\+\_\+buffer}, \hyperpage{39}
+  \item {archives\+\_\+exist}
+    \subitem {utilities.\+cpp}, \hyperpage{101}
+    \subitem {utilities.\+h}, \hyperpage{106}
+  \item {ast\+\_\+queues}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{17}
+  \item {asteroid}
+    \subitem {elem\+\_\+asteroid\+\_\+t}, \hyperpage{9}
+  \item {asteroid\+\_\+head}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{17}
+  \item {asteroid\+\_\+list}
+    \subitem {data.\+h}, \hyperpage{48}
+  \item {asteroid\+\_\+special\+\_\+t}
+    \subitem {data.\+h}, \hyperpage{48}
+  \item {asteroid\+\_\+t}, \hyperpage{5}
+    \subitem {bmp}, \hyperpage{5}
+    \subitem {radius}, \hyperpage{6}
+    \subitem {slope}, \hyperpage{6}
+    \subitem {special}, \hyperpage{6}
+    \subitem {word}, \hyperpage{6}
+    \subitem {x}, \hyperpage{6}
+    \subitem {y}, \hyperpage{6}
+  \item {asteroid\+\_\+to\+\_\+bonus}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
+  \item {asteroid\+\_\+to\+\_\+generate}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
+  \item {asteroids\+\_\+destroyed}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
+
+  \indexspace
+
+  \item {B\+A\+C\+K\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {general\+\_\+gv\+\_\+t}, \hyperpage{11}
+  \item {B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {general\+\_\+gv\+\_\+t}, \hyperpage{11}
+  \item {B\+A\+C\+K\+\_\+\+T\+E\+X\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+G\+AP}
+    \subitem {general\+\_\+gv\+\_\+t}, \hyperpage{11}
+  \item {B\+A\+C\+K\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {general\+\_\+gv\+\_\+t}, \hyperpage{11}
+  \item {B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME}
+    \subitem {data.\+h}, \hyperpage{43}
+  \item {B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE}
+    \subitem {data.\+h}, \hyperpage{49}
+  \item {B\+O\+N\+U\+S\+\_\+\+C\+A\+S\+E\+\_\+\+W\+I\+D\+TH}
+    \subitem {instr\+\_\+gv\+\_\+t}, \hyperpage{13}
+  \item {B\+O\+N\+U\+S\+\_\+\+H\+I\+N\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{23}
+  \item {B\+O\+N\+U\+S\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{24}
+  \item {B\+O\+N\+U\+S\+\_\+\+N\+U\+M\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{24}
+  \item {B\+O\+N\+U\+S\+\_\+\+R\+A\+D\+I\+US}
+    \subitem {instr\+\_\+gv\+\_\+t}, \hyperpage{13}
+  \item {B\+O\+N\+U\+S\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{24}
+  \item {B\+U\+L\+L\+E\+T\+\_\+\+R\+A\+D\+I\+US}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{24}
+  \item {B\+U\+L\+L\+E\+T\+\_\+\+S\+C\+A\+LE}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{24}
+  \item {bmp}
+    \subitem {asteroid\+\_\+t}, \hyperpage{5}
+  \item {bullet\+\_\+t}, \hyperpage{7}
+    \subitem {radius}, \hyperpage{7}
+    \subitem {slope}, \hyperpage{7}
+    \subitem {x}, \hyperpage{7}
+    \subitem {y}, \hyperpage{7}
+
+  \indexspace
+
+  \item {C\+O\+P\+Y\+R\+I\+G\+H\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{21}
+  \item {C\+O\+P\+Y\+R\+I\+G\+H\+T\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{21}
+  \item {change\+\_\+enable}
+    \subitem {utilities.\+cpp}, \hyperpage{101}
+    \subitem {utilities.\+h}, \hyperpage{106}
+  \item {change\+\_\+music}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{72}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{77}
+  \item {check\+\_\+distance}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{72}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{78}
+  \item {check\+\_\+gameover}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{73}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{78}
+  \item {check\+\_\+shield}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{73}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{78}
+  \item {consumer\+\_\+sem}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
+  \item {count\+\_\+result}
+    \subitem {result\+\_\+t}, \hyperpage{26}
+  \item {current\+\_\+asteroid}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
+
+  \indexspace
+
+  \item {D\+A\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{24}
+  \item {D\+E\+B1}
+    \subitem {data.\+h}, \hyperpage{43}
+  \item {D\+E\+B2}
+    \subitem {data.\+h}, \hyperpage{43}
+  \item {D\+EB}
+    \subitem {data.\+h}, \hyperpage{43}
+  \item {data.\+h}, \hyperpage{40}
+    \subitem {asteroid\+\_\+list}, \hyperpage{48}
+    \subitem {asteroid\+\_\+special\+\_\+t}, \hyperpage{48}
+    \subitem {B\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+ME}, 
+		\hyperpage{43}
+    \subitem {B\+M\+P\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+SE}, 
+		\hyperpage{49}
+    \subitem {D\+E\+B1}, \hyperpage{43}
+    \subitem {D\+E\+B2}, \hyperpage{43}
+    \subitem {D\+EB}, \hyperpage{43}
+    \subitem {enable\+\_\+t}, \hyperpage{49}
+    \subitem {F\+O\+N\+T\+\_\+\+P\+A\+TH}, \hyperpage{49}
+    \subitem {G\+A\+M\+E\+R\+E\+S\+\_\+H}, \hyperpage{44}
+    \subitem {G\+A\+M\+E\+R\+E\+S\+\_\+W}, \hyperpage{44}
+    \subitem {M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD}, 
+		\hyperpage{44}
+    \subitem {M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE}, 
+		\hyperpage{44}
+    \subitem {M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD}, 
+		\hyperpage{44}
+    \subitem {M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS}, 
+		\hyperpage{44}
+    \subitem {M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}, 
+		\hyperpage{45}
+    \subitem {M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR}, 
+		\hyperpage{45}
+    \subitem {M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR}, 
+		\hyperpage{45}
+    \subitem {M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN}, 
+		\hyperpage{45}
+    \subitem {M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE}, 
+		\hyperpage{45}
+    \subitem {M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA}, 
+		\hyperpage{49}
+    \subitem {M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA}, 
+		\hyperpage{49}
+    \subitem {M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA}, 
+		\hyperpage{49}
+    \subitem {N\+\_\+\+Q\+U\+E\+U\+ES}, \hyperpage{50}
+    \subitem {N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS}, 
+		\hyperpage{45}
+    \subitem {N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS}, 
+		\hyperpage{46}
+    \subitem {N\+U\+M\+\_\+\+I\+T\+E\+MS}, \hyperpage{46}
+    \subitem {N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS}, 
+		\hyperpage{46}
+    \subitem {N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS}, 
+		\hyperpage{46}
+    \subitem {N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS}, 
+		\hyperpage{46}
+    \subitem {N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS}, \hyperpage{46}
+    \subitem {N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS}, 
+		\hyperpage{47}
+    \subitem {N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS}, 
+		\hyperpage{47}
+    \subitem {N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS}, 
+		\hyperpage{47}
+    \subitem {N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS}, 
+		\hyperpage{47}
+    \subitem {S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT}, 
+		\hyperpage{47}
+    \subitem {S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR}, \hyperpage{47}
+    \subitem {S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR}, 
+		\hyperpage{50}
+    \subitem {S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON}, 
+		\hyperpage{50}
+    \subitem {S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE}, 
+		\hyperpage{50}
+    \subitem {S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER}, 
+		\hyperpage{50}
+    \subitem {T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US}, 
+		\hyperpage{48}
+    \subitem {T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US}, 
+		\hyperpage{48}
+  \item {delete\+\_\+ast\+\_\+queues}
+    \subitem {utilities.\+cpp}, \hyperpage{101}
+    \subitem {utilities.\+h}, \hyperpage{106}
+  \item {delete\+\_\+display\+\_\+evqueue\+\_\+music}
+    \subitem {utilities.\+cpp}, \hyperpage{102}
+    \subitem {utilities.\+h}, \hyperpage{106}
+  \item {delete\+\_\+sounds}
+    \subitem {utilities.\+cpp}, \hyperpage{102}
+    \subitem {utilities.\+h}, \hyperpage{106}
+  \item {delete\+\_\+timer}
+    \subitem {utilities.\+cpp}, \hyperpage{102}
+    \subitem {utilities.\+h}, \hyperpage{107}
+  \item {destroy\+\_\+arr\+\_\+bitmaps}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{52}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{62}
+  \item {destroy\+\_\+arr\+\_\+fonts}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{52}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{62}
+  \item {display\+\_\+info}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{70}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{81}
+    \subitem {graphical\+\_\+values.\+h}, \hyperpage{85}
+    \subitem {init.\+h}, \hyperpage{93}
+    \subitem {main.\+cpp}, \hyperpage{94}
+    \subitem {sections.\+h}, \hyperpage{99}
+    \subitem {utilities.\+h}, \hyperpage{108}
+  \item {display\+\_\+info\+\_\+t}, \hyperpage{8}
+    \subitem {height}, \hyperpage{8}
+    \subitem {width}, \hyperpage{8}
+  \item {draw\+\_\+back}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{53}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{63}
+  \item {draw\+\_\+background}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{53}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{63}
+  \item {draw\+\_\+gameover\+\_\+animation}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{53}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{63}
+  \item {draw\+\_\+head}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{53}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{63}
+  \item {draw\+\_\+instructions}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{54}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{64}
+  \item {draw\+\_\+intro\+\_\+init}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{54}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{64}
+  \item {draw\+\_\+intro\+\_\+menu\+\_\+fadein}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{54}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{64}
+  \item {draw\+\_\+intro\+\_\+title\+\_\+slide}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{54}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{64}
+  \item {draw\+\_\+menu\+\_\+copyright}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{55}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{65}
+  \item {draw\+\_\+menu\+\_\+option}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{55}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{65}
+  \item {draw\+\_\+menu\+\_\+title}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{55}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{65}
+  \item {draw\+\_\+playagain\+\_\+button}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{55}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{65}
+  \item {draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{56}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{66}
+  \item {draw\+\_\+playwa\+\_\+bonus\+\_\+music}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{56}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{66}
+  \item {draw\+\_\+playwa\+\_\+score\+\_\+hint}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{56}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{66}
+  \item {draw\+\_\+playwa\+\_\+shooter}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{57}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{67}
+  \item {draw\+\_\+results}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{57}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{67}
+  \item {draw\+\_\+stat}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{57}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{67}
+  \item {draw\+\_\+stats\+\_\+blocks}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{58}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{68}
+  \item {draw\+\_\+username}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{58}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{68}
+  \item {draw\+\_\+username\+\_\+block}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{58}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{68}
+  \item {drawing\+\_\+functions.\+cpp}, \hyperpage{51}
+    \subitem {destroy\+\_\+arr\+\_\+bitmaps}, \hyperpage{52}
+    \subitem {destroy\+\_\+arr\+\_\+fonts}, \hyperpage{52}
+    \subitem {draw\+\_\+back}, \hyperpage{53}
+    \subitem {draw\+\_\+background}, \hyperpage{53}
+    \subitem {draw\+\_\+gameover\+\_\+animation}, \hyperpage{53}
+    \subitem {draw\+\_\+head}, \hyperpage{53}
+    \subitem {draw\+\_\+instructions}, \hyperpage{54}
+    \subitem {draw\+\_\+intro\+\_\+init}, \hyperpage{54}
+    \subitem {draw\+\_\+intro\+\_\+menu\+\_\+fadein}, \hyperpage{54}
+    \subitem {draw\+\_\+intro\+\_\+title\+\_\+slide}, \hyperpage{54}
+    \subitem {draw\+\_\+menu\+\_\+copyright}, \hyperpage{55}
+    \subitem {draw\+\_\+menu\+\_\+option}, \hyperpage{55}
+    \subitem {draw\+\_\+menu\+\_\+title}, \hyperpage{55}
+    \subitem {draw\+\_\+playagain\+\_\+button}, \hyperpage{55}
+    \subitem {draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets}, 
+		\hyperpage{56}
+    \subitem {draw\+\_\+playwa\+\_\+bonus\+\_\+music}, \hyperpage{56}
+    \subitem {draw\+\_\+playwa\+\_\+score\+\_\+hint}, \hyperpage{56}
+    \subitem {draw\+\_\+playwa\+\_\+shooter}, \hyperpage{57}
+    \subitem {draw\+\_\+results}, \hyperpage{57}
+    \subitem {draw\+\_\+stat}, \hyperpage{57}
+    \subitem {draw\+\_\+stats\+\_\+blocks}, \hyperpage{58}
+    \subitem {draw\+\_\+username}, \hyperpage{58}
+    \subitem {draw\+\_\+username\+\_\+block}, \hyperpage{58}
+    \subitem {generate\+\_\+instr\+\_\+bitmaps}, \hyperpage{58}
+    \subitem {generate\+\_\+instr\+\_\+fonts}, \hyperpage{59}
+    \subitem {generate\+\_\+menu\+\_\+bitmaps}, \hyperpage{59}
+    \subitem {generate\+\_\+menu\+\_\+fonts}, \hyperpage{59}
+    \subitem {generate\+\_\+playwa\+\_\+bitmaps}, \hyperpage{59}
+    \subitem {generate\+\_\+playwa\+\_\+fonts}, \hyperpage{59}
+    \subitem {generate\+\_\+settings\+\_\+fonts}, \hyperpage{59}
+    \subitem {generate\+\_\+user\+\_\+fonts}, \hyperpage{60}
+  \item {drawing\+\_\+functions.\+h}, \hyperpage{60}
+    \subitem {destroy\+\_\+arr\+\_\+bitmaps}, \hyperpage{62}
+    \subitem {destroy\+\_\+arr\+\_\+fonts}, \hyperpage{62}
+    \subitem {display\+\_\+info}, \hyperpage{70}
+    \subitem {draw\+\_\+back}, \hyperpage{63}
+    \subitem {draw\+\_\+background}, \hyperpage{63}
+    \subitem {draw\+\_\+gameover\+\_\+animation}, \hyperpage{63}
+    \subitem {draw\+\_\+head}, \hyperpage{63}
+    \subitem {draw\+\_\+instructions}, \hyperpage{64}
+    \subitem {draw\+\_\+intro\+\_\+init}, \hyperpage{64}
+    \subitem {draw\+\_\+intro\+\_\+menu\+\_\+fadein}, \hyperpage{64}
+    \subitem {draw\+\_\+intro\+\_\+title\+\_\+slide}, \hyperpage{64}
+    \subitem {draw\+\_\+menu\+\_\+copyright}, \hyperpage{65}
+    \subitem {draw\+\_\+menu\+\_\+option}, \hyperpage{65}
+    \subitem {draw\+\_\+menu\+\_\+title}, \hyperpage{65}
+    \subitem {draw\+\_\+playagain\+\_\+button}, \hyperpage{65}
+    \subitem {draw\+\_\+playwa\+\_\+asteroids\+\_\+bullets}, 
+		\hyperpage{66}
+    \subitem {draw\+\_\+playwa\+\_\+bonus\+\_\+music}, \hyperpage{66}
+    \subitem {draw\+\_\+playwa\+\_\+score\+\_\+hint}, \hyperpage{66}
+    \subitem {draw\+\_\+playwa\+\_\+shooter}, \hyperpage{67}
+    \subitem {draw\+\_\+results}, \hyperpage{67}
+    \subitem {draw\+\_\+stat}, \hyperpage{67}
+    \subitem {draw\+\_\+stats\+\_\+blocks}, \hyperpage{68}
+    \subitem {draw\+\_\+username}, \hyperpage{68}
+    \subitem {draw\+\_\+username\+\_\+block}, \hyperpage{68}
+    \subitem {G\+E\+N\+E\+R\+A\+L\+\_\+\+GV}, \hyperpage{70}
+    \subitem {generate\+\_\+instr\+\_\+bitmaps}, \hyperpage{68}
+    \subitem {generate\+\_\+instr\+\_\+fonts}, \hyperpage{69}
+    \subitem {generate\+\_\+menu\+\_\+bitmaps}, \hyperpage{69}
+    \subitem {generate\+\_\+menu\+\_\+fonts}, \hyperpage{69}
+    \subitem {generate\+\_\+playwa\+\_\+bitmaps}, \hyperpage{69}
+    \subitem {generate\+\_\+playwa\+\_\+fonts}, \hyperpage{69}
+    \subitem {generate\+\_\+settings\+\_\+fonts}, \hyperpage{69}
+    \subitem {generate\+\_\+user\+\_\+fonts}, \hyperpage{70}
+    \subitem {I\+N\+S\+T\+R\+\_\+\+GV}, \hyperpage{70}
+    \subitem {M\+E\+N\+U\+\_\+\+GV}, \hyperpage{70}
+    \subitem {P\+L\+A\+Y\+W\+A\+\_\+\+GV}, \hyperpage{71}
+    \subitem {U\+S\+R\+\_\+\+GV}, \hyperpage{71}
+
+  \indexspace
+
+  \item {E\+N\+T\+E\+R\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {usr\+\_\+gv\+\_\+t}, \hyperpage{34}
+  \item {E\+N\+T\+E\+R\+\_\+\+H\+E\+I\+G\+HT}
+    \subitem {usr\+\_\+gv\+\_\+t}, \hyperpage{34}
+  \item {E\+N\+T\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {usr\+\_\+gv\+\_\+t}, \hyperpage{34}
+  \item {E\+N\+T\+E\+R\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {usr\+\_\+gv\+\_\+t}, \hyperpage{34}
+  \item {E\+N\+T\+E\+R\+\_\+\+W\+I\+D\+TH}
+    \subitem {usr\+\_\+gv\+\_\+t}, \hyperpage{34}
+  \item {elem\+\_\+asteroid\+\_\+t}, \hyperpage{9}
+    \subitem {asteroid}, \hyperpage{9}
+    \subitem {next}, \hyperpage{9}
+  \item {email}
+    \subitem {look\+\_\+into\+\_\+t}, \hyperpage{14}
+    \subitem {search\+\_\+manager\+\_\+t}, \hyperpage{27}
+  \item {enable\+\_\+t}
+    \subitem {data.\+h}, \hyperpage{49}
+  \item {exit}
+    \subitem {utilities.\+cpp}, \hyperpage{102}
+    \subitem {utilities.\+h}, \hyperpage{107}
+  \item {extract\+\_\+elem}
+    \subitem {utilities.\+cpp}, \hyperpage{103}
+    \subitem {utilities.\+h}, \hyperpage{107}
+
+  \indexspace
+
+  \item {F\+O\+N\+T\+\_\+\+P\+A\+TH}
+    \subitem {data.\+h}, \hyperpage{49}
+  \item {file\+\_\+list}
+    \subitem {search\+\_\+manager\+\_\+t}, \hyperpage{28}
+  \item {file\+\_\+t}, \hyperpage{10}
+    \subitem {filename}, \hyperpage{10}
+    \subitem {size}, \hyperpage{10}
+  \item {filename}
+    \subitem {file\+\_\+t}, \hyperpage{10}
+    \subitem {look\+\_\+into\+\_\+t}, \hyperpage{14}
+  \item {files}
+    \subitem {ls\+\_\+t}, \hyperpage{15}
+  \item {fps}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
+
+  \indexspace
+
+  \item {G\+A\+M\+E\+R\+E\+S\+\_\+H}
+    \subitem {data.\+h}, \hyperpage{44}
+  \item {G\+A\+M\+E\+R\+E\+S\+\_\+W}
+    \subitem {data.\+h}, \hyperpage{44}
+  \item {G\+E\+N\+E\+R\+A\+L\+\_\+\+GV}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{70}
+    \subitem {graphical\+\_\+values.\+cpp}, \hyperpage{83}
+  \item {game\+\_\+functions.\+cpp}, \hyperpage{71}
+    \subitem {change\+\_\+music}, \hyperpage{72}
+    \subitem {check\+\_\+distance}, \hyperpage{72}
+    \subitem {check\+\_\+gameover}, \hyperpage{73}
+    \subitem {check\+\_\+shield}, \hyperpage{73}
+    \subitem {generate\+\_\+asteroid}, \hyperpage{73}
+    \subitem {handler\+\_\+key\+\_\+pressed}, \hyperpage{73}
+    \subitem {handler\+\_\+timer}, \hyperpage{74}
+    \subitem {move\+\_\+asteroids}, \hyperpage{74}
+    \subitem {move\+\_\+bullets}, \hyperpage{74}
+    \subitem {move\+\_\+shooter}, \hyperpage{75}
+    \subitem {music\+\_\+wa\+\_\+play}, \hyperpage{75}
+    \subitem {sound\+\_\+play}, \hyperpage{75}
+    \subitem {spawn\+\_\+asteroid\+\_\+thread}, \hyperpage{75}
+  \item {game\+\_\+functions.\+h}, \hyperpage{76}
+    \subitem {change\+\_\+music}, \hyperpage{77}
+    \subitem {check\+\_\+distance}, \hyperpage{78}
+    \subitem {check\+\_\+gameover}, \hyperpage{78}
+    \subitem {check\+\_\+shield}, \hyperpage{78}
+    \subitem {display\+\_\+info}, \hyperpage{81}
+    \subitem {generate\+\_\+asteroid}, \hyperpage{78}
+    \subitem {handler\+\_\+key\+\_\+pressed}, \hyperpage{79}
+    \subitem {handler\+\_\+timer}, \hyperpage{79}
+    \subitem {move\+\_\+asteroids}, \hyperpage{79}
+    \subitem {move\+\_\+bullets}, \hyperpage{80}
+    \subitem {move\+\_\+shooter}, \hyperpage{80}
+    \subitem {music\+\_\+wa}, \hyperpage{81}
+    \subitem {music\+\_\+wa\+\_\+play}, \hyperpage{80}
+    \subitem {P\+L\+A\+Y\+W\+A\+\_\+\+GV}, \hyperpage{81}
+    \subitem {sound\+\_\+play}, \hyperpage{80}
+    \subitem {spawn\+\_\+asteroid\+\_\+thread}, \hyperpage{81}
+    \subitem {thread\+\_\+manager}, \hyperpage{81}
+    \subitem {words\+\_\+buffer}, \hyperpage{82}
+  \item {gameover}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
+  \item {gameover\+\_\+cond}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
+  \item {gameover\+\_\+mutex}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
+  \item {general\+\_\+gv\+\_\+t}, \hyperpage{11}
+    \subitem {B\+A\+C\+K\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, \hyperpage{11}
+    \subitem {B\+A\+C\+K\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{11}
+    \subitem {B\+A\+C\+K\+\_\+\+T\+E\+X\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+G\+AP}, 
+		\hyperpage{11}
+    \subitem {B\+A\+C\+K\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{11}
+    \subitem {H\+E\+A\+D\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, \hyperpage{12}
+    \subitem {H\+E\+A\+D\+\_\+\+T\+E\+X\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+G\+AP}, 
+		\hyperpage{12}
+    \subitem {H\+E\+A\+D\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{12}
+    \subitem {R\+E\+S\+U\+L\+T\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{12}
+  \item {generate\+\_\+asteroid}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{73}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{78}
+  \item {generate\+\_\+instr\+\_\+bitmaps}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{58}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{68}
+  \item {generate\+\_\+instr\+\_\+fonts}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{59}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{69}
+  \item {generate\+\_\+menu\+\_\+bitmaps}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{59}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{69}
+  \item {generate\+\_\+menu\+\_\+fonts}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{59}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{69}
+  \item {generate\+\_\+playwa\+\_\+bitmaps}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{59}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{69}
+  \item {generate\+\_\+playwa\+\_\+fonts}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{59}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{69}
+  \item {generate\+\_\+settings\+\_\+fonts}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{59}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{69}
+  \item {generate\+\_\+user\+\_\+fonts}
+    \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{60}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{70}
+  \item {graphical\+\_\+values.\+cpp}, \hyperpage{82}
+    \subitem {G\+E\+N\+E\+R\+A\+L\+\_\+\+GV}, \hyperpage{83}
+    \subitem {I\+N\+S\+T\+R\+\_\+\+GV}, \hyperpage{83}
+    \subitem {M\+E\+N\+U\+\_\+\+GV}, \hyperpage{83}
+    \subitem {P\+L\+A\+Y\+W\+A\+\_\+\+GV}, \hyperpage{83}
+    \subitem {U\+S\+R\+\_\+\+GV}, \hyperpage{83}
+    \subitem {update\+\_\+graphical\+\_\+values}, \hyperpage{82}
+  \item {graphical\+\_\+values.\+h}, \hyperpage{84}
+    \subitem {display\+\_\+info}, \hyperpage{85}
+    \subitem {update\+\_\+graphical\+\_\+values}, \hyperpage{84}
+
+  \indexspace
+
+  \item {H\+E\+A\+D\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {general\+\_\+gv\+\_\+t}, \hyperpage{12}
+  \item {H\+E\+A\+D\+\_\+\+T\+E\+X\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+G\+AP}
+    \subitem {general\+\_\+gv\+\_\+t}, \hyperpage{12}
+  \item {H\+E\+A\+D\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {general\+\_\+gv\+\_\+t}, \hyperpage{12}
+  \item {H\+E\+I\+G\+H\+T\+\_\+\+B\+O\+N\+US}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{24}
+  \item {H\+I\+N\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{24}
+  \item {H\+I\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{25}
+  \item {H\+I\+N\+T\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{25}
+  \item {handler\+\_\+key\+\_\+pressed}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{73}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{79}
+  \item {handler\+\_\+timer}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{74}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{79}
+  \item {height}
+    \subitem {display\+\_\+info\+\_\+t}, \hyperpage{8}
+
+  \indexspace
+
+  \item {I\+N\+S\+T\+R\+\_\+\+GV}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{70}
+    \subitem {graphical\+\_\+values.\+cpp}, \hyperpage{83}
+  \item {I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{21}
+  \item {init.\+cpp}, \hyperpage{85}
+    \subitem {init\+\_\+arr\+\_\+bullet}, \hyperpage{86}
+    \subitem {init\+\_\+bullet}, \hyperpage{86}
+    \subitem {init\+\_\+display\+\_\+res}, \hyperpage{86}
+    \subitem {init\+\_\+game\+\_\+requirements}, \hyperpage{86}
+    \subitem {init\+\_\+match\+\_\+vars}, \hyperpage{87}
+    \subitem {init\+\_\+queue\+\_\+event}, \hyperpage{87}
+    \subitem {init\+\_\+settings}, \hyperpage{87}
+    \subitem {init\+\_\+shooter}, \hyperpage{87}
+    \subitem {init\+\_\+sound\+\_\+music}, \hyperpage{87}
+    \subitem {init\+\_\+target\+\_\+bonus}, \hyperpage{88}
+    \subitem {init\+\_\+thread\+\_\+manager}, \hyperpage{88}
+    \subitem {init\+\_\+words\+\_\+buffer}, \hyperpage{88}
+    \subitem {sort\+\_\+file\+\_\+list}, \hyperpage{88}
+  \item {init.\+h}, \hyperpage{89}
+    \subitem {display\+\_\+info}, \hyperpage{93}
+    \subitem {init\+\_\+arr\+\_\+bullet}, \hyperpage{90}
+    \subitem {init\+\_\+bullet}, \hyperpage{90}
+    \subitem {init\+\_\+display\+\_\+res}, \hyperpage{91}
+    \subitem {init\+\_\+game\+\_\+requirements}, \hyperpage{91}
+    \subitem {init\+\_\+match\+\_\+vars}, \hyperpage{91}
+    \subitem {init\+\_\+queue\+\_\+event}, \hyperpage{91}
+    \subitem {init\+\_\+settings}, \hyperpage{91}
+    \subitem {init\+\_\+shooter}, \hyperpage{92}
+    \subitem {init\+\_\+sound\+\_\+music}, \hyperpage{92}
+    \subitem {init\+\_\+target\+\_\+bonus}, \hyperpage{92}
+    \subitem {init\+\_\+thread\+\_\+manager}, \hyperpage{92}
+    \subitem {init\+\_\+words\+\_\+buffer}, \hyperpage{93}
+    \subitem {music\+\_\+wa}, \hyperpage{93}
+    \subitem {P\+L\+A\+Y\+W\+A\+\_\+\+GV}, \hyperpage{93}
+  \item {init\+\_\+arr\+\_\+bullet}
+    \subitem {init.\+cpp}, \hyperpage{86}
+    \subitem {init.\+h}, \hyperpage{90}
+  \item {init\+\_\+bullet}
+    \subitem {init.\+cpp}, \hyperpage{86}
+    \subitem {init.\+h}, \hyperpage{90}
+  \item {init\+\_\+display\+\_\+res}
+    \subitem {init.\+cpp}, \hyperpage{86}
+    \subitem {init.\+h}, \hyperpage{91}
+  \item {init\+\_\+game\+\_\+requirements}
+    \subitem {init.\+cpp}, \hyperpage{86}
+    \subitem {init.\+h}, \hyperpage{91}
+  \item {init\+\_\+match\+\_\+vars}
+    \subitem {init.\+cpp}, \hyperpage{87}
+    \subitem {init.\+h}, \hyperpage{91}
+  \item {init\+\_\+queue\+\_\+event}
+    \subitem {init.\+cpp}, \hyperpage{87}
+    \subitem {init.\+h}, \hyperpage{91}
+  \item {init\+\_\+settings}
+    \subitem {init.\+cpp}, \hyperpage{87}
+    \subitem {init.\+h}, \hyperpage{91}
+  \item {init\+\_\+shooter}
+    \subitem {init.\+cpp}, \hyperpage{87}
+    \subitem {init.\+h}, \hyperpage{92}
+  \item {init\+\_\+sound\+\_\+music}
+    \subitem {init.\+cpp}, \hyperpage{87}
+    \subitem {init.\+h}, \hyperpage{92}
+  \item {init\+\_\+target\+\_\+bonus}
+    \subitem {init.\+cpp}, \hyperpage{88}
+    \subitem {init.\+h}, \hyperpage{92}
+  \item {init\+\_\+thread\+\_\+manager}
+    \subitem {init.\+cpp}, \hyperpage{88}
+    \subitem {init.\+h}, \hyperpage{92}
+  \item {init\+\_\+words\+\_\+buffer}
+    \subitem {init.\+cpp}, \hyperpage{88}
+    \subitem {init.\+h}, \hyperpage{93}
+  \item {insert\+\_\+asteroid\+\_\+index}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
+  \item {insert\+\_\+elem\+\_\+head}
+    \subitem {utilities.\+cpp}, \hyperpage{103}
+    \subitem {utilities.\+h}, \hyperpage{107}
+  \item {instant\+\_\+ast\+\_\+dest}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
+  \item {instr\+\_\+gv\+\_\+t}, \hyperpage{12}
+    \subitem {B\+O\+N\+U\+S\+\_\+\+C\+A\+S\+E\+\_\+\+W\+I\+D\+TH}, 
+		\hyperpage{13}
+    \subitem {B\+O\+N\+U\+S\+\_\+\+R\+A\+D\+I\+US}, \hyperpage{13}
+    \subitem {S\+U\+B\+T\+I\+T\+L\+E\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{13}
+    \subitem {T\+E\+X\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, \hyperpage{13}
+  \item {int\+\_\+to\+\_\+str\+\_\+score}
+    \subitem {utilities.\+cpp}, \hyperpage{103}
+    \subitem {utilities.\+h}, \hyperpage{108}
+  \item {intro}
+    \subitem {sections.\+cpp}, \hyperpage{96}
+    \subitem {sections.\+h}, \hyperpage{98}
+  \item {is\+\_\+searcher}
+    \subitem {look\+\_\+into\+\_\+t}, \hyperpage{14}
+  \item {items}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
+
+  \indexspace
+
+  \item {key\+\_\+error}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
+
+  \indexspace
+
+  \item {load}
+    \subitem {words\+\_\+buffer\+\_\+t}, \hyperpage{35}
+  \item {look\+\_\+into\+\_\+t}, \hyperpage{13}
+    \subitem {email}, \hyperpage{14}
+    \subitem {filename}, \hyperpage{14}
+    \subitem {is\+\_\+searcher}, \hyperpage{14}
+  \item {ls\+\_\+t}, \hyperpage{15}
+    \subitem {files}, \hyperpage{15}
+    \subitem {nfile}, \hyperpage{15}
+  \item {ls\+\_\+tar}
+    \subitem {utilities.\+cpp}, \hyperpage{103}
+    \subitem {utilities.\+h}, \hyperpage{108}
+
+  \indexspace
+
+  \item {M\+A\+X\+\_\+\+A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+H\+E\+AD}
+    \subitem {data.\+h}, \hyperpage{44}
+  \item {M\+A\+X\+\_\+\+D\+I\+G\+I\+T\+\_\+\+S\+C\+O\+RE}
+    \subitem {data.\+h}, \hyperpage{44}
+  \item {M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+W\+O\+RD}
+    \subitem {data.\+h}, \hyperpage{44}
+  \item {M\+A\+X\+\_\+\+M\+A\+T\+C\+H\+I\+N\+G\+\_\+\+P\+A\+SS}
+    \subitem {data.\+h}, \hyperpage{44}
+  \item {M\+A\+X\+\_\+\+U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}
+    \subitem {data.\+h}, \hyperpage{45}
+  \item {M\+E\+N\+U\+\_\+\+C\+P\+Y\+\_\+\+C\+O\+L\+OR}
+    \subitem {data.\+h}, \hyperpage{45}
+  \item {M\+E\+N\+U\+\_\+\+F\+O\+N\+T\+\_\+\+C\+O\+L\+OR}
+    \subitem {data.\+h}, \hyperpage{45}
+  \item {M\+E\+N\+U\+\_\+\+GV}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{70}
+    \subitem {graphical\+\_\+values.\+cpp}, \hyperpage{83}
+    \subitem {sections.\+h}, \hyperpage{99}
+  \item {M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN}
+    \subitem {data.\+h}, \hyperpage{45}
+  \item {M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE}
+    \subitem {data.\+h}, \hyperpage{45}
+  \item {M\+U\+S\+I\+C\+\_\+\+G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+P\+A\+T\+H\+\_\+\+WA}
+    \subitem {data.\+h}, \hyperpage{49}
+  \item {M\+U\+S\+I\+C\+\_\+\+M\+E\+N\+U\+\_\+\+P\+A\+T\+H\+\_\+\+WA}
+    \subitem {data.\+h}, \hyperpage{49}
+  \item {M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA}
+    \subitem {data.\+h}, \hyperpage{49}
+  \item {main}
+    \subitem {main.\+cpp}, \hyperpage{94}
+  \item {main.\+cpp}, \hyperpage{94}
+    \subitem {display\+\_\+info}, \hyperpage{94}
+    \subitem {main}, \hyperpage{94}
+    \subitem {music\+\_\+wa}, \hyperpage{95}
+    \subitem {thread\+\_\+manager}, \hyperpage{95}
+    \subitem {words\+\_\+buffer}, \hyperpage{95}
+  \item {main\+\_\+menu}
+    \subitem {sections.\+cpp}, \hyperpage{96}
+    \subitem {sections.\+h}, \hyperpage{98}
+  \item {match\+\_\+vars\+\_\+t}, \hyperpage{16}
+    \subitem {ast\+\_\+queues}, \hyperpage{17}
+    \subitem {asteroid\+\_\+head}, \hyperpage{17}
+    \subitem {asteroid\+\_\+to\+\_\+bonus}, \hyperpage{18}
+    \subitem {asteroid\+\_\+to\+\_\+generate}, \hyperpage{18}
+    \subitem {asteroids\+\_\+destroyed}, \hyperpage{18}
+    \subitem {current\+\_\+asteroid}, \hyperpage{18}
+    \subitem {fps}, \hyperpage{18}
+    \subitem {gameover}, \hyperpage{18}
+    \subitem {insert\+\_\+asteroid\+\_\+index}, \hyperpage{18}
+    \subitem {instant\+\_\+ast\+\_\+dest}, \hyperpage{18}
+    \subitem {items}, \hyperpage{19}
+    \subitem {key\+\_\+error}, \hyperpage{19}
+    \subitem {music\+\_\+playwa}, \hyperpage{19}
+    \subitem {playing}, \hyperpage{19}
+    \subitem {score}, \hyperpage{19}
+    \subitem {sound\+\_\+error}, \hyperpage{19}
+    \subitem {sound\+\_\+exp}, \hyperpage{19}
+    \subitem {sound\+\_\+fire}, \hyperpage{19}
+    \subitem {sound\+\_\+gameover}, \hyperpage{20}
+    \subitem {spawn\+\_\+interval}, \hyperpage{20}
+    \subitem {spawn\+\_\+timer}, \hyperpage{20}
+    \subitem {timer\+\_\+rallenty\+\_\+bonus}, \hyperpage{20}
+    \subitem {timer\+\_\+shield\+\_\+bonus}, \hyperpage{20}
+  \item {menu\+\_\+gv\+\_\+t}, \hyperpage{20}
+    \subitem {C\+O\+P\+Y\+R\+I\+G\+H\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{21}
+    \subitem {C\+O\+P\+Y\+R\+I\+G\+H\+T\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{21}
+    \subitem {I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{21}
+    \subitem {O\+P\+T\+I\+O\+N\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{21}
+    \subitem {O\+P\+T\+I\+O\+N\+\_\+\+T\+E\+X\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{22}
+    \subitem {O\+P\+T\+I\+O\+N\+\_\+H}, \hyperpage{21}
+    \subitem {O\+P\+T\+I\+O\+N\+\_\+W}, \hyperpage{22}
+    \subitem {T\+I\+T\+L\+E\+\_\+H}, \hyperpage{22}
+    \subitem {T\+I\+T\+L\+E\+\_\+W}, \hyperpage{22}
+    \subitem {U\+P\+P\+E\+R\+\_\+\+O\+F\+F\+S\+ET}, \hyperpage{22}
+  \item {move\+\_\+asteroids}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{74}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{79}
+  \item {move\+\_\+bullets}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{74}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{80}
+  \item {move\+\_\+shooter}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{75}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{80}
+  \item {music}
+    \subitem {settings\+\_\+t}, \hyperpage{29}
+  \item {music\+\_\+playwa}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
+  \item {music\+\_\+wa}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{81}
+    \subitem {init.\+h}, \hyperpage{93}
+    \subitem {main.\+cpp}, \hyperpage{95}
+    \subitem {sections.\+h}, \hyperpage{99}
+  \item {music\+\_\+wa\+\_\+play}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{75}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{80}
+
+  \indexspace
+
+  \item {N\+\_\+\+Q\+U\+E\+U\+ES}
+    \subitem {data.\+h}, \hyperpage{50}
+  \item {N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+B\+I\+T\+M\+A\+PS}
+    \subitem {data.\+h}, \hyperpage{45}
+  \item {N\+U\+M\+\_\+\+I\+N\+S\+T\+R\+\_\+\+F\+O\+N\+TS}
+    \subitem {data.\+h}, \hyperpage{46}
+  \item {N\+U\+M\+\_\+\+I\+T\+E\+MS}
+    \subitem {data.\+h}, \hyperpage{46}
+  \item {N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+B\+I\+T\+M\+A\+PS}
+    \subitem {data.\+h}, \hyperpage{46}
+  \item {N\+U\+M\+\_\+\+M\+E\+N\+U\+\_\+\+F\+O\+N\+TS}
+    \subitem {data.\+h}, \hyperpage{46}
+  \item {N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+S\+E\+T\+T\+I\+N\+GS}
+    \subitem {data.\+h}, \hyperpage{46}
+  \item {N\+U\+M\+\_\+\+O\+P\+T\+I\+O\+NS}
+    \subitem {data.\+h}, \hyperpage{46}
+  \item {N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+B\+I\+T\+M\+A\+PS}
+    \subitem {data.\+h}, \hyperpage{47}
+  \item {N\+U\+M\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+F\+O\+N\+TS}
+    \subitem {data.\+h}, \hyperpage{47}
+  \item {N\+U\+M\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+F\+O\+N\+TS}
+    \subitem {data.\+h}, \hyperpage{47}
+  \item {N\+U\+M\+\_\+\+U\+S\+E\+R\+\_\+\+F\+O\+N\+TS}
+    \subitem {data.\+h}, \hyperpage{47}
+  \item {next}
+    \subitem {elem\+\_\+asteroid\+\_\+t}, \hyperpage{9}
+  \item {nfile}
+    \subitem {ls\+\_\+t}, \hyperpage{15}
+
+  \indexspace
+
+  \item {O\+P\+T\+I\+O\+N\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{21}
+  \item {O\+P\+T\+I\+O\+N\+\_\+\+T\+E\+X\+T\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{22}
+  \item {O\+P\+T\+I\+O\+N\+\_\+H}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{21}
+  \item {O\+P\+T\+I\+O\+N\+\_\+W}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{22}
+
+  \indexspace
+
+  \item {P\+L\+A\+Y\+W\+A\+\_\+\+GV}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{71}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{81}
+    \subitem {graphical\+\_\+values.\+cpp}, \hyperpage{83}
+    \subitem {init.\+h}, \hyperpage{93}
+  \item {pass\+\_\+result}
+    \subitem {result\+\_\+t}, \hyperpage{26}
+  \item {play\+\_\+wa}
+    \subitem {sections.\+cpp}, \hyperpage{96}
+    \subitem {sections.\+h}, \hyperpage{98}
+  \item {playing}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
+  \item {playwa\+\_\+gv\+\_\+t}, \hyperpage{22}
+    \subitem {A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{23}
+    \subitem {A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+G\+AP}, 
+		\hyperpage{23}
+    \subitem {A\+S\+T\+E\+R\+O\+I\+D\+\_\+\+T\+E\+X\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+G\+AP}, 
+		\hyperpage{23}
+    \subitem {B\+O\+N\+U\+S\+\_\+\+H\+I\+N\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{23}
+    \subitem {B\+O\+N\+U\+S\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{24}
+    \subitem {B\+O\+N\+U\+S\+\_\+\+N\+U\+M\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{24}
+    \subitem {B\+O\+N\+U\+S\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{24}
+    \subitem {B\+U\+L\+L\+E\+T\+\_\+\+R\+A\+D\+I\+US}, \hyperpage{24}
+    \subitem {B\+U\+L\+L\+E\+T\+\_\+\+S\+C\+A\+LE}, \hyperpage{24}
+    \subitem {D\+A\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US}, \hyperpage{24}
+    \subitem {H\+E\+I\+G\+H\+T\+\_\+\+B\+O\+N\+US}, \hyperpage{24}
+    \subitem {H\+I\+N\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, \hyperpage{24}
+    \subitem {H\+I\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{25}
+    \subitem {H\+I\+N\+T\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{25}
+    \subitem {S\+C\+O\+R\+E\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{25}
+    \subitem {S\+C\+O\+R\+E\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{25}
+    \subitem {S\+C\+O\+R\+E\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{25}
+    \subitem {S\+H\+O\+O\+T\+E\+R\+\_\+\+A\+R\+E\+A\+\_\+\+R\+AD}, 
+		\hyperpage{25}
+    \subitem {S\+H\+O\+O\+T\+E\+R\+\_\+\+S\+C\+A\+LE}, \hyperpage{25}
+    \subitem {T\+E\+X\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{25}
+
+  \indexspace
+
+  \item {R\+E\+S\+U\+L\+T\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {general\+\_\+gv\+\_\+t}, \hyperpage{12}
+  \item {radius}
+    \subitem {asteroid\+\_\+t}, \hyperpage{6}
+    \subitem {bullet\+\_\+t}, \hyperpage{7}
+    \subitem {shooter\+\_\+t}, \hyperpage{30}
+  \item {res}
+    \subitem {search\+\_\+manager\+\_\+t}, \hyperpage{28}
+  \item {result\+\_\+t}, \hyperpage{26}
+    \subitem {count\+\_\+result}, \hyperpage{26}
+    \subitem {pass\+\_\+result}, \hyperpage{26}
+
+  \indexspace
+
+  \item {S\+C\+O\+R\+E\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{25}
+  \item {S\+C\+O\+R\+E\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT}
+    \subitem {data.\+h}, \hyperpage{47}
+  \item {S\+C\+O\+R\+E\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{25}
+  \item {S\+C\+O\+R\+E\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{25}
+  \item {S\+H\+A\+D\+O\+W\+\_\+\+C\+O\+L\+OR}
+    \subitem {data.\+h}, \hyperpage{47}
+  \item {S\+H\+O\+O\+T\+E\+R\+\_\+\+A\+R\+E\+A\+\_\+\+R\+AD}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{25}
+  \item {S\+H\+O\+O\+T\+E\+R\+\_\+\+S\+C\+A\+LE}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{25}
+  \item {S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+R\+R\+OR}
+    \subitem {data.\+h}, \hyperpage{50}
+  \item {S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+E\+X\+P\+L\+O\+S\+I\+ON}
+    \subitem {data.\+h}, \hyperpage{50}
+  \item {S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+I\+RE}
+    \subitem {data.\+h}, \hyperpage{50}
+  \item {S\+O\+U\+N\+D\+\_\+\+P\+A\+T\+H\+\_\+\+G\+A\+M\+E\+O\+V\+ER}
+    \subitem {data.\+h}, \hyperpage{50}
+  \item {S\+T\+A\+T\+S\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {usr\+\_\+gv\+\_\+t}, \hyperpage{34}
+  \item {S\+U\+B\+T\+I\+T\+L\+E\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {instr\+\_\+gv\+\_\+t}, \hyperpage{13}
+  \item {score}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
+  \item {search\+\_\+manager}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
+  \item {search\+\_\+manager\+\_\+t}, \hyperpage{27}
+    \subitem {email}, \hyperpage{27}
+    \subitem {file\+\_\+list}, \hyperpage{28}
+    \subitem {res}, \hyperpage{28}
+    \subitem {threads}, \hyperpage{28}
+  \item {search\+\_\+result\+\_\+mutex}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
+  \item {searcher\+\_\+sem}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
+  \item {searcher\+\_\+thread}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
+  \item {sections.\+cpp}, \hyperpage{95}
+    \subitem {intro}, \hyperpage{96}
+    \subitem {main\+\_\+menu}, \hyperpage{96}
+    \subitem {play\+\_\+wa}, \hyperpage{96}
+    \subitem {settings\+\_\+menu}, \hyperpage{96}
+  \item {sections.\+h}, \hyperpage{97}
+    \subitem {display\+\_\+info}, \hyperpage{99}
+    \subitem {intro}, \hyperpage{98}
+    \subitem {M\+E\+N\+U\+\_\+\+GV}, \hyperpage{99}
+    \subitem {main\+\_\+menu}, \hyperpage{98}
+    \subitem {music\+\_\+wa}, \hyperpage{99}
+    \subitem {play\+\_\+wa}, \hyperpage{98}
+    \subitem {settings\+\_\+menu}, \hyperpage{99}
+    \subitem {thread\+\_\+manager}, \hyperpage{100}
+    \subitem {U\+S\+R\+\_\+\+GV}, \hyperpage{100}
+    \subitem {words\+\_\+buffer}, \hyperpage{100}
+  \item {settings\+\_\+menu}
+    \subitem {sections.\+cpp}, \hyperpage{96}
+    \subitem {sections.\+h}, \hyperpage{99}
+  \item {settings\+\_\+t}, \hyperpage{28}
+    \subitem {music}, \hyperpage{29}
+    \subitem {sound}, \hyperpage{29}
+    \subitem {visible\+\_\+hints}, \hyperpage{29}
+  \item {shooter\+\_\+t}, \hyperpage{29}
+    \subitem {radius}, \hyperpage{30}
+    \subitem {slope}, \hyperpage{30}
+    \subitem {x}, \hyperpage{30}
+    \subitem {y}, \hyperpage{30}
+  \item {size}
+    \subitem {file\+\_\+t}, \hyperpage{10}
+  \item {slope}
+    \subitem {asteroid\+\_\+t}, \hyperpage{6}
+    \subitem {bullet\+\_\+t}, \hyperpage{7}
+    \subitem {shooter\+\_\+t}, \hyperpage{30}
+  \item {sort\+\_\+file\+\_\+list}
+    \subitem {init.\+cpp}, \hyperpage{88}
+  \item {sound}
+    \subitem {settings\+\_\+t}, \hyperpage{29}
+  \item {sound\+\_\+error}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
+  \item {sound\+\_\+exp}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
+  \item {sound\+\_\+fire}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
+  \item {sound\+\_\+gameover}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{20}
+  \item {sound\+\_\+play}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{75}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{80}
+  \item {spawn\+\_\+asteroid\+\_\+thread}
+    \subitem {game\+\_\+functions.\+cpp}, \hyperpage{75}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{81}
+  \item {spawn\+\_\+cond}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
+  \item {spawn\+\_\+interval}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{20}
+  \item {spawn\+\_\+mutex}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{33}
+  \item {spawn\+\_\+timer}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{20}
+  \item {spawner\+\_\+thread}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{33}
+  \item {special}
+    \subitem {asteroid\+\_\+t}, \hyperpage{6}
+  \item {start\+\_\+searching}
+    \subitem {archive\+\_\+functions.\+cpp}, \hyperpage{37}
+    \subitem {archive\+\_\+functions.\+h}, \hyperpage{39}
+
+  \indexspace
+
+  \item {T\+E\+X\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {instr\+\_\+gv\+\_\+t}, \hyperpage{13}
+  \item {T\+E\+X\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {playwa\+\_\+gv\+\_\+t}, \hyperpage{25}
+  \item {T\+I\+M\+E\+R\+\_\+\+R\+A\+L\+L\+E\+N\+T\+Y\+\_\+\+B\+O\+N\+US}
+    \subitem {data.\+h}, \hyperpage{48}
+  \item {T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US}
+    \subitem {data.\+h}, \hyperpage{48}
+  \item {T\+I\+T\+L\+E\+\_\+H}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{22}
+  \item {T\+I\+T\+L\+E\+\_\+W}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{22}
+  \item {thread\+\_\+manager}
+    \subitem {archive\+\_\+functions.\+h}, \hyperpage{39}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{81}
+    \subitem {main.\+cpp}, \hyperpage{95}
+    \subitem {sections.\+h}, \hyperpage{100}
+  \item {thread\+\_\+manager\+\_\+t}, \hyperpage{30}
+    \subitem {consumer\+\_\+sem}, \hyperpage{32}
+    \subitem {gameover\+\_\+cond}, \hyperpage{32}
+    \subitem {gameover\+\_\+mutex}, \hyperpage{32}
+    \subitem {search\+\_\+manager}, \hyperpage{32}
+    \subitem {search\+\_\+result\+\_\+mutex}, \hyperpage{32}
+    \subitem {searcher\+\_\+sem}, \hyperpage{32}
+    \subitem {searcher\+\_\+thread}, \hyperpage{32}
+    \subitem {spawn\+\_\+cond}, \hyperpage{32}
+    \subitem {spawn\+\_\+mutex}, \hyperpage{33}
+    \subitem {spawner\+\_\+thread}, \hyperpage{33}
+    \subitem {words\+\_\+buffer\+\_\+mutex}, \hyperpage{33}
+  \item {threads}
+    \subitem {search\+\_\+manager\+\_\+t}, \hyperpage{28}
+  \item {timer\+\_\+rallenty\+\_\+bonus}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{20}
+  \item {timer\+\_\+shield\+\_\+bonus}
+    \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{20}
+
+  \indexspace
+
+  \item {U\+P\+P\+E\+R\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{22}
+  \item {U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
+    \subitem {usr\+\_\+gv\+\_\+t}, \hyperpage{34}
+  \item {U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}
+    \subitem {usr\+\_\+gv\+\_\+t}, \hyperpage{34}
+  \item {U\+S\+R\+\_\+\+GV}
+    \subitem {drawing\+\_\+functions.\+h}, \hyperpage{71}
+    \subitem {graphical\+\_\+values.\+cpp}, \hyperpage{83}
+    \subitem {sections.\+h}, \hyperpage{100}
+  \item {update\+\_\+graphical\+\_\+values}
+    \subitem {graphical\+\_\+values.\+cpp}, \hyperpage{82}
+    \subitem {graphical\+\_\+values.\+h}, \hyperpage{84}
+  \item {usr\+\_\+gv\+\_\+t}, \hyperpage{33}
+    \subitem {E\+N\+T\+E\+R\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{34}
+    \subitem {E\+N\+T\+E\+R\+\_\+\+H\+E\+I\+G\+HT}, \hyperpage{34}
+    \subitem {E\+N\+T\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{34}
+    \subitem {E\+N\+T\+E\+R\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{34}
+    \subitem {E\+N\+T\+E\+R\+\_\+\+W\+I\+D\+TH}, \hyperpage{34}
+    \subitem {S\+T\+A\+T\+S\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{34}
+    \subitem {U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}, 
+		\hyperpage{34}
+    \subitem {U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
+		\hyperpage{34}
+  \item {utilities.\+cpp}, \hyperpage{100}
+    \subitem {archives\+\_\+exist}, \hyperpage{101}
+    \subitem {change\+\_\+enable}, \hyperpage{101}
+    \subitem {delete\+\_\+ast\+\_\+queues}, \hyperpage{101}
+    \subitem {delete\+\_\+display\+\_\+evqueue\+\_\+music}, 
+		\hyperpage{102}
+    \subitem {delete\+\_\+sounds}, \hyperpage{102}
+    \subitem {delete\+\_\+timer}, \hyperpage{102}
+    \subitem {exit}, \hyperpage{102}
+    \subitem {extract\+\_\+elem}, \hyperpage{103}
+    \subitem {insert\+\_\+elem\+\_\+head}, \hyperpage{103}
+    \subitem {int\+\_\+to\+\_\+str\+\_\+score}, \hyperpage{103}
+    \subitem {ls\+\_\+tar}, \hyperpage{103}
+    \subitem {which\+\_\+quadrant}, \hyperpage{104}
+  \item {utilities.\+h}, \hyperpage{104}
+    \subitem {archives\+\_\+exist}, \hyperpage{106}
+    \subitem {change\+\_\+enable}, \hyperpage{106}
+    \subitem {delete\+\_\+ast\+\_\+queues}, \hyperpage{106}
+    \subitem {delete\+\_\+display\+\_\+evqueue\+\_\+music}, 
+		\hyperpage{106}
+    \subitem {delete\+\_\+sounds}, \hyperpage{106}
+    \subitem {delete\+\_\+timer}, \hyperpage{107}
+    \subitem {display\+\_\+info}, \hyperpage{108}
+    \subitem {exit}, \hyperpage{107}
+    \subitem {extract\+\_\+elem}, \hyperpage{107}
+    \subitem {insert\+\_\+elem\+\_\+head}, \hyperpage{107}
+    \subitem {int\+\_\+to\+\_\+str\+\_\+score}, \hyperpage{108}
+    \subitem {ls\+\_\+tar}, \hyperpage{108}
+    \subitem {which\+\_\+quadrant}, \hyperpage{108}
+
+  \indexspace
+
+  \item {visible\+\_\+hints}
+    \subitem {settings\+\_\+t}, \hyperpage{29}
+
+  \indexspace
+
+  \item {which\+\_\+quadrant}
+    \subitem {utilities.\+cpp}, \hyperpage{104}
+    \subitem {utilities.\+h}, \hyperpage{108}
+  \item {width}
+    \subitem {display\+\_\+info\+\_\+t}, \hyperpage{8}
+  \item {word}
+    \subitem {asteroid\+\_\+t}, \hyperpage{6}
+  \item {words}
+    \subitem {words\+\_\+buffer\+\_\+t}, \hyperpage{35}
+  \item {words\+\_\+buffer}
+    \subitem {archive\+\_\+functions.\+h}, \hyperpage{39}
+    \subitem {game\+\_\+functions.\+h}, \hyperpage{82}
+    \subitem {main.\+cpp}, \hyperpage{95}
+    \subitem {sections.\+h}, \hyperpage{100}
+  \item {words\+\_\+buffer\+\_\+mutex}
+    \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{33}
+  \item {words\+\_\+buffer\+\_\+t}, \hyperpage{35}
+    \subitem {load}, \hyperpage{35}
+    \subitem {words}, \hyperpage{35}
+
+  \indexspace
+
+  \item {x}
+    \subitem {asteroid\+\_\+t}, \hyperpage{6}
+    \subitem {bullet\+\_\+t}, \hyperpage{7}
+    \subitem {shooter\+\_\+t}, \hyperpage{30}
+
+  \indexspace
+
+  \item {y}
+    \subitem {asteroid\+\_\+t}, \hyperpage{6}
+    \subitem {bullet\+\_\+t}, \hyperpage{7}
+    \subitem {shooter\+\_\+t}, \hyperpage{30}
+
+\end{theindex}

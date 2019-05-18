@@ -1,0 +1,42 @@
+\hypertarget{archive__functions_8cpp}{}\section{Riferimenti per il file archive\+\_\+functions.\+cpp}
+\label{archive__functions_8cpp}\index{archive\+\_\+functions.\+cpp@{archive\+\_\+functions.\+cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$dirent.\+h$>$}\newline
+{\ttfamily \#include $<$malloc.\+h$>$}\newline
+{\ttfamily \#include $<$archive.\+h$>$}\newline
+{\ttfamily \#include $<$archive\+\_\+entry.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$semaphore.\+h$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include \char`\"{}archive\+\_\+functions.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per archive\+\_\+functions.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/da7/archive__functions_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{archive__functions_8cpp_a9f84e719a4e4079c5aad042930458381}{start\+\_\+searching} (void $\ast$search\+\_\+manager)
+\begin{DoxyCompactList}\small\item\em Funzione che gestire i thread searcher e worker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{archive__functions_8cpp_a9f84e719a4e4079c5aad042930458381}\label{archive__functions_8cpp_a9f84e719a4e4079c5aad042930458381}} 
+\index{archive\+\_\+functions.\+cpp@{archive\+\_\+functions.\+cpp}!start\+\_\+searching@{start\+\_\+searching}}
+\index{start\+\_\+searching@{start\+\_\+searching}!archive\+\_\+functions.\+cpp@{archive\+\_\+functions.\+cpp}}
+\subsubsection{\texorpdfstring{start\+\_\+searching()}{start\_searching()}}
+{\footnotesize\ttfamily void$\ast$ start\+\_\+searching (\begin{DoxyParamCaption}\item[{void $\ast$}]{search\+\_\+manager }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestire i thread searcher e worker. 
+
+~\newline
+Questi thread gestiscono la ricerca dell\textquotesingle{}email dello username all\textquotesingle{}interno delle collection. ~\newline
+Parametri\+: ~\newline
+1) search\+\_\+manager -\/ Variabile contenente le strutture per la sincronizzazione la ricerca. 

@@ -1,0 +1,6 @@
+<map id="thread_manager_t" name="thread_manager_t">
+<area shape="rect" id="node2" href="$d3/d16/structsearch__manager__t.html" title="Struct che rappresenta il manager dei thread atti a ricercare le password all&#39;interno degli archivi..." alt="" coords="6,184,135,211"/>
+<area shape="rect" id="node3" href="$d0/d80/structls__t.html" title="Struct che raccoglie tutti gli archivi. " alt="" coords="9,95,52,121"/>
+<area shape="rect" id="node4" href="$dd/d91/structfile__t.html" title="Struct relativa alla descrizione di un archivio che andrà esaminato. " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node5" href="$df/dd3/structresult__t.html" title="Struct contenenti le password corrispondenti alla mail data in input dall&#39;utente. ..." alt="" coords="77,95,142,121"/>
+</map>

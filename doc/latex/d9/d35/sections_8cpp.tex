@@ -1,0 +1,84 @@
+\hypertarget{sections_8cpp}{}\section{Riferimenti per il file sections.\+cpp}
+\label{sections_8cpp}\index{sections.\+cpp@{sections.\+cpp}}
+{\ttfamily \#include $<$semaphore.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sections.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per sections.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d97/sections_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{sections_8cpp_af70f3c978475d7a7271b784f838ff98b}{intro} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display)
+\begin{DoxyCompactList}\small\item\em Funzione che lancia l\textquotesingle{}animazione di introduzione. \end{DoxyCompactList}\item 
+int \hyperlink{sections_8cpp_a57ef27fbb5dfc9331234f3e4769f78bb}{main\+\_\+menu} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$ev\+\_\+queue, const float \&prev\+\_\+bg\+\_\+offset)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce la schermata del menu principale. \end{DoxyCompactList}\item 
+bool \hyperlink{sections_8cpp_a46f019b736168bdc12825c9629e18828}{settings\+\_\+menu} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$ev\+\_\+queue, \hyperlink{structsettings__t}{settings\+\_\+t} \&settings)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce la schermata del menu delle impostazioni. \end{DoxyCompactList}\item 
+bool \hyperlink{sections_8cpp_a77020eac2eeede2d2f733f19cdc9594c}{play\+\_\+wa} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$ev\+\_\+queue, \hyperlink{structsettings__t}{settings\+\_\+t} \&settings)
+\begin{DoxyCompactList}\small\item\em Funzione che gestisce la schermata di gioco. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{sections_8cpp_af70f3c978475d7a7271b784f838ff98b}\label{sections_8cpp_af70f3c978475d7a7271b784f838ff98b}} 
+\index{sections.\+cpp@{sections.\+cpp}!intro@{intro}}
+\index{intro@{intro}!sections.\+cpp@{sections.\+cpp}}
+\subsubsection{\texorpdfstring{intro()}{intro()}}
+{\footnotesize\ttfamily float intro (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display }\end{DoxyParamCaption})}
+
+
+
+Funzione che lancia l\textquotesingle{}animazione di introduzione. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Display corrente. ~\newline
+Ritorna la posizione dello sfondo a fine funzione (espressa in pixel). \mbox{\Hypertarget{sections_8cpp_a57ef27fbb5dfc9331234f3e4769f78bb}\label{sections_8cpp_a57ef27fbb5dfc9331234f3e4769f78bb}} 
+\index{sections.\+cpp@{sections.\+cpp}!main\+\_\+menu@{main\+\_\+menu}}
+\index{main\+\_\+menu@{main\+\_\+menu}!sections.\+cpp@{sections.\+cpp}}
+\subsubsection{\texorpdfstring{main\+\_\+menu()}{main\_menu()}}
+{\footnotesize\ttfamily int main\+\_\+menu (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$}]{ev\+\_\+queue,  }\item[{const float \&}]{prev\+\_\+bg\+\_\+offset }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce la schermata del menu principale. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Display corrente; ~\newline
+2) ev\+\_\+queue -\/ Coda degli eventi; ~\newline
+3) prev\+\_\+bg\+\_\+offset -\/ Posizione dello sfondo al momento del lancio della funzione. ~\newline
+Ritorna la scelta effettuata dall\textquotesingle{}utente. \mbox{\Hypertarget{sections_8cpp_a77020eac2eeede2d2f733f19cdc9594c}\label{sections_8cpp_a77020eac2eeede2d2f733f19cdc9594c}} 
+\index{sections.\+cpp@{sections.\+cpp}!play\+\_\+wa@{play\+\_\+wa}}
+\index{play\+\_\+wa@{play\+\_\+wa}!sections.\+cpp@{sections.\+cpp}}
+\subsubsection{\texorpdfstring{play\+\_\+wa()}{play\_wa()}}
+{\footnotesize\ttfamily bool play\+\_\+wa (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$}]{ev\+\_\+queue,  }\item[{\hyperlink{structsettings__t}{settings\+\_\+t} \&}]{settings }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce la schermata di gioco. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Display corrente; ~\newline
+2) ev\+\_\+queue -\/ Coda degli eventi; ~\newline
+3) settings -\/ Struct contenente le impostazioni di gioco. ~\newline
+Ritorna true se la partita termina normalmente, false se l\textquotesingle{}utente decide di uscire dal gioco. \mbox{\Hypertarget{sections_8cpp_a46f019b736168bdc12825c9629e18828}\label{sections_8cpp_a46f019b736168bdc12825c9629e18828}} 
+\index{sections.\+cpp@{sections.\+cpp}!settings\+\_\+menu@{settings\+\_\+menu}}
+\index{settings\+\_\+menu@{settings\+\_\+menu}!sections.\+cpp@{sections.\+cpp}}
+\subsubsection{\texorpdfstring{settings\+\_\+menu()}{settings\_menu()}}
+{\footnotesize\ttfamily bool settings\+\_\+menu (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$}]{ev\+\_\+queue,  }\item[{\hyperlink{structsettings__t}{settings\+\_\+t} \&}]{settings }\end{DoxyParamCaption})}
+
+
+
+Funzione che gestisce la schermata del menu delle impostazioni. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Display corrente; ~\newline
+2) ev\+\_\+queue -\/ Coda degli eventi; ~\newline
+3) settings -\/ Struct contenente le impostazioni di gioco. ~\newline
+Ritorna true se l\textquotesingle{}utente decide di tornare al menu principale, false se decide di uscire dal gioco. 
