@@ -6,11 +6,10 @@ set(CMAKE_CXX_STANDARD 14)
 set(G++_COVERAGE_COMPILE_FLAGS "-fpermissive")
 add_definitions(${G++_COVERAGE_COMPILE_FLAGS})
 
-add_definitions(-DCOLLECTION_FOLDER=\"/home/corra/Scaricati/Collection\ 1/\")#${COLLECTION_FOLDER})
-add_definitions(-DNUMBER_THREADS=4)#${NUMBER_THREADS})
+add_definitions(-DCOLLECTION_FOLDER=${COLLECTION_FOLDER})
+add_definitions(-DNUMBER_THREADS=${NUMBER_THREADS})
 
 include_directories(src)
-link_directories(allegro5/build/lib)
 
 add_executable(wa
 

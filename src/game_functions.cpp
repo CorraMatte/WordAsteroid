@@ -641,10 +641,6 @@ void check_shield(match_vars_t &match_vars, bullet_t *arr_bullet, shooter_t &sho
         update_bonus(match_vars.items, match_vars.ast_queues[index_to_extract]->asteroid.special);
         match_vars.asteroid_to_generate = update_diff_score(match_vars, index_to_extract);
         match_vars.insert_asteroid_index = delete_asteroid(match_vars.ast_queues, index_to_extract);
-
-        DEB2(int h = match_vars.insert_asteroid_index;
-                     cout << "Indice del prossimo asteroide da generare: " << (h == -1 ? h : (char) (h + 'A')) << endl;)
-
     }
 }
 
