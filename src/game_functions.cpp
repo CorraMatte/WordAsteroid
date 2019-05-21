@@ -92,26 +92,12 @@ static char *get_random_word(char force) {
 
     // Prende la parola dal buffer che riempono i searcher_thread
     pthread_mutex_lock(&thread_manager.words_buffer_mutex);
-    DEB1(for (int j = 0; j < N_QUEUES; j++) {
-        if (words_buffer.words[j] != nullptr)
-			printf("Devo pescare %c, buffer in %d e' %s\n", i + 'A', j,
-				   words_buffer.words[j]);
-    })
 
 	punt = new char[strlen(words_buffer.words[i])];
     strcpy(punt, words_buffer.words[i]);
     free(words_buffer.words[i]);
     words_buffer.words[i] = nullptr;
     words_buffer.load--;
-
-    DEB1(printf("Estratto: %s\n", punt);
-				 for (j = 0; j < N_QUEUES; j++) {
-                     if (words_buffer.words[j] != nullptr)
-						 printf("Pescato %c, buffer in %d e' %s\n", i + 'A', j,
-								words_buffer.words[j]);
-                     else
-                         printf("Pescato %c, buffer in %d e' vuoto\n", i + 'A', j);
-                 })
     pthread_mutex_unlock(&thread_manager.words_buffer_mutex);
 
     // Manda un segnale ai searcher_thread di riempire il buffer e aspetta
@@ -158,10 +144,6 @@ static asteroid_special_t update_diff_score(match_vars_t &match_vars,
     if (match_vars.asteroids_destroyed % 10 == 0) {
         if (match_vars.spawn_interval > MIN_TIME_SPAWN) match_vars.spawn_interval -= .1;
         al_set_timer_speed(match_vars.spawn_timer, match_vars.spawn_interval);
-
-        DEB1(cout << "Livello aumentato: " << match_vars.diff_liv << endl;)
-        DEB2(cout << "Asteroidi distrutti: " << match_vars.asteroids_destroyed << endl;)
-        DEB2(cout << "Intervallo di spawn: " << match_vars.spawn_interval << endl;)
     }
 
     if (match_vars.asteroids_destroyed - match_vars.asteroid_to_bonus >= match_vars.instant_ast_dest) {
@@ -171,8 +153,6 @@ static asteroid_special_t update_diff_score(match_vars_t &match_vars,
         srand(time(nullptr));
 
 		bonus_to_generate = rand() % NUM_ITEMS;
-        DEB2(cout << "Bonus ricevuto. Il prossimo tra: " << match_vars.asteroid_to_bonus << " asteroidi" << endl;
-                     cout << "Bonus generato :" << bonus_to_generate << endl;)
         switch (bonus_to_generate) {
             case 0:
                 return ATOMIC;
@@ -260,8 +240,7 @@ static int closer_asteroid(const asteroid_list *ast_queues,
  *      3) shooter - Navicella; \n
  *      4) en_sound - Se ON, viene riprodotto il suono dell'esplosione degli asteroidi.
  */
-static void atomic_bonus(match_vars_t &match_vars, bullet_t *arr_bullet,
-						 const shooter_t &shooter, enable_t &en_sound) {
+static void atomic_bonus(match_vars_t &match_vars, bullet_t *arr_bullet, enable_t &en_sound) {
 	int	i;
 
 	for (i = 0; i < N_QUEUES; i++)
@@ -289,11 +268,6 @@ static void atomic_bonus(match_vars_t &match_vars, bullet_t *arr_bullet,
     match_vars.current_asteroid = -1;
     match_vars.asteroid_head = 0;
     match_vars.items[0]--;
-
-    DEB1(cout << "Bonus ATOMIC lanciato" << endl;)
-    DEB2(int h = match_vars.insert_asteroid_index;
-                 cout << "Indice del prossimo asteroide da generare: " << (h == -1 ? h : (char) (h + 'A')) << endl;)
-
 }
 
 /**
@@ -319,10 +293,6 @@ static void fire_bonus(match_vars_t &match_vars, const bullet_t *arr_bullet,
 	match_vars.insert_asteroid_index = delete_asteroid(match_vars.ast_queues,
 													   index_to_extract);
     match_vars.items[2]--;
-
-    DEB1(cout << "Bonus FIRE lanciato" << endl;)
-    DEB2(int h = match_vars.insert_asteroid_index;
-                 cout << "Indice del prossimo asteroide da generare: " << (h == -1 ? h : (char) (h + 'A')) << endl;)
 }
 
 /**
@@ -356,21 +326,11 @@ static void spawn_asteroid(match_vars_t &match_vars) {
     while (next_pos_to_insert != -1)
         if (next_pos_to_insert == N_QUEUES) next_pos_to_insert = 0;
         else {
-            next_pos_to_insert = insert_elem_head(match_vars.ast_queues,
+			next_pos_to_insert = insert_elem_head(match_vars.ast_queues,
 												  generate_asteroid(
 														  match_vars.asteroid_to_generate,
 														  next_pos_to_insert));
-
-            DEB1(cout << "Nuovo asteroide all'indice: " << (char) (next_pos_to_insert) << endl;)
-            DEB2(if (next_pos_to_insert != -1) {
-                int count = 0;
-                for (asteroid_list p = match_vars.ast_queues[next_pos_to_insert - 1]; p->next != nullptr; count++)
-                    p = p->next;
-                cout << "Situazione coda: " << count << endl;
-            })
-        }
-
-    DEB1(cout << "Asteroidi in testa: " << match_vars.asteroid_head << endl;)
+		}
 }
 
 /**
@@ -414,7 +374,7 @@ static void spawn_asteroid_cancel_routine(void *) {
 // Public
 void *spawn_asteroid_thread(void *mv) {
     pthread_cleanup_push(spawn_asteroid_cancel_routine, nullptr);
-        match_vars_t *match_vars = (match_vars_t *) mv;
+        match_vars_t	*match_vars = (match_vars_t *) mv;
 
         while (true) {
             pthread_cond_wait(&thread_manager.spawn_cond, &thread_manager.spawn_mutex);
@@ -522,13 +482,6 @@ asteroid_t generate_asteroid(const asteroid_special_t s, const int &next_p) {
 
     strcpy(asteroid.word, h_word);
     delete[] h_word;
-
-    DEB1(cout << "Asteroide generato in posizione: " << asteroid.word[0] << endl;)
-    DEB2(cout << "Parola: " << asteroid.word << endl;)
-    DEB2(cout << "X: " << asteroid.x << endl;)
-    DEB2(cout << "Y: " << asteroid.y << endl;)
-    DEB2(cout << "Slope: " << asteroid.slope << endl;)
-
     return asteroid;
 }
 
@@ -558,11 +511,6 @@ void move_bullets(bullet_t *bullet, match_vars_t &match_vars, enable_t &en_sound
             update_bonus(match_vars.items, match_vars.ast_queues[i]->asteroid.special);
             match_vars.insert_asteroid_index = delete_asteroid(match_vars.ast_queues, i);
             init_bullet(bullet[i]);
-            DEB1(cout << "Asteroide colpito: " << (char) (i + 'A') << endl;)
-            DEB2(int h = match_vars.insert_asteroid_index;
-                         cout << "Indice del prossimo asteroide da generare: " << (h == -1 ? h : (char) (h + 'A'))
-                              << endl;)
-
         }
     }
 }
@@ -675,7 +623,7 @@ float check_distance(const asteroid_list *ast_queues, const bullet_t *arr_bullet
     int	index_to_extract = closer_asteroid(ast_queues, arr_bullet, shooter);
     if (index_to_extract == -1) return false;
 
-    float distance = calculate_distance(ast_queues[index_to_extract]->asteroid.x, shooter.x,
+    float	distance = calculate_distance(ast_queues[index_to_extract]->asteroid.x, shooter.x,
                                         ast_queues[index_to_extract]->asteroid.y,
                                         shooter.y, ast_queues[index_to_extract]->asteroid.radius);
 
@@ -728,46 +676,46 @@ void handler_key_pressed(ALLEGRO_EVENT ev, match_vars_t &match_vars,
     switch (ev.keyboard.keycode) {
         case ALLEGRO_KEY_ESCAPE:
             change_enable(match_vars.playing);
-            return;
+            break;
 
         case ALLEGRO_KEY_F1: {
-            if (match_vars.items[0] == 0) return;
-            atomic_bonus(match_vars, arr_bullet, shooter, settings.sound);
-            return;
+            if (match_vars.items[0] == 0) break;
+            atomic_bonus(match_vars, arr_bullet, settings.sound);
+            break;
         }
 
         case ALLEGRO_KEY_F2: {
-            if (match_vars.items[1] == 0 || al_get_timer_started(match_vars.timer_rallenty_bonus)) return;
+            if (match_vars.items[1] == 0 || al_get_timer_started(match_vars.timer_rallenty_bonus)) break;
             al_start_timer(match_vars.timer_rallenty_bonus);
             match_vars.fps = 20;
             al_set_sample_instance_speed(match_vars.music_playwa, 0.5);
             match_vars.items[1]--;
-            return;
+            break;
         }
 
         case ALLEGRO_KEY_F3: {
-            if (match_vars.items[2] == 0) return;
+            if (match_vars.items[2] == 0) break;
             fire_bonus(match_vars, arr_bullet, shooter, settings.sound);
-            return;
+            break;
         }
 
         case ALLEGRO_KEY_F4: {
-            if (match_vars.items[3] == 0 || al_get_timer_started(match_vars.timer_shield_bonus)) return;
+            if (match_vars.items[3] == 0 || al_get_timer_started(match_vars.timer_shield_bonus)) break;
             al_start_timer(match_vars.timer_shield_bonus);
             match_vars.items[3]--;
-            return;
+            break;
         }
 
         case ALLEGRO_KEY_F8: {
             change_enable(settings.music);
             if (settings.music == ON) al_play_sample_instance(match_vars.music_playwa);
             else al_stop_sample_instance(match_vars.music_playwa);
-            return;
+            break;
         }
 
         case ALLEGRO_KEY_F9: {
             change_enable(settings.sound);
-            return;
+            break;
         }
 
         case ALLEGRO_KEY_LSHIFT:
@@ -776,7 +724,6 @@ void handler_key_pressed(ALLEGRO_EVENT ev, match_vars_t &match_vars,
 
         default: {
             const char *value = al_keycode_to_name(ev.keyboard.keycode);
-
             if (char_key_handler(match_vars.ast_queues, value, match_vars.current_asteroid) && value[1] == '\0') {
 
 				index_to_extract = match_vars.current_asteroid;
@@ -788,11 +735,6 @@ void handler_key_pressed(ALLEGRO_EVENT ev, match_vars_t &match_vars,
                     arr_bullet[index_to_extract] = generate_bullet(match_vars.ast_queues[index_to_extract]->asteroid,
                                                                    shooter);
                     match_vars.asteroid_to_generate = update_diff_score(match_vars, index_to_extract);
-                    DEB1(cout << "Parola finita all'indice: " << (char) (index_to_extract + 'A') << endl;)
-                    DEB2(cout << "Angolo del bullet: " << arr_bullet[index_to_extract].slope << endl;
-                                 cout << "Angolo dell'asteroide da distruggere: "
-                                      << match_vars.ast_queues[index_to_extract]->asteroid.slope << endl;)
-
                 }
             } else {
                 match_vars.key_error = match_vars.current_asteroid;

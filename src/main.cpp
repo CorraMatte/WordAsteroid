@@ -79,7 +79,6 @@ int main(int argc, char **argv){
 
 	// Deallocazione display, coda degli eventi e musica
 	delete_display_evqueue_music(display, event_queue, music_wa);
-    DEB1(cout<<"--- USCITA ---"<<endl;)
     
 	return 0;
 }

@@ -2,25 +2,6 @@
 #define DATA
 
 //============================================
-//                  Debug
-//============================================
-
-#ifdef DEBUG_MODE
-    #define MASK 3
-    #define DEB(a,b) { if((a) & MASK){ \
-                            for(int	i=0; i < a - 1; i++) \
-                                cout<<'\t'; \
-                            b \
-                       } \
-                     }
-    #else
-    #define DEB(a,b)
-#endif
-
-#define DEB1(a) DEB(1, a)
-#define DEB2(a) DEB(2, a)
-
-//============================================
 //                Inclusioni
 //============================================
 

@@ -14,12 +14,11 @@
 static bool
 instructions(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 			 enable_t &playing, settings_t &settings, float &prev_bg_offset) {
-	ALLEGRO_BITMAP **arr_bitmaps = generate_instr_bitmaps();
-	ALLEGRO_FONT **arr_fonts = generate_instr_fonts();
-	char *head_str;
-	ALLEGRO_EVENT ev;
+	ALLEGRO_BITMAP	**arr_bitmaps = generate_instr_bitmaps();
+	ALLEGRO_FONT	**arr_fonts = generate_instr_fonts();
+	char	*head_str;
+	ALLEGRO_EVENT	ev;
 
-	DEB1(cout << "--- PAUSA ---" << endl;)
 	while (true) {
         // Stampa sfondo
         draw_background(arr_bitmaps[0], prev_bg_offset, 1);
@@ -57,7 +56,6 @@ instructions(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
                     destroy_arr_bitmaps(arr_bitmaps, NUM_INSTR_BITMAPS);
                     destroy_arr_fonts(arr_fonts, NUM_INSTR_FONTS);
                     playing = ON;
-                    DEB1(cout << "--- RIPRESA ---" << endl;)
                     return true;
                 }
         }
@@ -151,8 +149,8 @@ static char *
 ask_email(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *event_queue,
 		  settings_t &settings) {
 
-	ALLEGRO_FONT **arr_fonts = generate_user_fonts();
-	ALLEGRO_BITMAP *bg_bmp = al_load_bitmap("media/images/bg_menu.png");
+	ALLEGRO_FONT	**arr_fonts = generate_user_fonts();
+	ALLEGRO_BITMAP	*bg_bmp = al_load_bitmap("media/images/bg_menu.png");
     assert(bg_bmp != nullptr);
 	char *username, *head_str;
 	float bg_offset;
@@ -237,8 +235,8 @@ ask_email(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *event_queue,
 
 float intro(ALLEGRO_DISPLAY *display) {
     // Inizializzazione bitmaps, e ripresa del controllo da parte del display
-	ALLEGRO_BITMAP **arr_bitmaps = generate_menu_bitmaps();
-	ALLEGRO_FONT **arr_fonts = generate_menu_fonts();
+	ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
+	ALLEGRO_FONT	**arr_fonts = generate_menu_fonts();
 	float bg_offset;
 
 	al_set_target_bitmap(al_get_backbuffer(display));
@@ -267,8 +265,8 @@ float intro(ALLEGRO_DISPLAY *display) {
 int main_menu(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 			  const float &prev_bg_offset) {
     // Inizializzazione bitmaps (menu)
-	ALLEGRO_BITMAP **arr_bitmaps = generate_menu_bitmaps();
-	ALLEGRO_FONT **arr_fonts = generate_menu_fonts();
+	ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
+	ALLEGRO_FONT	**arr_fonts = generate_menu_fonts();
 	int i, scelta = 0;
 	char arr_scelte[][255] = {
             "Gioca",
@@ -345,8 +343,8 @@ bool settings_menu(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 				   settings_t &settings) {
 
     // Inizializzazione bitmaps (menu)
-	ALLEGRO_BITMAP **arr_bitmaps = generate_menu_bitmaps();
-	ALLEGRO_FONT **arr_fonts = generate_settings_fonts();
+	ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
+	ALLEGRO_FONT	**arr_fonts = generate_settings_fonts();
 
     // Ripresa di controllo da parte del bitmap "display"
     al_set_target_bitmap(al_get_backbuffer(display));
@@ -474,15 +472,14 @@ bool settings_menu(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 bool play_wa(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 			 settings_t &settings) {
 
-	ALLEGRO_BITMAP **arr_bitmaps = generate_playwa_bitmaps();
-	ALLEGRO_FONT **arr_fonts = generate_playwa_fonts();
-	match_vars_t match_vars;
-	shooter_t shooter;
-	float bg_offset = 0;
-	bool start = false;
+	ALLEGRO_BITMAP	**arr_bitmaps = generate_playwa_bitmaps();
+	ALLEGRO_FONT	**arr_fonts = generate_playwa_fonts();
+	match_vars_t	match_vars;
+	shooter_t	shooter;
+	float	bg_offset = 0;
+	bool	start = false;
+	bullet_t	arr_bullet[N_QUEUES];
 
-
-	DEB1(cout << "--- INIZIO PARTITA ---" << endl;)
 	char *email = ask_email(display, ev_queue, settings);
 
     // Setto il sample del play_wa, ma non uso la musica per lo stoppo subito
@@ -503,7 +500,6 @@ bool play_wa(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
     init_shooter(shooter);
 
     // Inizializzazione proiettili
-    bullet_t arr_bullet[N_QUEUES];
     init_arr_bullet(arr_bullet);
 
     init_words_buffer(words_buffer);
@@ -546,17 +542,16 @@ bool play_wa(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 								arr_fonts[3], arr_fonts[4], settings);
         al_flip_display();
 
-        if (match_vars.gameover) {
-            DEB1(cout << "--- FINE PARTITA ---" << endl;)
-            al_stop_samples();
-            sound_play(match_vars.sound_gameover, settings.sound);
-            al_rest(1.0);
-            break;
-        }
+		if (match_vars.gameover) {
+			al_stop_samples();
+			sound_play(match_vars.sound_gameover, settings.sound);
+			al_rest(1.0);
+			break;
+		}
 
         ALLEGRO_EVENT ev;
-        if (!al_wait_for_event_timed(ev_queue, &ev, 1.0 / match_vars.fps))
-            continue;
+		if (!al_wait_for_event_timed(ev_queue, &ev, 1.0 / match_vars.fps))
+			continue;
 
         switch (ev.type) {
             // X
@@ -581,7 +576,6 @@ bool play_wa(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
                 if (match_vars.key_error != -1)
                     match_vars.key_error = -1;
                 break;
-
         }
         if (!start) {
             sem_wait(&thread_manager.consumer_sem);
