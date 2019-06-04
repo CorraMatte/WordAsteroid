@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['score_5fincrement',['SCORE_INCREMENT',['../d2/dbd/data_8h.html#a58f27eafcb451c09c454d20e4ef83edb',1,'data.h']]],
-  ['shadow_5fcolor',['SHADOW_COLOR',['../d2/dbd/data_8h.html#a19736b4c86eeb93bb035d5a8623f4e47',1,'data.h']]]
+  ['timer_5frallenty_5fbonus',['TIMER_RALLENTY_BONUS',['../d2/dbd/data_8h.html#a9e0802df8e999c92321e68fcfe300672',1,'data.h']]],
+  ['timer_5fshield_5fbonus',['TIMER_SHIELD_BONUS',['../d2/dbd/data_8h.html#a5e44ee7e5e774b94bc34f1a2e86b3fe6',1,'data.h']]]
 ];

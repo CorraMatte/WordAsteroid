@@ -18,10 +18,10 @@
  *      Ritorna la nuova stringa in maiuscolo, oppure nullptr se contiene caratteri speciali.
  */
 static inline char *convert_to_only_alpha(char *str) {
-	char	*tmp = new char[strlen(str) + 1];
-	int	i, c = 0;
+    char	*tmp = new char[strlen(str) + 1];
+    int	i, c = 0;
 
-	for (i = 0; i < strlen(str); ++i) {
+    for (i = 0; i < strlen(str); ++i) {
         if (!isalpha(str[i]) && !isdigit(str[i]))
             return nullptr;
         if (islower(str[i]))
@@ -40,11 +40,11 @@ static inline char *convert_to_only_alpha(char *str) {
  *      1) arg - Puntatore all'oggetto da deallocare.
  */
 static void extract_archive_cancel_routine(void *arg) {
-	struct archive	*a = (struct archive *) arg;
-	pthread_mutex_unlock(&thread_manager.gameover_mutex);
-	pthread_mutex_unlock((&thread_manager.words_buffer_mutex));
-	archive_clear_error(a);
-	archive_read_free(a);
+    struct archive	*a = (struct archive *) arg;
+    pthread_mutex_unlock(&thread_manager.gameover_mutex);
+    pthread_mutex_unlock((&thread_manager.words_buffer_mutex));
+    archive_clear_error(a);
+    archive_read_free(a);
 }
 
 /**
@@ -53,8 +53,8 @@ static void extract_archive_cancel_routine(void *arg) {
  *      1) arg - Puntatore all'oggetto da deallocare.
  */
 static void extract_entry_cancel_routine(void *arg) {
-	struct archive_entry	*entry = (struct archive_entry *) arg;
-	archive_entry_free(entry);
+    struct archive_entry	*entry = (struct archive_entry *) arg;
+    archive_entry_free(entry);
 }
 
 /**
@@ -74,14 +74,14 @@ static void extract_free_cancel_routine(void *arg) {
  *      1) arg - Puntatore al search manager.
  */
 static void start_searching_cancel_routine(void *arg) {
-	int i;
-	search_manager_t	*sm = (search_manager_t *) arg;
+    int i;
+    search_manager_t	*sm = (search_manager_t *) arg;
 
-	for (i = 0; i < NUMBER_THREADS; i++) {
+    for (i = 0; i < NUMBER_THREADS; i++) {
         pthread_cancel(sm->threads[i]);
         pthread_join(sm->threads[i], nullptr);
     }
-	for (i = 0; i < N_QUEUES; i++) {
+    for (i = 0; i < N_QUEUES; i++) {
         if (words_buffer.words[i] != nullptr) {
             delete[] words_buffer.words[i];
             words_buffer.words[i] = nullptr;
@@ -94,20 +94,20 @@ static void start_searching_cancel_routine(void *arg) {
 
 /**
  *      Funzione che si occupa della ricerca della email all'interno di un file contenuto in un archivio. \n
- * 		Parametri: \n
- * 		1) ar - Puntatore all'archivio da esaminare; \n
- * 		2) email - email da ricercare; \n
- * 		3) is_searcher - flag che indica la tipologia del thread; \n
+ *      Parametri: \n
+ *      1) ar - Puntatore all'archivio da esaminare; \n
+ *      2) email - email da ricercare; \n
+ *      3) is_searcher - flag che indica la tipologia del thread; \n
  */
 static int search_string(struct archive *ar, const char *email, const bool is_searcher) {
-	int	i, r, first_letter;
-	const void	*buff;
-	char	*row, *t, *char_buffer, *e, *pass;
-	char	comma[2] = {":"};
-	size_t	size;
-	bool	full;
+    int	i, r, first_letter;
+    const void	*buff;
+    char	*row, *t, *char_buffer, *e, *pass;
+    char	comma[2] = {":"};
+    size_t	size;
+    bool	full;
 #if ARCHIVE_VERSION_NUMBER >= 3000000
-	int64_t offset;
+    int64_t offset;
 #else
     off_t offset;
 #endif
@@ -121,10 +121,10 @@ static int search_string(struct archive *ar, const char *email, const bool is_se
         if (r != ARCHIVE_OK)
             return 1;
 
-		char_buffer = (char *) buff;
+        char_buffer = (char *) buff;
         row = strtok_r(char_buffer, "\r\n", &t);
         if (row == nullptr) continue;
-		first_letter = 0;
+        first_letter = 0;
 
         if (is_searcher) {
             pthread_mutex_lock(&thread_manager.words_buffer_mutex);
@@ -181,7 +181,7 @@ static int search_string(struct archive *ar, const char *email, const bool is_se
                 delete[] pass;
             }
 
-			e = strdup(row);
+            e = strdup(row);
             e[strlen(row) - strlen(strstr(row, comma))] = '\0';
             if (strstr(e, email) != nullptr) {
                 /* Lock della struttura dei risultati e salva il match trovato */
@@ -191,9 +191,9 @@ static int search_string(struct archive *ar, const char *email, const bool is_se
                     pthread_mutex_unlock(&thread_manager.search_result_mutex);
                     continue;
                 }
-				thread_manager.search_manager.res.pass_result[
-						thread_manager.search_manager.res.count_result++
-				] = strdup(row);
+                thread_manager.search_manager.res.pass_result[
+                            thread_manager.search_manager.res.count_result++
+                ] = strdup(row);
 
                 /* unlock */
                 pthread_mutex_unlock(&thread_manager.search_result_mutex);
@@ -212,74 +212,74 @@ static int search_string(struct archive *ar, const char *email, const bool is_se
  *      che indica se il thread si tratta di un searcher.
  */
 static void *extract(void *look_into) {
-	look_into_t	*lk = (look_into_t *) look_into;
-	struct archive	*a = archive_read_new();
-	struct archive_entry	*entry;
-	int	r;
+    look_into_t	*lk = (look_into_t *) look_into;
+    struct archive	*a = archive_read_new();
+    struct archive_entry	*entry;
+    int	r;
 
     archive_read_support_format_tar(a);
     archive_read_support_filter_gzip(a);
     pthread_cleanup_push(extract_free_cancel_routine, lk);
         pthread_cleanup_push(extract_archive_cancel_routine, a);
-			pthread_cleanup_push(extract_entry_cancel_routine, entry);
-				// if (lk->filename != nullptr && strcmp(lk->filename, "-") == 0)
-				//		lk->filename = nullptr;
+            pthread_cleanup_push(extract_entry_cancel_routine, entry);
+                // if (lk->filename != nullptr && strcmp(lk->filename, "-") == 0)
+                //        lk->filename = nullptr;
 
-				if (archive_read_open_filename(a, lk->filename, 1024)) {
-					return (void *) 1;
-				}
-				for (;;) {
-					if (!lk->is_searcher) {
-						pthread_cond_wait(&thread_manager.gameover_cond,
-										  &thread_manager.gameover_mutex);
-					}
-					r = archive_read_next_header(a, &entry);
-					if (r == ARCHIVE_EOF)
-						break;
+                if (archive_read_open_filename(a, lk->filename, 1024)) {
+                    return (void *) 1;
+                }
+                for (;;) {
+                    if (!lk->is_searcher) {
+                    	pthread_cond_wait(&thread_manager.gameover_cond,
+                                    	  &thread_manager.gameover_mutex);
+                    }
+                    r = archive_read_next_header(a, &entry);
+                    if (r == ARCHIVE_EOF)
+                    	break;
 
-					if (r < ARCHIVE_OK || r < ARCHIVE_WARN) {
-						return (void *) 1;
-					}
-					assert(search_string(a, lk->email, lk->is_searcher) == 0);
-				}
-				archive_entry_free(entry);
-				archive_read_close(a);
-				archive_read_free(a);
+                    if (r < ARCHIVE_OK || r < ARCHIVE_WARN) {
+                    	return (void *) 1;
+                    }
+                    assert(search_string(a, lk->email, lk->is_searcher) == 0);
+                }
+                archive_entry_free(entry);
+                archive_read_close(a);
+                archive_read_free(a);
 
-			pthread_cleanup_pop(0);
+            pthread_cleanup_pop(0);
         pthread_cleanup_pop(0);
     pthread_cleanup_pop(0);
     return (void *) 0;
 }
 
 void *start_searching(void *search_manager) {
-	search_manager_t	*sm= (search_manager_t *) search_manager;
+    search_manager_t	*sm= (search_manager_t *) search_manager;
     pthread_cleanup_push(start_searching_cancel_routine, (void *) sm);
         pthread_attr_t	attr;
-		long long	sig1;
-		int	sig, err, i;
-		look_into_t	*lk;
-		void	*ret;
+        long long	sig1;
+        int	sig, err, i;
+        look_into_t	*lk;
+        void	*ret;
         sm->threads = new pthread_t[NUMBER_THREADS];
 
         for (i = 0; i < sm->file_list->nfile; i++) {
-			ret = nullptr;
+            ret = nullptr;
             if (i >= NUMBER_THREADS) {
-            	pthread_testcancel();
+                pthread_testcancel();
                 pthread_join(sm->threads[i % NUMBER_THREADS], &ret);
             }
-			sig1 = reinterpret_cast<long long> (ret);
-			sig = static_cast<int>(sig1);
+            sig1 = reinterpret_cast<long long> (ret);
+            sig = static_cast<int>(sig1);
             assert(sig == 0);
 
-			lk = new look_into_t;
+            lk = new look_into_t;
             lk->filename = sm->file_list->files[i].filename;
             lk->email = sm->email;
             lk->is_searcher = i % 2 == 1 || NUMBER_THREADS == 1;
 
             pthread_attr_init(&attr);
-			err = pthread_create(&sm->threads[i % NUMBER_THREADS], nullptr,
-								 extract, (void *) lk);
+            err = pthread_create(&sm->threads[i % NUMBER_THREADS], nullptr,
+                            	 extract, (void *) lk);
             pthread_attr_destroy(&attr);
             assert(err == 0);
         }

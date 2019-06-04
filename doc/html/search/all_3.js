@@ -2,9 +2,6 @@ var searchData=
 [
   ['danger_5fradius',['DANGER_RADIUS',['../d3/d1b/structplaywa__gv__t.html#afd29a2a79501ace74c1b139f2df0ade5',1,'playwa_gv_t']]],
   ['data_2eh',['data.h',['../d2/dbd/data_8h.html',1,'']]],
-  ['deb',['DEB',['../d2/dbd/data_8h.html#a4d87b864f0d93d71fe43d714a5634f9e',1,'data.h']]],
-  ['deb1',['DEB1',['../d2/dbd/data_8h.html#a81abc68fb355638b9e35fc29fd1ffc71',1,'data.h']]],
-  ['deb2',['DEB2',['../d2/dbd/data_8h.html#a86ba8a1242bcfa3aabcad0b733be9a16',1,'data.h']]],
   ['delete_5fast_5fqueues',['delete_ast_queues',['../de/da5/utilities_8cpp.html#adcafafb6c87ae3399e1d4889a5d5dcce',1,'delete_ast_queues(asteroid_list *ast_queues):&#160;utilities.cpp'],['../de/df0/utilities_8h.html#adcafafb6c87ae3399e1d4889a5d5dcce',1,'delete_ast_queues(asteroid_list *ast_queues):&#160;utilities.cpp']]],
   ['delete_5fdisplay_5fevqueue_5fmusic',['delete_display_evqueue_music',['../de/da5/utilities_8cpp.html#a1f78e2ccd2b9605cd499c1d5c7fd62ec',1,'delete_display_evqueue_music(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue, ALLEGRO_SAMPLE *sound):&#160;utilities.cpp'],['../de/df0/utilities_8h.html#a1f78e2ccd2b9605cd499c1d5c7fd62ec',1,'delete_display_evqueue_music(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue, ALLEGRO_SAMPLE *sound):&#160;utilities.cpp']]],
   ['delete_5fsounds',['delete_sounds',['../de/da5/utilities_8cpp.html#ab1ffd16a1c007a9d9029fc4eaea4abdb',1,'delete_sounds(match_vars_t &amp;match_vars):&#160;utilities.cpp'],['../de/df0/utilities_8h.html#ab1ffd16a1c007a9d9029fc4eaea4abdb',1,'delete_sounds(match_vars_t &amp;match_vars):&#160;utilities.cpp']]],

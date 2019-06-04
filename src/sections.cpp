@@ -7,24 +7,24 @@
  *      Parametri: \n
  *      1) display - Display corrente; \n
  *      2) ev_queue - Coda degli eventi; \n
- * 		3) settings - Struct contenente le impostazioni di gioco. \n
+ *      3) settings - Struct contenente le impostazioni di gioco. \n
  *      4) prev_bg_offset - Posizione dello sfondo al momento del lancio della funzione. \n
  *      Ritorna false se si è usciti dal gioco.
  */
 static bool
 instructions(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
-			 enable_t &playing, settings_t &settings, float &prev_bg_offset) {
-	ALLEGRO_BITMAP	**arr_bitmaps = generate_instr_bitmaps();
-	ALLEGRO_FONT	**arr_fonts = generate_instr_fonts();
-	char	*head_str;
-	ALLEGRO_EVENT	ev;
+            enable_t &playing, settings_t &settings, float &prev_bg_offset) {
+    ALLEGRO_BITMAP	**arr_bitmaps = generate_instr_bitmaps();
+    ALLEGRO_FONT	**arr_fonts = generate_instr_fonts();
+    char	*head_str;
+    ALLEGRO_EVENT	ev;
 
-	while (true) {
+    while (true) {
         // Stampa sfondo
         draw_background(arr_bitmaps[0], prev_bg_offset, 1);
 
         // Stampa titolo
-		head_str = new char[255];
+        head_str = new char[255];
         strcpy(head_str, "Pausa");
         draw_head(head_str, arr_fonts[0]);
         delete[] head_str;
@@ -67,32 +67,32 @@ instructions(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
  *      Parametri: \n
  *      1) display - Display corrente; \n
  *      2) ev_queue - Coda degli eventi; \n
- * 		2) match_vars - Contenitore delle variabili di gioco; \n
+ *      3) match_vars - Contenitore delle variabili di gioco; \n
  *      Ritorna nullptr se si è usciti dal gioco, altrimenti ritorna la stringa contenente l'username del giocatore \n
- * 		che ha appena finito di giocare la partita.
+ *      che ha appena finito di giocare la partita.
  */
 static void
 draw_gameover(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
-			  const match_vars_t &match_vars) {
-	float	bg_offset = 0;
-	bool	bar_visible;
-	ALLEGRO_FONT	**arr_fonts = generate_user_fonts();
-	ALLEGRO_BITMAP	*bg_bmp = al_load_bitmap("media/images/bg_menu.png");
+              const match_vars_t &match_vars) {
+    float	bg_offset = 0;
+    bool	bar_visible;
+    ALLEGRO_FONT	**arr_fonts = generate_user_fonts();
+    ALLEGRO_BITMAP	*bg_bmp = al_load_bitmap("media/images/bg_menu.png");
     assert(bg_bmp != nullptr);
 
     // Animazione gameover
-	draw_gameover_animation(match_vars.score, match_vars.asteroids_destroyed,
-							bg_bmp, bg_offset, arr_fonts);
+    draw_gameover_animation(match_vars.score, match_vars.asteroids_destroyed,
+                            bg_bmp, bg_offset, arr_fonts);
 
     // Lampeggiamento barra username
-	bar_visible = false;
+    bar_visible = false;
     ALLEGRO_TIMER *bar_timer = al_create_timer(0.5);
     al_register_event_source(ev_queue, al_get_timer_event_source(bar_timer));
     al_start_timer(bar_timer);
 
-	while (true) {
+    while (true) {
         // Stampa sfondo
-		char	*head_str = new char[255];
+        char	*head_str = new char[255];
         draw_background(bg_bmp, bg_offset, 0);
         strcpy(head_str, "Gameover");
         draw_head(head_str, arr_fonts[1]);
@@ -142,30 +142,30 @@ draw_gameover(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
  *      Parametri: \n
  *      1) display - Display corrente; \n
  *      2) ev_queue - Coda degli eventi; \n
- * 		3) settings - Struct contenente le impostazioni di gioco. \n
+ *      3) settings - Struct contenente le impostazioni di gioco. \n
  *      Ritorna la mail inserita dall'utente.
  */
 static char *
 ask_email(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *event_queue,
-		  settings_t &settings) {
+          settings_t &settings) {
 
-	ALLEGRO_FONT	**arr_fonts = generate_user_fonts();
-	ALLEGRO_BITMAP	*bg_bmp = al_load_bitmap("media/images/bg_menu.png");
+    ALLEGRO_FONT	**arr_fonts = generate_user_fonts();
+    ALLEGRO_BITMAP	*bg_bmp = al_load_bitmap("media/images/bg_menu.png");
     assert(bg_bmp != nullptr);
-	char *username, *head_str;
-	float bg_offset;
-	bool bar_visible;
-	int cur_pos;
+    char *username, *head_str;
+    float bg_offset;
+    bool bar_visible;
+    int cur_pos;
 
-	username = new char[MAX_USERNAME_LENGTH];
-	bg_offset = 0;
+    username = new char[MAX_USERNAME_LENGTH];
+    bg_offset = 0;
 
     // Lampeggiamento barra username
-	bar_visible = false;
+    bar_visible = false;
     ALLEGRO_TIMER *bar_timer = al_create_timer(0.5);
     al_register_event_source(event_queue, al_get_timer_event_source(bar_timer));
     al_start_timer(bar_timer);
-	cur_pos = 0;
+    cur_pos = 0;
 
     while (true) {
 
@@ -173,7 +173,7 @@ ask_email(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *event_queue,
         draw_background(bg_bmp, bg_offset, 0);
 
         // Stampa titolo
-		head_str = new char[255];
+        head_str = new char[255];
         strcpy(head_str, "inserisci la tua email");
         draw_head(head_str, arr_fonts[1]);
         delete[] head_str;
@@ -235,14 +235,14 @@ ask_email(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *event_queue,
 
 float intro(ALLEGRO_DISPLAY *display) {
     // Inizializzazione bitmaps, e ripresa del controllo da parte del display
-	ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
-	ALLEGRO_FONT	**arr_fonts = generate_menu_fonts();
-	float bg_offset;
+    ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
+    ALLEGRO_FONT	**arr_fonts = generate_menu_fonts();
+    float bg_offset;
 
-	al_set_target_bitmap(al_get_backbuffer(display));
+    al_set_target_bitmap(al_get_backbuffer(display));
 
     // Init offset per rotazione sfondo
-	bg_offset = 0;
+    bg_offset = 0;
 
     // Transizione titolo: posizione iniziale
     draw_intro_init(arr_bitmaps, bg_offset);
@@ -263,21 +263,21 @@ float intro(ALLEGRO_DISPLAY *display) {
 }
 
 int main_menu(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
-			  const float &prev_bg_offset) {
+              const float &prev_bg_offset) {
     // Inizializzazione bitmaps (menu)
-	ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
-	ALLEGRO_FONT	**arr_fonts = generate_menu_fonts();
-	int i, scelta = 0;
-	char arr_scelte[][255] = {
+    ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
+    ALLEGRO_FONT	**arr_fonts = generate_menu_fonts();
+    int i, scelta = 0;
+    char arr_scelte[][255] = {
             "Gioca",
             "Impostazioni",
             "Esci"
     };
-	float bg_offset = prev_bg_offset;
-	bool done = false;
+    float bg_offset = prev_bg_offset;
+    bool done = false;
 
-	// Ripresa di controllo da parte del bitmap "display"
-	al_set_target_bitmap(al_get_backbuffer(display));
+    // Ripresa di controllo da parte del bitmap "display"
+    al_set_target_bitmap(al_get_backbuffer(display));
     while (!done) {
         // Stampa sfondo
         draw_background(arr_bitmaps[3], bg_offset, 0);
@@ -285,7 +285,7 @@ int main_menu(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
         draw_menu_title(arr_bitmaps[0]);
 
         // Stampa opzioni
-		for (i = 0; i < NUM_OPTIONS; i++) {
+        for (i = 0; i < NUM_OPTIONS; i++) {
             // Selezione bitmap option
             ALLEGRO_BITMAP *bmp_option;
             if (i == scelta)
@@ -340,35 +340,35 @@ int main_menu(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 }
 
 bool settings_menu(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
-				   settings_t &settings) {
+    			   settings_t &settings) {
 
     // Inizializzazione bitmaps (menu)
-	ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
-	ALLEGRO_FONT	**arr_fonts = generate_settings_fonts();
+    ALLEGRO_BITMAP	**arr_bitmaps = generate_menu_bitmaps();
+    ALLEGRO_FONT	**arr_fonts = generate_settings_fonts();
 
     // Ripresa di controllo da parte del bitmap "display"
     al_set_target_bitmap(al_get_backbuffer(display));
-	int i, scelta = 0;
-	char *head_str, arr_scelte[][255] = {
+    int i, scelta = 0;
+    char *head_str, arr_scelte[][255] = {
             "Musica: ",
             "Suoni: ",
             "Torna al menu principale"
     };
-	float bg_offset = 0;
-	bool done = false;
+    float bg_offset = 0;
+    bool done = false;
 
     while (!done) {
         // Stampa sfondo
         draw_background(arr_bitmaps[3], bg_offset, 0);
 
         // Stampa titolo
-		head_str = new char[255];
+    	head_str = new char[255];
         strcpy(head_str, "Impostazioni");
         draw_head(head_str, arr_fonts[0]);
         delete[] head_str;
 
         // Stampa opzioni
-		for (i = 0; i < NUM_OPTIONS_SETTINGS; i++) {
+        for (i = 0; i < NUM_OPTIONS_SETTINGS; i++) {
 
             // Selezione bitmap option
             ALLEGRO_BITMAP *bmp_option;
@@ -470,17 +470,17 @@ bool settings_menu(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 }
 
 bool play_wa(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
-			 settings_t &settings) {
+             settings_t &settings) {
 
-	ALLEGRO_BITMAP	**arr_bitmaps = generate_playwa_bitmaps();
-	ALLEGRO_FONT	**arr_fonts = generate_playwa_fonts();
-	match_vars_t	match_vars;
-	shooter_t	shooter;
-	float	bg_offset = 0;
-	bool	start = false;
-	bullet_t	arr_bullet[N_QUEUES];
+    ALLEGRO_BITMAP	**arr_bitmaps = generate_playwa_bitmaps();
+    ALLEGRO_FONT	**arr_fonts = generate_playwa_fonts();
+    match_vars_t	match_vars;
+    shooter_t	shooter;
+    float	bg_offset = 0;
+    bool	start = false;
+    bullet_t	arr_bullet[N_QUEUES];
 
-	char *email = ask_email(display, ev_queue, settings);
+    char *email = ask_email(display, ev_queue, settings);
 
     // Setto il sample del play_wa, ma non uso la musica per lo stoppo subito
     change_music(MUSIC_PLAYWA_PATH_WA, settings.music);
@@ -506,10 +506,10 @@ bool play_wa(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
     /* Inizializzazione dei Thread e avvio della ricerca*/
     /* Inizializzazione delle strutture per la ricerca negli archivi */
     init_thread_manager(thread_manager, email);
-	pthread_create(&thread_manager.searcher_thread, nullptr,
-				   start_searching, (void *) &thread_manager.search_manager);
-	pthread_create(&thread_manager.spawner_thread, nullptr,
-				   spawn_asteroid_thread, (void *) &match_vars);
+    pthread_create(&thread_manager.searcher_thread, nullptr,
+    			   start_searching, (void *) &thread_manager.search_manager);
+    pthread_create(&thread_manager.spawner_thread, nullptr,
+    			   spawn_asteroid_thread, (void *) &match_vars);
     al_start_timer(match_vars.spawn_timer);
 
     while (!match_vars.gameover) {
@@ -533,25 +533,25 @@ bool play_wa(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
 
         // Stampe
         draw_background(arr_bitmaps[8], bg_offset, true);
-		draw_playwa_asteroids_bullets(match_vars, arr_bullet,
-									  arr_bitmaps, arr_fonts[2]);
-		draw_playwa_score_hint(match_vars, arr_fonts[0], arr_fonts[1],
-							   settings.visible_hints);
+        draw_playwa_asteroids_bullets(match_vars, arr_bullet,
+                                      arr_bitmaps, arr_fonts[2]);
+        draw_playwa_score_hint(match_vars, arr_fonts[0], arr_fonts[1],
+                               settings.visible_hints);
         draw_playwa_shooter(match_vars, arr_bullet, shooter, arr_bitmaps);
-		draw_playwa_bonus_music(match_vars, arr_bitmaps, arr_fonts[0],
-								arr_fonts[3], arr_fonts[4], settings);
+        draw_playwa_bonus_music(match_vars, arr_bitmaps, arr_fonts[0],
+                                arr_fonts[3], arr_fonts[4], settings);
         al_flip_display();
 
-		if (match_vars.gameover) {
-			al_stop_samples();
-			sound_play(match_vars.sound_gameover, settings.sound);
-			al_rest(1.0);
-			break;
-		}
+        if (match_vars.gameover) {
+            al_stop_samples();
+            sound_play(match_vars.sound_gameover, settings.sound);
+            al_rest(1.0);
+            break;
+        }
 
         ALLEGRO_EVENT ev;
-		if (!al_wait_for_event_timed(ev_queue, &ev, 1.0 / match_vars.fps))
-			continue;
+        if (!al_wait_for_event_timed(ev_queue, &ev, 1.0 / match_vars.fps))
+            continue;
 
         switch (ev.type) {
             // X
@@ -599,7 +599,7 @@ bool play_wa(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *ev_queue,
     al_flush_event_queue(ev_queue);
     change_music(MUSIC_GAMEOVER_PATH_WA, settings.music);
 
-	// Schermata di fine partita
+    // Schermata di fine partita
     draw_gameover(display, ev_queue, match_vars);
     al_stop_samples();
     return true;

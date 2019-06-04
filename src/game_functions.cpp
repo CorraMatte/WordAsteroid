@@ -10,8 +10,8 @@
  *      1) str - Stringa sulla quale effettuare lo shift.
  */
 static void word_leftshift(char *str) {
-	unsigned int	i;
-	for (i = 0; i < strlen(str); i++)
+    unsigned int	i;
+    for (i = 0; i < strlen(str); i++)
         str[i] = str[i + 1];
 }
 
@@ -27,10 +27,10 @@ static void word_leftshift(char *str) {
  */
 static float
 calculate_distance(const float &x_a, const float &x_b, const float &y_a,
-				   const float &y_b, const float &radius) {
-	float	d_x, d_y;
-	d_x = x_a + radius - x_b;
-	d_y = y_a + radius - y_b;
+                   const float &y_b, const float &radius) {
+    float	d_x, d_y;
+    d_x = x_a + radius - x_b;
+    d_y = y_a + radius - y_b;
 
     return sqrt(pow(d_x, 2) + pow(d_y, 2));
 }
@@ -48,7 +48,7 @@ calculate_distance(const float &x_a, const float &x_b, const float &y_a,
  *      Altrimenti, cancella il primo carattere della parola relativa all'asteroide agganciato e ritorna true.
  */
 static bool char_key_handler(asteroid_list *ast_queues, const char *k,
-							 int &current_asteroid) {
+                             int &current_asteroid) {
     char	key = k[0];
 
     if (!isalpha(key) && !isdigit(key))
@@ -83,8 +83,8 @@ static bool char_key_handler(asteroid_list *ast_queues, const char *k,
  *      Ritorna il puntatore alla parola allocata.
  */
 static char *get_random_word(char force) {
-	char	i, *punt;
-	int	j;
+    char	i, *punt;
+    int	j;
 
     // Generazione casuale (o assegnamento forzato) di i
     srand(clock());
@@ -93,7 +93,7 @@ static char *get_random_word(char force) {
     // Prende la parola dal buffer che riempono i searcher_thread
     pthread_mutex_lock(&thread_manager.words_buffer_mutex);
 
-	punt = new char[strlen(words_buffer.words[i])];
+    punt = new char[strlen(words_buffer.words[i])];
     strcpy(punt, words_buffer.words[i]);
     free(words_buffer.words[i]);
     words_buffer.words[i] = nullptr;
@@ -108,10 +108,10 @@ static char *get_random_word(char force) {
 }
 
 /**
- *		Funzione che elimina l'asteroide selezionato. \n
- * 		Parametri: \n
- * 		1)	ast_queues - Vettore di liste di asteroidi \n
- * 		2)	index_to_extract - Indice dell'asteroide da eliminare \n
+ *      Funzione che elimina l'asteroide selezionato. \n
+ *      Parametri: \n
+ *      1)	ast_queues - Vettore di liste di asteroidi \n
+ *      2)	index_to_extract - Indice dell'asteroide da eliminare \n
  *      Ritorna -1 se l'asteroide non ha asteroide in coda, index_to_extract se ha altri asterodi in coda.
  */
 static int delete_asteroid(asteroid_list *ast_queues, const int &index_to_extract) {
@@ -123,19 +123,19 @@ static int delete_asteroid(asteroid_list *ast_queues, const int &index_to_extrac
 
 /**
  *      Funzione chiamata quando viene distrutto un asteroide: aumenta lo score del giocatore in base al tipo dell'asteroide e
- * 	    ogni 10 asteroidi distrutti aumenta la difficola' del livello. \n
+ *      ogni 10 asteroidi distrutti aumenta la difficola' del livello. \n
  *      Parametri: \n
- * 	    1) match - Struttura per modificare lo score il numero di asteroidi distrutti; \n
- * 	    2) match_vars - Struttura per aumentare la velocità di spawn degli asteroidi in caso di update di livello; \n
- * 	    3) index_to_extract - Indice dell'asteroide distrutto da cui si ottiene il suo tipo. \n
+ *      1) match - Struttura per modificare lo score il numero di asteroidi distrutti; \n
+ *      2) match_vars - Struttura per aumentare la velocità di spawn degli asteroidi in caso di update di livello; \n
+ *      3) index_to_extract - Indice dell'asteroide distrutto da cui si ottiene il suo tipo. \n
  *      Ritorna il bonus dell'asteroide da generare.
  */
 static asteroid_special_t update_diff_score(match_vars_t &match_vars,
-											const int &index_to_extract) {
-	int	bonus_to_generate;
+                                            const int &index_to_extract) {
+    int	bonus_to_generate;
 
     srand(clock());
-	match_vars.score += SCORE_INCREMENT;
+    match_vars.score += SCORE_INCREMENT;
     match_vars.asteroids_destroyed++;
     match_vars.current_asteroid = -1;
     match_vars.asteroid_head--;
@@ -147,12 +147,12 @@ static asteroid_special_t update_diff_score(match_vars_t &match_vars,
     }
 
     if (match_vars.asteroids_destroyed - match_vars.asteroid_to_bonus >= match_vars.instant_ast_dest) {
-		match_vars.asteroid_to_bonus = init_target_bonus(
-				match_vars.instant_ast_dest,
-				match_vars.asteroids_destroyed);
+        match_vars.asteroid_to_bonus = init_target_bonus(
+                match_vars.instant_ast_dest,
+                match_vars.asteroids_destroyed);
         srand(time(nullptr));
 
-		bonus_to_generate = rand() % NUM_ITEMS;
+        bonus_to_generate = rand() % NUM_ITEMS;
         switch (bonus_to_generate) {
             case 0:
                 return ATOMIC;
@@ -169,10 +169,10 @@ static asteroid_special_t update_diff_score(match_vars_t &match_vars,
 }
 
 /**
- *		Funzione che aggiorna i contatori dei bonus. \n
- * 		Parametri: \n
- * 		1)	items[] - Vettore dei bonus; \n
- * 		2)	s - Tipo di bonus ottenuto.
+ *      Funzione che aggiorna i contatori dei bonus. \n
+ *      Parametri: \n
+ *      1) items[] - Vettore dei bonus; \n
+ *      2) s - Tipo di bonus ottenuto.
  */
 static void update_bonus(int *items, const asteroid_special_t &s) {
     switch (s) {
@@ -197,35 +197,35 @@ static void update_bonus(int *items, const asteroid_special_t &s) {
 }
 
 /**
- *		Funzione che calcola l'indice dell'asteroide più vicino alla navicella. \n
- * 		Parametri: \n
- * 		1) ast_queue - Vettore di liste di asteroidi; \n
+ *      Funzione che calcola l'indice dell'asteroide più vicino alla navicella. \n
+ *      Parametri: \n
+ *      1) ast_queue - Vettore di liste di asteroidi; \n
  *      2) arr_bullet - Vettore dei proiettili; \n
- * 		3) shooter - Shooter posizionato al centro dello schermo.  \n
+ *      3) shooter - Shooter posizionato al centro dello schermo.  \n
  *      Ritorna l'indice dell'asteroide piu' vicino.
  */
 static int closer_asteroid(const asteroid_list *ast_queues,
-						   const bullet_t *arr_bullet,
-						   const shooter_t &shooter) {
-	float	distance;
-	int	index_to_extract, i;
+                           const bullet_t *arr_bullet,
+                           const shooter_t &shooter) {
+    float	distance;
+    int	index_to_extract, i;
 
-	distance = 0;
-	index_to_extract = -1;
+    distance = 0;
+    index_to_extract = -1;
 
-	for (i = 0; i < N_QUEUES; i++)
-		if (ast_queues[i] != nullptr &&
-			arr_bullet[i].x == 0 &&
-			(distance == 0 || distance >
-							  calculate_distance(ast_queues[i]->asteroid.x,
-												 shooter.x,
-												 ast_queues[i]->asteroid.y,
-												 shooter.y,
-												 ast_queues[i]->asteroid.radius))) {
+    for (i = 0; i < N_QUEUES; i++)
+        if (ast_queues[i] != nullptr &&
+            arr_bullet[i].x == 0 &&
+            (distance == 0 || distance >
+                              calculate_distance(ast_queues[i]->asteroid.x,
+                                                 shooter.x,
+                                                 ast_queues[i]->asteroid.y,
+                                                 shooter.y,
+                                                 ast_queues[i]->asteroid.radius))) {
 
-			distance = calculate_distance(ast_queues[i]->asteroid.x, shooter.x,
-										  ast_queues[i]->asteroid.y, shooter.y,
-										  ast_queues[i]->asteroid.radius);
+            distance = calculate_distance(ast_queues[i]->asteroid.x, shooter.x,
+                                          ast_queues[i]->asteroid.y, shooter.y,
+                                          ast_queues[i]->asteroid.radius);
             index_to_extract = i;
         }
 
@@ -241,9 +241,9 @@ static int closer_asteroid(const asteroid_list *ast_queues,
  *      4) en_sound - Se ON, viene riprodotto il suono dell'esplosione degli asteroidi.
  */
 static void atomic_bonus(match_vars_t &match_vars, bullet_t *arr_bullet, enable_t &en_sound) {
-	int	i;
+    int	i;
 
-	for (i = 0; i < N_QUEUES; i++)
+    for (i = 0; i < N_QUEUES; i++)
         if (match_vars.ast_queues[i] != nullptr) {
 
             //Manca da mandare l'animazione
@@ -279,19 +279,19 @@ static void atomic_bonus(match_vars_t &match_vars, bullet_t *arr_bullet, enable_
  *      4) en_sound - Se ON, viene riprodotto il suono dell'esplosione degli asteroidi.
  */
 static void fire_bonus(match_vars_t &match_vars, const bullet_t *arr_bullet,
-					   const shooter_t &shooter, enable_t &en_sound) {
-	int	index_to_extract;
+                       const shooter_t &shooter, enable_t &en_sound) {
+    int	index_to_extract;
 
-	index_to_extract = closer_asteroid(match_vars.ast_queues, arr_bullet,
-									   shooter);
+    index_to_extract = closer_asteroid(match_vars.ast_queues, arr_bullet,
+                                       shooter);
     if (index_to_extract == -1) return;
     sound_play(match_vars.sound_exp, en_sound);
     al_destroy_bitmap(match_vars.ast_queues[index_to_extract]->asteroid.bmp);
-	update_bonus(match_vars.items,
-				 match_vars.ast_queues[index_to_extract]->asteroid.special);
+    update_bonus(match_vars.items,
+                 match_vars.ast_queues[index_to_extract]->asteroid.special);
     match_vars.asteroid_to_generate = update_diff_score(match_vars, index_to_extract);
-	match_vars.insert_asteroid_index = delete_asteroid(match_vars.ast_queues,
-													   index_to_extract);
+    match_vars.insert_asteroid_index = delete_asteroid(match_vars.ast_queues,
+                                                       index_to_extract);
     match_vars.items[2]--;
 }
 
@@ -302,7 +302,7 @@ static void fire_bonus(match_vars_t &match_vars, const bullet_t *arr_bullet,
  *      2) settings - Struct contenente le impostazioni di gioco.
  */
 static void spawn_asteroid(match_vars_t &match_vars) {
-	int	next_pos_to_insert;
+    int	next_pos_to_insert;
 
     // Inserimento asteroidi
     if (match_vars.asteroid_head == MAX_ASTEROID_HEAD)
@@ -316,28 +316,29 @@ static void spawn_asteroid(match_vars_t &match_vars) {
         return;
     }
 
-	next_pos_to_insert = insert_elem_head(match_vars.ast_queues,
-										  generate_asteroid(
-												  match_vars.asteroid_to_generate,
-												  0));
+    next_pos_to_insert = insert_elem_head(match_vars.ast_queues,
+                                          generate_asteroid(
+                                                  match_vars.asteroid_to_generate,
+                                                  0));
     match_vars.asteroid_to_generate = NORMAL;
 
     // next_pos_to_insert
     while (next_pos_to_insert != -1)
         if (next_pos_to_insert == N_QUEUES) next_pos_to_insert = 0;
         else {
-			next_pos_to_insert = insert_elem_head(match_vars.ast_queues,
-												  generate_asteroid(
-														  match_vars.asteroid_to_generate,
-														  next_pos_to_insert));
-		}
+            next_pos_to_insert = insert_elem_head(match_vars.ast_queues,
+                                                  generate_asteroid(
+                                                          match_vars.asteroid_to_generate,
+                                                          next_pos_to_insert));
+
+        }
 }
 
 /**
- *		Funzione che genera il bullet corrispondente all'asteroide distrutto, spostandolo all'estremita' dello shooter. \n
- * 		Parametri: \n
- * 		1)	asteroid - Asteroide da distruggere; \n
- * 		2)	shooter - Shooter posizionato al centro dello schermo.
+ *      Funzione che genera il bullet corrispondente all'asteroide distrutto, spostandolo all'estremita' dello shooter. \n
+ *      Parametri: \n
+ *      1)	asteroid - Asteroide da distruggere; \n
+ *      2)	shooter - Shooter posizionato al centro dello schermo.
  */
 static bullet_t generate_bullet(const asteroid_t &asteroid, const shooter_t &shooter) {
     bullet_t	bullet = {shooter.x, shooter.y, PLAYWA_GV.BULLET_RADIUS,
@@ -394,44 +395,44 @@ void music_wa_play() {
 }
 
 asteroid_t generate_asteroid(const asteroid_special_t s, const int &next_p) {
-	asteroid_t	asteroid;
-	char	src[255], *c_num, *h_word;
-	float	intervall_no_spawn = 180;
-	int	rand_side, first_char;
+    asteroid_t	asteroid;
+    char	src[255], *c_num, *h_word;
+    float	intervall_no_spawn = 180;
+    int	rand_side, first_char;
 
     srand(clock());
     // Init raggio
-	asteroid.radius = (float) 5 / 3 * (2.5 * display_info.width) / 100;
+    asteroid.radius = (float) 5 / 3 * (2.5 * display_info.width) / 100;
     // Init special
     asteroid.special = s;
     strcpy(src, "media/images/asteroids/");
 
     switch (s) {
         case NORMAL:
-			strcat(src, "normal/ast.png");
+            strcat(src, "normal/ast.png");
             break;
 
         case ATOMIC:
-			strcat(src, "atomic/ast.png");
+            strcat(src, "atomic/ast.png");
             break;
 
         case RALLENTY:
-			strcat(src, "rallenty/ast.png");
+            strcat(src, "rallenty/ast.png");
             break;
 
         case FIRE:
-			strcat(src, "fire/ast.png");
+            strcat(src, "fire/ast.png");
             break;
 
         case SHIELD:
-			strcat(src, "shield/ast.png");
+            strcat(src, "shield/ast.png");
     }
 
     asteroid.bmp = al_load_bitmap(src);
     assert(asteroid.bmp != nullptr);
 
     // Init coordinate
-	rand_side = rand() % 4 + 1;
+    rand_side = rand() % 4 + 1;
     switch (rand_side) {
 
         // Lato superiore
@@ -471,8 +472,8 @@ asteroid_t generate_asteroid(const asteroid_special_t s, const int &next_p) {
                           (display_info.width / 2 - (asteroid.x + asteroid.radius)));
 
     // Init parola
-	h_word = nullptr;
-	first_char = next_p;
+    h_word = nullptr;
+    first_char = next_p;
 
     while (h_word == nullptr) {
         h_word = get_random_word(first_char);
@@ -486,9 +487,9 @@ asteroid_t generate_asteroid(const asteroid_special_t s, const int &next_p) {
 }
 
 void move_bullets(bullet_t *bullet, match_vars_t &match_vars, enable_t &en_sound) {
-	int	i;
+    int	i;
 
-	for (i = 0; i < N_QUEUES; i++) {
+    for (i = 0; i < N_QUEUES; i++) {
         if (bullet[i].x == 0) continue;
 
         if (bullet[i].x < display_info.width / 2) {
@@ -499,11 +500,11 @@ void move_bullets(bullet_t *bullet, match_vars_t &match_vars, enable_t &en_sound
             bullet[i].y += 3 * sin(bullet[i].slope);
         }
 
-		if (calculate_distance(match_vars.ast_queues[i]->asteroid.x,
-							   bullet[i].x,
-							   match_vars.ast_queues[i]->asteroid.y,
-							   bullet[i].y,
-							   match_vars.ast_queues[i]->asteroid.radius) <
+        if (calculate_distance(match_vars.ast_queues[i]->asteroid.x,
+                               bullet[i].x,
+                               match_vars.ast_queues[i]->asteroid.y,
+                               bullet[i].y,
+                               match_vars.ast_queues[i]->asteroid.radius) <
             match_vars.ast_queues[i]->asteroid.radius + bullet[i].radius) {
 
             sound_play(match_vars.sound_exp, en_sound);
@@ -516,33 +517,33 @@ void move_bullets(bullet_t *bullet, match_vars_t &match_vars, enable_t &en_sound
 }
 
 void move_asteroids(asteroid_list *ast_queues, const int &extract_index) {
-	int	i;
+    int	i;
 
-	for (i = 0; i < N_QUEUES; i++) {
+    for (i = 0; i < N_QUEUES; i++) {
 
-		if (ast_queues[i] != nullptr) {
+    	if (ast_queues[i] != nullptr) {
 
-			if (ast_queues[i]->asteroid.x < display_info.width / 2) {
-				ast_queues[i]->asteroid.x += cos(ast_queues[i]->asteroid.slope);
-				ast_queues[i]->asteroid.y += sin(ast_queues[i]->asteroid.slope);
+            if (ast_queues[i]->asteroid.x < display_info.width / 2) {
+                ast_queues[i]->asteroid.x += cos(ast_queues[i]->asteroid.slope);
+                ast_queues[i]->asteroid.y += sin(ast_queues[i]->asteroid.slope);
 
-			} else {
+            } else {
 
-				ast_queues[i]->asteroid.x -= cos(ast_queues[i]->asteroid.slope);
-				ast_queues[i]->asteroid.y -= sin(ast_queues[i]->asteroid.slope);
+                ast_queues[i]->asteroid.x -= cos(ast_queues[i]->asteroid.slope);
+                ast_queues[i]->asteroid.y -= sin(ast_queues[i]->asteroid.slope);
 
-			}
-		}
-	}
+            }
+        }
+    }
 }
 
 void move_shooter(shooter_t &shooter, const asteroid_list *ast_queues,
-				  const int current_asteroid) {
-	float	goal_slope, distanza;
-	int	goal_quadrant;
-	bool	senso_orario;
+                  const int current_asteroid) {
+    float	goal_slope, distanza;
+    int	goal_quadrant;
+    bool	senso_orario;
 
-	// Se non deve puntare a nulla, ritorna
+    // Se non deve puntare a nulla, ritorna
     if (current_asteroid == -1)
         return;
 
@@ -550,7 +551,7 @@ void move_shooter(shooter_t &shooter, const asteroid_list *ast_queues,
     asteroid_t ast = ast_queues[current_asteroid]->asteroid;
 
     // "goal_quadrant" è il quadrante a cui appartiene l'asteroide interessato
-	goal_quadrant = which_quadrant(ast.x, ast.y);
+    goal_quadrant = which_quadrant(ast.x, ast.y);
 
     // Offset quadrante.
     switch (goal_quadrant) {
@@ -580,8 +581,8 @@ void move_shooter(shooter_t &shooter, const asteroid_list *ast_queues,
     // ...altrimenti, ruota.
 
     // Scelta via più breve:
-	senso_orario = true;
-	distanza = abs(goal_slope - shooter.slope);
+    senso_orario = true;
+    distanza = abs(goal_slope - shooter.slope);
     if (goal_slope > shooter.slope) {
         if (distanza >= M_PI) {
             senso_orario = false;
@@ -606,7 +607,7 @@ void move_shooter(shooter_t &shooter, const asteroid_list *ast_queues,
 }
 
 bool check_gameover(asteroid_list *ast_queues, const shooter_t &shooter,
-					const bullet_t *arr_bullet) {
+                    const bullet_t *arr_bullet) {
     int	index_to_extract = closer_asteroid(ast_queues, arr_bullet, shooter);
     if (index_to_extract == -1) return false;
 
@@ -664,9 +665,9 @@ void handler_timer(ALLEGRO_EVENT ev, match_vars_t &match_vars, settings_t &setti
 }
 
 void handler_key_pressed(ALLEGRO_EVENT ev, match_vars_t &match_vars,
-						 bullet_t *arr_bullet, shooter_t &shooter,
-						 settings_t &settings) {
-	int	index_to_extract;
+                         bullet_t *arr_bullet, shooter_t &shooter,
+                         settings_t &settings) {
+    int	index_to_extract;
 
 
     switch (ev.keyboard.keycode) {
@@ -722,7 +723,7 @@ void handler_key_pressed(ALLEGRO_EVENT ev, match_vars_t &match_vars,
             const char *value = al_keycode_to_name(ev.keyboard.keycode);
             if (char_key_handler(match_vars.ast_queues, value, match_vars.current_asteroid) && value[1] == '\0') {
 
-				index_to_extract = match_vars.current_asteroid;
+                index_to_extract = match_vars.current_asteroid;
                 assert(match_vars.ast_queues[index_to_extract] != nullptr);
 
                 if (match_vars.ast_queues[index_to_extract]->asteroid.word[0] == '\0') {
