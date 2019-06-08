@@ -1,4 +1,5 @@
 import argparse
+from datetime import datetime
 import multiprocessing as mp
 import os
 import random
@@ -7,7 +8,7 @@ import string
 import tarfile
 
 NPROC = 10
-ARCHIVE_DIR = '/tmp/' # os.path.abspath(os.path.join(os.pardir, 'archives'))
+ARCHIVE_DIR = '/tmp/'
 TEMP_DIR = 'tmp'
 
 
@@ -25,7 +26,7 @@ def create_single_file(args):
 
 
 def create_archive(email):
-    if (!os.path.exists(TEMP_DIR)):
+    if (not os.path.exists(TEMP_DIR)):
         os.mkdir(TEMP_DIR)
     p = mp.Pool(processes=10)
     args = [email for i in range(NPROC)]
@@ -34,9 +35,12 @@ def create_archive(email):
     p.map(create_single_file, args)
 
     print("Creating the archive..")
-    with tarfile.open('{}/archive_{}.tar.gz'.format(ARCHIVE_DIR, mp.current_process().pid), "w:gz") as tar:
+    filename = '{}/archive_{}.tar.gz'.format(ARCHIVE_DIR, mp.current_process().pid)
+    with tarfile.open(filename, "w:gz") as tar:
         tar.add(TEMP_DIR, arcname=os.path.basename(TEMP_DIR))
         shutil.rmtree(TEMP_DIR)
+
+    return filename
 
 
 def main():
@@ -54,9 +58,12 @@ def main():
         print("Nothing will be created")
         return
     
-    for i in range(nfiles):
-        print("Creating {}/{}".format(i + 1, nfiles))
-        create_archive(args.email)
+    print("Creating archive")
+    src = create_archive(args.email)
+    for i in range(nfiles - 1):
+        t = int(datetime.now().timestamp())
+        dst = '{}/archive_{}.tar.gz'.format(ARCHIVE_DIR, t)
+        shutil.copyfile(src, dst)
 
     print("Archive creates")
 
