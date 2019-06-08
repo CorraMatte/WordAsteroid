@@ -53,12 +53,12 @@ bool init_game_requirements(){
     al_init_font_addon();
     al_init_ttf_addon();
     al_install_audio();     
-    if(!al_install_audio())				return false;
-    if(!al_init_acodec_addon())			return false;
-    if(!al_reserve_samples(6))			return false;
+    if(!al_install_audio()) return false;
+    if(!al_init_acodec_addon()) return false;
+    if(!al_reserve_samples(6)) return false;
     // Installo e controllo se esiste la tastiera
-    if (!al_install_keyboard())			return false;
-    if (!al_is_keyboard_installed())	return false;
+    if (!al_install_keyboard()) return false;
+    if (!al_is_keyboard_installed()) return false;
     return true;
 }
 

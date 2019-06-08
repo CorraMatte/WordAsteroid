@@ -44,7 +44,6 @@ target_link_libraries(wa
         liballegro_image.so.5.2.6
         liballegro_main.so.5.2.6
         liballegro_memfile.so.5.2.6
-        liballegro_physfs.so.5.2.6
         liballegro_primitives.so.5.2.6
         liballegro_ttf.so.5.2.6
 
