@@ -2,3 +2,6 @@
 CMakeFiles
 wa*
 CMakeCache.txt
+Makefile
+cmake-build-debug/
+cmake_install.cmake
