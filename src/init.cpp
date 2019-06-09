@@ -84,7 +84,25 @@ display_info_t init_display_res(){
 
     D = {display_w, display_h};
     return D;
-};
+}
+
+void init_display(ALLEGRO_DISPLAY * & display){
+	display = al_create_display(display_info.width, display_info.height);
+	ALLEGRO_BITMAP	*icon;
+
+	char	*bmp_path;
+	char	bmp_path_names[255] = "icon.png";
+
+	bmp_path = new char[255];
+	bmp_path[0] = '\0';
+	strcat(bmp_path, BMP_PATH_BASE);
+	strcat(bmp_path, bmp_path_names);
+	icon = al_load_bitmap(bmp_path);
+	assert(icon != nullptr);
+	delete[] bmp_path;
+
+	al_set_display_icon(display, icon);
+}
 
 ALLEGRO_EVENT_QUEUE* init_queue_event(ALLEGRO_DISPLAY * & display){
     // Creo la code degli eventi

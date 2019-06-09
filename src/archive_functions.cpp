@@ -42,19 +42,11 @@ static inline char *convert_to_only_alpha(char *str) {
 static void extract_archive_cancel_routine(void *arg) {
     struct archive	*a = (struct archive *) arg;
     pthread_mutex_unlock(&thread_manager.gameover_mutex);
-    pthread_mutex_unlock((&thread_manager.words_buffer_mutex));
-    archive_clear_error(a);
-    archive_read_free(a);
-}
-
-/**
- *      Funzione che pulisce e chiude l'entry di lettura dell'archivio
- *      che si stava analizzando.\n
- *      1) arg - Puntatore all'oggetto da deallocare.
- */
-static void extract_entry_cancel_routine(void *arg) {
-    struct archive_entry	*entry = (struct archive_entry *) arg;
-    archive_entry_free(entry);
+    pthread_mutex_unlock(&thread_manager.words_buffer_mutex);
+    if (a != nullptr) {
+        archive_read_close(a);
+        archive_read_free(a);
+    }
 }
 
 /**
@@ -214,39 +206,34 @@ static int search_string(struct archive *ar, const char *email, const bool is_se
 static void *extract(void *look_into) {
     look_into_t	*lk = (look_into_t *) look_into;
     struct archive	*a = archive_read_new();
-    struct archive_entry	*entry;
+    struct archive_entry	*entry = nullptr;
     int	r;
 
     archive_read_support_format_tar(a);
     archive_read_support_filter_gzip(a);
     pthread_cleanup_push(extract_free_cancel_routine, lk);
         pthread_cleanup_push(extract_archive_cancel_routine, a);
-            pthread_cleanup_push(extract_entry_cancel_routine, entry);
-                // if (lk->filename != nullptr && strcmp(lk->filename, "-") == 0)
-                //        lk->filename = nullptr;
 
                 if (archive_read_open_filename(a, lk->filename, 1024)) {
                     return (void *) 1;
                 }
                 for (;;) {
                     if (!lk->is_searcher) {
-                    	pthread_cond_wait(&thread_manager.gameover_cond,
+                        pthread_cond_wait(&thread_manager.gameover_cond,
                                     	  &thread_manager.gameover_mutex);
                     }
                     r = archive_read_next_header(a, &entry);
                     if (r == ARCHIVE_EOF)
-                    	break;
+                        break;
 
                     if (r < ARCHIVE_OK || r < ARCHIVE_WARN) {
-                    	return (void *) 1;
+                        return (void *) 1;
                     }
                     assert(search_string(a, lk->email, lk->is_searcher) == 0);
                 }
-                archive_entry_free(entry);
                 archive_read_close(a);
                 archive_read_free(a);
 
-            pthread_cleanup_pop(0);
         pthread_cleanup_pop(0);
     pthread_cleanup_pop(0);
     return (void *) 0;
@@ -262,28 +249,29 @@ void *start_searching(void *search_manager) {
         void	*ret;
         sm->threads = new pthread_t[NUMBER_THREADS];
 
-        for (i = 0; i < sm->file_list->nfile; i++) {
-            ret = nullptr;
-            if (i >= NUMBER_THREADS) {
-                pthread_testcancel();
-                pthread_join(sm->threads[i % NUMBER_THREADS], &ret);
+        for (;;){
+            for (i = 0; i < sm->file_list->nfile; i++) {
+                ret = nullptr;
+                if (i >= NUMBER_THREADS) {
+                    pthread_testcancel();
+                    pthread_join(sm->threads[i % NUMBER_THREADS], &ret);
+                }
+                sig1 = reinterpret_cast<long long> (ret);
+                sig = static_cast<int>(sig1);
+                assert(sig == 0);
+
+                lk = new look_into_t;
+                lk->filename = sm->file_list->files[i].filename;
+                lk->email = sm->email;
+                lk->is_searcher = i % 2 == 1 || NUMBER_THREADS == 1;
+
+                pthread_attr_init(&attr);
+                err = pthread_create(&sm->threads[i % NUMBER_THREADS], nullptr,
+                                     extract, (void *) lk);
+                pthread_attr_destroy(&attr);
+                assert(err == 0);
             }
-            sig1 = reinterpret_cast<long long> (ret);
-            sig = static_cast<int>(sig1);
-            assert(sig == 0);
-
-            lk = new look_into_t;
-            lk->filename = sm->file_list->files[i].filename;
-            lk->email = sm->email;
-            lk->is_searcher = i % 2 == 1 || NUMBER_THREADS == 1;
-
-            pthread_attr_init(&attr);
-            err = pthread_create(&sm->threads[i % NUMBER_THREADS], nullptr,
-                            	 extract, (void *) lk);
-            pthread_attr_destroy(&attr);
-            assert(err == 0);
+            pthread_join(sm->threads[sm->file_list->nfile - 1], &ret);
         }
-        pthread_join(sm->threads[sm->file_list->nfile - 1], &ret);
     pthread_cleanup_pop(0);
-    return nullptr;
 }

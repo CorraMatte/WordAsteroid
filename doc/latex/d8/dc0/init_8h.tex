@@ -27,6 +27,8 @@ bool \hyperlink{init_8h_ad344b8e4aa48698e5e02723af7cb9cf3}{init\+\_\+game\+\_\+r
 \begin{DoxyCompactList}\small\item\em Funzione che inizializza le dimensioni del display di gioco in base alle proporzioni standard (1280x800), adattandole al monitor del proprio computer. \end{DoxyCompactList}\item 
 A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$ \hyperlink{init_8h_a5059121608a64d2b96b2d3a95816213e}{init\+\_\+queue\+\_\+event} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$\&display)
 \begin{DoxyCompactList}\small\item\em Funzione che crea il puntatore alla coda degli eventi e aggancia alla coda gli eventi relativi alla tastiera e display. \end{DoxyCompactList}\item 
+void \hyperlink{init_8h_a026a4c3b4000d2f08220df0d54f61f5a}{init\+\_\+display} (A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$\&display)
+\begin{DoxyCompactList}\small\item\em Funzione che crea il display ed inizializza il titolo e l\textquotesingle{}icona. \end{DoxyCompactList}\item 
 int \hyperlink{init_8h_ae891066631b0f2207f9781f0e96ed154}{init\+\_\+target\+\_\+bonus} (int \&instant\+\_\+ast\+\_\+dest, const int \&asteroids\+\_\+destroyed)
 \begin{DoxyCompactList}\small\item\em Funzione che indica dopo quanti asteroidi distrutti ottengo il bonus. \end{DoxyCompactList}\item 
 A\+L\+L\+E\+G\+R\+O\+\_\+\+S\+A\+M\+P\+LE $\ast$ \hyperlink{init_8h_ae3a65cb2bb1a457481b60f2417f13f8c}{init\+\_\+sound\+\_\+music} (const char $\ast$path)
@@ -81,7 +83,20 @@ Funzione che inizializza le informazioni di un proiettile.
 
 ~\newline
 Parametri\+: ~\newline
-1) shooter -\/ Struct relativo al singolo proiettile. \mbox{\Hypertarget{init_8h_a52af8e422d4613b6d748fe26befa48fe}\label{init_8h_a52af8e422d4613b6d748fe26befa48fe}} 
+1) shooter -\/ Struct relativo al singolo proiettile. \mbox{\Hypertarget{init_8h_a026a4c3b4000d2f08220df0d54f61f5a}\label{init_8h_a026a4c3b4000d2f08220df0d54f61f5a}} 
+\index{init.\+h@{init.\+h}!init\+\_\+display@{init\+\_\+display}}
+\index{init\+\_\+display@{init\+\_\+display}!init.\+h@{init.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+display()}{init\_display()}}
+{\footnotesize\ttfamily void init\+\_\+display (\begin{DoxyParamCaption}\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$\&}]{display }\end{DoxyParamCaption})}
+
+
+
+Funzione che crea il display ed inizializza il titolo e l\textquotesingle{}icona. 
+
+~\newline
+Parametri\+: ~\newline
+1) display -\/ Puntatore al display del gioco; ~\newline
+\mbox{\Hypertarget{init_8h_a52af8e422d4613b6d748fe26befa48fe}\label{init_8h_a52af8e422d4613b6d748fe26befa48fe}} 
 \index{init.\+h@{init.\+h}!init\+\_\+display\+\_\+res@{init\+\_\+display\+\_\+res}}
 \index{init\+\_\+display\+\_\+res@{init\+\_\+display\+\_\+res}!init.\+h@{init.\+h}}
 \subsubsection{\texorpdfstring{init\+\_\+display\+\_\+res()}{init\_display\_res()}}

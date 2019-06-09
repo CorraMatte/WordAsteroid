@@ -13,7 +13,7 @@
     \subitem {thread\+\_\+manager}, \hyperpage{39}
     \subitem {words\+\_\+buffer}, \hyperpage{39}
   \item {archives\+\_\+exist}
-    \subitem {utilities.\+cpp}, \hyperpage{100}
+    \subitem {utilities.\+cpp}, \hyperpage{101}
     \subitem {utilities.\+h}, \hyperpage{105}
   \item {ast\+\_\+queues}
     \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{17}
@@ -85,7 +85,7 @@
   \item {C\+O\+P\+Y\+R\+I\+G\+H\+T\+\_\+\+T\+O\+P\+\_\+\+O\+F\+F\+S\+ET}
     \subitem {menu\+\_\+gv\+\_\+t}, \hyperpage{21}
   \item {change\+\_\+enable}
-    \subitem {utilities.\+cpp}, \hyperpage{100}
+    \subitem {utilities.\+cpp}, \hyperpage{101}
     \subitem {utilities.\+h}, \hyperpage{105}
   \item {change\+\_\+music}
     \subitem {game\+\_\+functions.\+cpp}, \hyperpage{72}
@@ -182,16 +182,16 @@
     \subitem {T\+I\+M\+E\+R\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+B\+O\+N\+US}, 
 		\hyperpage{47}
   \item {delete\+\_\+ast\+\_\+queues}
-    \subitem {utilities.\+cpp}, \hyperpage{100}
+    \subitem {utilities.\+cpp}, \hyperpage{101}
     \subitem {utilities.\+h}, \hyperpage{105}
   \item {delete\+\_\+display\+\_\+evqueue\+\_\+music}
     \subitem {utilities.\+cpp}, \hyperpage{101}
-    \subitem {utilities.\+h}, \hyperpage{105}
+    \subitem {utilities.\+h}, \hyperpage{106}
   \item {delete\+\_\+sounds}
     \subitem {utilities.\+cpp}, \hyperpage{101}
-    \subitem {utilities.\+h}, \hyperpage{105}
+    \subitem {utilities.\+h}, \hyperpage{106}
   \item {delete\+\_\+timer}
-    \subitem {utilities.\+cpp}, \hyperpage{101}
+    \subitem {utilities.\+cpp}, \hyperpage{102}
     \subitem {utilities.\+h}, \hyperpage{106}
   \item {destroy\+\_\+arr\+\_\+bitmaps}
     \subitem {drawing\+\_\+functions.\+cpp}, \hyperpage{52}
@@ -203,10 +203,10 @@
     \subitem {drawing\+\_\+functions.\+h}, \hyperpage{69}
     \subitem {game\+\_\+functions.\+h}, \hyperpage{80}
     \subitem {graphical\+\_\+values.\+h}, \hyperpage{84}
-    \subitem {init.\+h}, \hyperpage{92}
-    \subitem {main.\+cpp}, \hyperpage{93}
-    \subitem {sections.\+h}, \hyperpage{98}
-    \subitem {utilities.\+h}, \hyperpage{107}
+    \subitem {init.\+h}, \hyperpage{93}
+    \subitem {main.\+cpp}, \hyperpage{94}
+    \subitem {sections.\+h}, \hyperpage{99}
+    \subitem {utilities.\+h}, \hyperpage{108}
   \item {display\+\_\+info\+\_\+t}, \hyperpage{8}
     \subitem {height}, \hyperpage{8}
     \subitem {width}, \hyperpage{8}
@@ -367,11 +367,11 @@
   \item {enable\+\_\+t}
     \subitem {data.\+h}, \hyperpage{48}
   \item {exit}
-    \subitem {utilities.\+cpp}, \hyperpage{101}
+    \subitem {utilities.\+cpp}, \hyperpage{102}
     \subitem {utilities.\+h}, \hyperpage{106}
   \item {extract\+\_\+elem}
     \subitem {utilities.\+cpp}, \hyperpage{102}
-    \subitem {utilities.\+h}, \hyperpage{106}
+    \subitem {utilities.\+h}, \hyperpage{107}
 
   \indexspace
 
@@ -526,74 +526,79 @@
   \item {init.\+cpp}, \hyperpage{84}
     \subitem {init\+\_\+arr\+\_\+bullet}, \hyperpage{85}
     \subitem {init\+\_\+bullet}, \hyperpage{85}
-    \subitem {init\+\_\+display\+\_\+res}, \hyperpage{85}
-    \subitem {init\+\_\+game\+\_\+requirements}, \hyperpage{85}
+    \subitem {init\+\_\+display}, \hyperpage{85}
+    \subitem {init\+\_\+display\+\_\+res}, \hyperpage{86}
+    \subitem {init\+\_\+game\+\_\+requirements}, \hyperpage{86}
     \subitem {init\+\_\+match\+\_\+vars}, \hyperpage{86}
     \subitem {init\+\_\+queue\+\_\+event}, \hyperpage{86}
     \subitem {init\+\_\+settings}, \hyperpage{86}
-    \subitem {init\+\_\+shooter}, \hyperpage{86}
-    \subitem {init\+\_\+sound\+\_\+music}, \hyperpage{86}
+    \subitem {init\+\_\+shooter}, \hyperpage{87}
+    \subitem {init\+\_\+sound\+\_\+music}, \hyperpage{87}
     \subitem {init\+\_\+target\+\_\+bonus}, \hyperpage{87}
     \subitem {init\+\_\+thread\+\_\+manager}, \hyperpage{87}
-    \subitem {init\+\_\+words\+\_\+buffer}, \hyperpage{87}
-    \subitem {sort\+\_\+file\+\_\+list}, \hyperpage{87}
+    \subitem {init\+\_\+words\+\_\+buffer}, \hyperpage{88}
+    \subitem {sort\+\_\+file\+\_\+list}, \hyperpage{88}
   \item {init.\+h}, \hyperpage{88}
-    \subitem {display\+\_\+info}, \hyperpage{92}
-    \subitem {init\+\_\+arr\+\_\+bullet}, \hyperpage{89}
-    \subitem {init\+\_\+bullet}, \hyperpage{89}
+    \subitem {display\+\_\+info}, \hyperpage{93}
+    \subitem {init\+\_\+arr\+\_\+bullet}, \hyperpage{90}
+    \subitem {init\+\_\+bullet}, \hyperpage{90}
+    \subitem {init\+\_\+display}, \hyperpage{90}
     \subitem {init\+\_\+display\+\_\+res}, \hyperpage{90}
-    \subitem {init\+\_\+game\+\_\+requirements}, \hyperpage{90}
-    \subitem {init\+\_\+match\+\_\+vars}, \hyperpage{90}
-    \subitem {init\+\_\+queue\+\_\+event}, \hyperpage{90}
-    \subitem {init\+\_\+settings}, \hyperpage{90}
+    \subitem {init\+\_\+game\+\_\+requirements}, \hyperpage{91}
+    \subitem {init\+\_\+match\+\_\+vars}, \hyperpage{91}
+    \subitem {init\+\_\+queue\+\_\+event}, \hyperpage{91}
+    \subitem {init\+\_\+settings}, \hyperpage{91}
     \subitem {init\+\_\+shooter}, \hyperpage{91}
-    \subitem {init\+\_\+sound\+\_\+music}, \hyperpage{91}
-    \subitem {init\+\_\+target\+\_\+bonus}, \hyperpage{91}
-    \subitem {init\+\_\+thread\+\_\+manager}, \hyperpage{91}
+    \subitem {init\+\_\+sound\+\_\+music}, \hyperpage{92}
+    \subitem {init\+\_\+target\+\_\+bonus}, \hyperpage{92}
+    \subitem {init\+\_\+thread\+\_\+manager}, \hyperpage{92}
     \subitem {init\+\_\+words\+\_\+buffer}, \hyperpage{92}
-    \subitem {music\+\_\+wa}, \hyperpage{92}
-    \subitem {P\+L\+A\+Y\+W\+A\+\_\+\+GV}, \hyperpage{92}
+    \subitem {music\+\_\+wa}, \hyperpage{93}
+    \subitem {P\+L\+A\+Y\+W\+A\+\_\+\+GV}, \hyperpage{93}
   \item {init\+\_\+arr\+\_\+bullet}
     \subitem {init.\+cpp}, \hyperpage{85}
-    \subitem {init.\+h}, \hyperpage{89}
+    \subitem {init.\+h}, \hyperpage{90}
   \item {init\+\_\+bullet}
     \subitem {init.\+cpp}, \hyperpage{85}
-    \subitem {init.\+h}, \hyperpage{89}
-  \item {init\+\_\+display\+\_\+res}
+    \subitem {init.\+h}, \hyperpage{90}
+  \item {init\+\_\+display}
     \subitem {init.\+cpp}, \hyperpage{85}
+    \subitem {init.\+h}, \hyperpage{90}
+  \item {init\+\_\+display\+\_\+res}
+    \subitem {init.\+cpp}, \hyperpage{86}
     \subitem {init.\+h}, \hyperpage{90}
   \item {init\+\_\+game\+\_\+requirements}
-    \subitem {init.\+cpp}, \hyperpage{85}
-    \subitem {init.\+h}, \hyperpage{90}
+    \subitem {init.\+cpp}, \hyperpage{86}
+    \subitem {init.\+h}, \hyperpage{91}
   \item {init\+\_\+match\+\_\+vars}
     \subitem {init.\+cpp}, \hyperpage{86}
-    \subitem {init.\+h}, \hyperpage{90}
+    \subitem {init.\+h}, \hyperpage{91}
   \item {init\+\_\+queue\+\_\+event}
     \subitem {init.\+cpp}, \hyperpage{86}
-    \subitem {init.\+h}, \hyperpage{90}
+    \subitem {init.\+h}, \hyperpage{91}
   \item {init\+\_\+settings}
     \subitem {init.\+cpp}, \hyperpage{86}
-    \subitem {init.\+h}, \hyperpage{90}
+    \subitem {init.\+h}, \hyperpage{91}
   \item {init\+\_\+shooter}
-    \subitem {init.\+cpp}, \hyperpage{86}
+    \subitem {init.\+cpp}, \hyperpage{87}
     \subitem {init.\+h}, \hyperpage{91}
   \item {init\+\_\+sound\+\_\+music}
-    \subitem {init.\+cpp}, \hyperpage{86}
-    \subitem {init.\+h}, \hyperpage{91}
+    \subitem {init.\+cpp}, \hyperpage{87}
+    \subitem {init.\+h}, \hyperpage{92}
   \item {init\+\_\+target\+\_\+bonus}
     \subitem {init.\+cpp}, \hyperpage{87}
-    \subitem {init.\+h}, \hyperpage{91}
+    \subitem {init.\+h}, \hyperpage{92}
   \item {init\+\_\+thread\+\_\+manager}
     \subitem {init.\+cpp}, \hyperpage{87}
-    \subitem {init.\+h}, \hyperpage{91}
+    \subitem {init.\+h}, \hyperpage{92}
   \item {init\+\_\+words\+\_\+buffer}
-    \subitem {init.\+cpp}, \hyperpage{87}
+    \subitem {init.\+cpp}, \hyperpage{88}
     \subitem {init.\+h}, \hyperpage{92}
   \item {insert\+\_\+asteroid\+\_\+index}
     \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
   \item {insert\+\_\+elem\+\_\+head}
     \subitem {utilities.\+cpp}, \hyperpage{102}
-    \subitem {utilities.\+h}, \hyperpage{106}
+    \subitem {utilities.\+h}, \hyperpage{107}
   \item {instant\+\_\+ast\+\_\+dest}
     \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{18}
   \item {instr\+\_\+gv\+\_\+t}, \hyperpage{12}
@@ -604,11 +609,11 @@
 		\hyperpage{13}
     \subitem {T\+E\+X\+T\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, \hyperpage{13}
   \item {int\+\_\+to\+\_\+str\+\_\+score}
-    \subitem {utilities.\+cpp}, \hyperpage{102}
+    \subitem {utilities.\+cpp}, \hyperpage{103}
     \subitem {utilities.\+h}, \hyperpage{107}
   \item {intro}
     \subitem {sections.\+cpp}, \hyperpage{95}
-    \subitem {sections.\+h}, \hyperpage{97}
+    \subitem {sections.\+h}, \hyperpage{98}
   \item {is\+\_\+searcher}
     \subitem {look\+\_\+into\+\_\+t}, \hyperpage{14}
   \item {items}
@@ -631,7 +636,7 @@
     \subitem {files}, \hyperpage{15}
     \subitem {nfile}, \hyperpage{15}
   \item {ls\+\_\+tar}
-    \subitem {utilities.\+cpp}, \hyperpage{102}
+    \subitem {utilities.\+cpp}, \hyperpage{103}
     \subitem {utilities.\+h}, \hyperpage{107}
 
   \indexspace
@@ -653,7 +658,7 @@
   \item {M\+E\+N\+U\+\_\+\+GV}
     \subitem {drawing\+\_\+functions.\+h}, \hyperpage{70}
     \subitem {graphical\+\_\+values.\+cpp}, \hyperpage{82}
-    \subitem {sections.\+h}, \hyperpage{98}
+    \subitem {sections.\+h}, \hyperpage{99}
   \item {M\+I\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+WN}
     \subitem {data.\+h}, \hyperpage{45}
   \item {M\+O\+N\+I\+T\+O\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+R\+A\+TE}
@@ -665,16 +670,16 @@
   \item {M\+U\+S\+I\+C\+\_\+\+P\+L\+A\+Y\+W\+A\+\_\+\+P\+A\+T\+H\+\_\+\+WA}
     \subitem {data.\+h}, \hyperpage{49}
   \item {main}
-    \subitem {main.\+cpp}, \hyperpage{93}
+    \subitem {main.\+cpp}, \hyperpage{94}
   \item {main.\+cpp}, \hyperpage{93}
-    \subitem {display\+\_\+info}, \hyperpage{93}
-    \subitem {main}, \hyperpage{93}
+    \subitem {display\+\_\+info}, \hyperpage{94}
+    \subitem {main}, \hyperpage{94}
     \subitem {music\+\_\+wa}, \hyperpage{94}
     \subitem {thread\+\_\+manager}, \hyperpage{94}
     \subitem {words\+\_\+buffer}, \hyperpage{94}
   \item {main\+\_\+menu}
     \subitem {sections.\+cpp}, \hyperpage{95}
-    \subitem {sections.\+h}, \hyperpage{97}
+    \subitem {sections.\+h}, \hyperpage{98}
   \item {match\+\_\+vars\+\_\+t}, \hyperpage{16}
     \subitem {ast\+\_\+queues}, \hyperpage{17}
     \subitem {asteroid\+\_\+head}, \hyperpage{17}
@@ -730,9 +735,9 @@
     \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
   \item {music\+\_\+wa}
     \subitem {game\+\_\+functions.\+h}, \hyperpage{80}
-    \subitem {init.\+h}, \hyperpage{92}
+    \subitem {init.\+h}, \hyperpage{93}
     \subitem {main.\+cpp}, \hyperpage{94}
-    \subitem {sections.\+h}, \hyperpage{98}
+    \subitem {sections.\+h}, \hyperpage{99}
   \item {music\+\_\+wa\+\_\+play}
     \subitem {game\+\_\+functions.\+cpp}, \hyperpage{74}
     \subitem {game\+\_\+functions.\+h}, \hyperpage{79}
@@ -785,12 +790,12 @@
     \subitem {drawing\+\_\+functions.\+h}, \hyperpage{70}
     \subitem {game\+\_\+functions.\+h}, \hyperpage{80}
     \subitem {graphical\+\_\+values.\+cpp}, \hyperpage{82}
-    \subitem {init.\+h}, \hyperpage{92}
+    \subitem {init.\+h}, \hyperpage{93}
   \item {pass\+\_\+result}
     \subitem {result\+\_\+t}, \hyperpage{26}
   \item {play\+\_\+wa}
-    \subitem {sections.\+cpp}, \hyperpage{95}
-    \subitem {sections.\+h}, \hyperpage{97}
+    \subitem {sections.\+cpp}, \hyperpage{96}
+    \subitem {sections.\+h}, \hyperpage{98}
   \item {playing}
     \subitem {match\+\_\+vars\+\_\+t}, \hyperpage{19}
   \item {playwa\+\_\+gv\+\_\+t}, \hyperpage{22}
@@ -886,24 +891,24 @@
     \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
   \item {searcher\+\_\+thread}
     \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{32}
-  \item {sections.\+cpp}, \hyperpage{94}
+  \item {sections.\+cpp}, \hyperpage{95}
     \subitem {intro}, \hyperpage{95}
     \subitem {main\+\_\+menu}, \hyperpage{95}
-    \subitem {play\+\_\+wa}, \hyperpage{95}
-    \subitem {settings\+\_\+menu}, \hyperpage{95}
-  \item {sections.\+h}, \hyperpage{96}
-    \subitem {display\+\_\+info}, \hyperpage{98}
-    \subitem {intro}, \hyperpage{97}
-    \subitem {M\+E\+N\+U\+\_\+\+GV}, \hyperpage{98}
-    \subitem {main\+\_\+menu}, \hyperpage{97}
-    \subitem {music\+\_\+wa}, \hyperpage{98}
-    \subitem {play\+\_\+wa}, \hyperpage{97}
+    \subitem {play\+\_\+wa}, \hyperpage{96}
+    \subitem {settings\+\_\+menu}, \hyperpage{96}
+  \item {sections.\+h}, \hyperpage{97}
+    \subitem {display\+\_\+info}, \hyperpage{99}
+    \subitem {intro}, \hyperpage{98}
+    \subitem {M\+E\+N\+U\+\_\+\+GV}, \hyperpage{99}
+    \subitem {main\+\_\+menu}, \hyperpage{98}
+    \subitem {music\+\_\+wa}, \hyperpage{99}
+    \subitem {play\+\_\+wa}, \hyperpage{98}
     \subitem {settings\+\_\+menu}, \hyperpage{98}
     \subitem {thread\+\_\+manager}, \hyperpage{99}
     \subitem {U\+S\+R\+\_\+\+GV}, \hyperpage{99}
-    \subitem {words\+\_\+buffer}, \hyperpage{99}
+    \subitem {words\+\_\+buffer}, \hyperpage{100}
   \item {settings\+\_\+menu}
-    \subitem {sections.\+cpp}, \hyperpage{95}
+    \subitem {sections.\+cpp}, \hyperpage{96}
     \subitem {sections.\+h}, \hyperpage{98}
   \item {settings\+\_\+t}, \hyperpage{28}
     \subitem {music}, \hyperpage{29}
@@ -921,7 +926,7 @@
     \subitem {bullet\+\_\+t}, \hyperpage{7}
     \subitem {shooter\+\_\+t}, \hyperpage{30}
   \item {sort\+\_\+file\+\_\+list}
-    \subitem {init.\+cpp}, \hyperpage{87}
+    \subitem {init.\+cpp}, \hyperpage{88}
   \item {sound}
     \subitem {settings\+\_\+t}, \hyperpage{29}
   \item {sound\+\_\+error}
@@ -1022,35 +1027,35 @@
 		\hyperpage{34}
     \subitem {U\+S\+E\+R\+N\+A\+M\+E\+\_\+\+F\+O\+N\+T\+S\+I\+ZE}, 
 		\hyperpage{34}
-  \item {utilities.\+cpp}, \hyperpage{99}
-    \subitem {archives\+\_\+exist}, \hyperpage{100}
-    \subitem {change\+\_\+enable}, \hyperpage{100}
-    \subitem {delete\+\_\+ast\+\_\+queues}, \hyperpage{100}
+  \item {utilities.\+cpp}, \hyperpage{100}
+    \subitem {archives\+\_\+exist}, \hyperpage{101}
+    \subitem {change\+\_\+enable}, \hyperpage{101}
+    \subitem {delete\+\_\+ast\+\_\+queues}, \hyperpage{101}
     \subitem {delete\+\_\+display\+\_\+evqueue\+\_\+music}, 
 		\hyperpage{101}
     \subitem {delete\+\_\+sounds}, \hyperpage{101}
-    \subitem {delete\+\_\+timer}, \hyperpage{101}
-    \subitem {exit}, \hyperpage{101}
+    \subitem {delete\+\_\+timer}, \hyperpage{102}
+    \subitem {exit}, \hyperpage{102}
     \subitem {extract\+\_\+elem}, \hyperpage{102}
     \subitem {insert\+\_\+elem\+\_\+head}, \hyperpage{102}
-    \subitem {int\+\_\+to\+\_\+str\+\_\+score}, \hyperpage{102}
-    \subitem {ls\+\_\+tar}, \hyperpage{102}
+    \subitem {int\+\_\+to\+\_\+str\+\_\+score}, \hyperpage{103}
+    \subitem {ls\+\_\+tar}, \hyperpage{103}
     \subitem {which\+\_\+quadrant}, \hyperpage{103}
-  \item {utilities.\+h}, \hyperpage{103}
+  \item {utilities.\+h}, \hyperpage{104}
     \subitem {archives\+\_\+exist}, \hyperpage{105}
     \subitem {change\+\_\+enable}, \hyperpage{105}
     \subitem {delete\+\_\+ast\+\_\+queues}, \hyperpage{105}
     \subitem {delete\+\_\+display\+\_\+evqueue\+\_\+music}, 
-		\hyperpage{105}
-    \subitem {delete\+\_\+sounds}, \hyperpage{105}
+		\hyperpage{106}
+    \subitem {delete\+\_\+sounds}, \hyperpage{106}
     \subitem {delete\+\_\+timer}, \hyperpage{106}
-    \subitem {display\+\_\+info}, \hyperpage{107}
+    \subitem {display\+\_\+info}, \hyperpage{108}
     \subitem {exit}, \hyperpage{106}
-    \subitem {extract\+\_\+elem}, \hyperpage{106}
-    \subitem {insert\+\_\+elem\+\_\+head}, \hyperpage{106}
+    \subitem {extract\+\_\+elem}, \hyperpage{107}
+    \subitem {insert\+\_\+elem\+\_\+head}, \hyperpage{107}
     \subitem {int\+\_\+to\+\_\+str\+\_\+score}, \hyperpage{107}
     \subitem {ls\+\_\+tar}, \hyperpage{107}
-    \subitem {which\+\_\+quadrant}, \hyperpage{107}
+    \subitem {which\+\_\+quadrant}, \hyperpage{108}
 
   \indexspace
 
@@ -1061,7 +1066,7 @@
 
   \item {which\+\_\+quadrant}
     \subitem {utilities.\+cpp}, \hyperpage{103}
-    \subitem {utilities.\+h}, \hyperpage{107}
+    \subitem {utilities.\+h}, \hyperpage{108}
   \item {width}
     \subitem {display\+\_\+info\+\_\+t}, \hyperpage{8}
   \item {word}
@@ -1072,7 +1077,7 @@
     \subitem {archive\+\_\+functions.\+h}, \hyperpage{39}
     \subitem {game\+\_\+functions.\+h}, \hyperpage{81}
     \subitem {main.\+cpp}, \hyperpage{94}
-    \subitem {sections.\+h}, \hyperpage{99}
+    \subitem {sections.\+h}, \hyperpage{100}
   \item {words\+\_\+buffer\+\_\+mutex}
     \subitem {thread\+\_\+manager\+\_\+t}, \hyperpage{33}
   \item {words\+\_\+buffer\+\_\+t}, \hyperpage{35}

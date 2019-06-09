@@ -60,6 +60,7 @@ const char	MUSIC_PLAYWA_PATH_WA[] = "media/sounds/playwa.wav";
 
 /** Percorso del font utilizzato in tutto il progetto. */
 const char	FONT_PATH[] = "media/font/visitor.ttf";
+
 /** Percorso della cartella contenente le immagini. */
 const char	BMP_PATH_BASE[] = "media/images/";
 

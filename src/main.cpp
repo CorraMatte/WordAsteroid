@@ -36,8 +36,7 @@ int main(int argc, char **argv){
      * Inizializzione e avvio della musica
      */
     display_info = init_display_res();
-    display = al_create_display(display_info.width, display_info.height);
-    al_set_window_title(display, "Word Asteroid");
+    init_display(display);
     ALLEGRO_EVENT_QUEUE *event_queue = init_queue_event(display);
     assert(event_queue != nullptr);
     music_wa = init_sound_music(MUSIC_MENU_PATH_WA);

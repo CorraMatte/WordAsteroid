@@ -29,6 +29,13 @@ display_info_t init_display_res();
 ALLEGRO_EVENT_QUEUE * init_queue_event(ALLEGRO_DISPLAY * & display);
 
 /**
+ *      Funzione che crea il display ed inizializza il titolo e l'icona. \n
+ * 		Parametri: \n
+ * 		1) display - Puntatore al display del gioco; \n
+ */
+void init_display(ALLEGRO_DISPLAY * & display);
+
+/**
  *		Funzione che indica dopo quanti asteroidi distrutti ottengo il bonus. Inizializza instant_ast_dest, per memorizzare quanti asteroidi
  * 		sono stati distrutti fino a quel momento, per controllare ad ogni asteroide distrutto se si ha diritto al bonus. \n
  * 		Parametri: \n
