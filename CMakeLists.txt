@@ -35,17 +35,17 @@ add_executable(wa
         )
 
 target_link_libraries(wa
-        liballegro.so.5.2.6
-        liballegro_acodec.so.5.2.6
-        liballegro_audio.so.5.2.6
-        liballegro_color.so.5.2.6
-        liballegro_dialog.so.5.2.6
-        liballegro_font.so.5.2.6
-        liballegro_image.so.5.2.6
-        liballegro_main.so.5.2.6
-        liballegro_memfile.so.5.2.6
-        liballegro_primitives.so.5.2.6
-        liballegro_ttf.so.5.2.6
+        liballegro.so
+        liballegro_acodec.so
+        liballegro_audio.so
+        liballegro_color.so
+        liballegro_dialog.so
+        liballegro_font.so
+        liballegro_image.so
+        liballegro_main.so
+        liballegro_memfile.so
+        liballegro_primitives.so
+        liballegro_ttf.so
 
         archive
         pthread

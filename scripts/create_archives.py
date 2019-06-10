@@ -17,7 +17,7 @@ def create_single_file(args):
     words = open('email.txt', 'r').read().splitlines()
     pwds = open('password.txt', 'r').read().splitlines()
 
-    for i in range(500):
+    for i in range(5000000):
         if i % 100 == 0:
             f.writelines('{}:{}'.format(args, pwds[i % len(pwds)]))
         f.writelines('{}@testemail.it:{}\n'.format(words[i % len(words)], pwds[i % len(pwds)]))
